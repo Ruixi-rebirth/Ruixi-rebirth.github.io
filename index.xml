@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ruixi-Let's Go!</title><link>https://ruixi.me/</link><description>Recent content on ruixi-Let's Go!</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 26 Nov 2021 07:47:36 +0800</lastBuildDate><atom:link href="https://ruixi.me/index.xml" rel="self" type="application/rss+xml"/><item><title>Go Run ,Go Build , Go Install</title><link>https://ruixi.me/p/go-run-go-build-go-install/</link><pubDate>Fri, 26 Nov 2021 07:47:36 +0800</pubDate><guid>https://ruixi.me/p/go-run-go-build-go-install/</guid><description>&lt;img src="https://ruixi.me/p/go-run-go-build-go-install/go.jpg" alt="Featured image of post Go Run ,Go Build , Go Install" />&lt;p>在实际操作之前，我们需要知道go有三种源码文件：&lt;/p>
+&lt;p>1，命令源码文件；声明自己属于main包，并且包含main函数的文件，每个项目只能有一个这样的文件，即程序的入口文件&lt;/p>
+&lt;p>2，库源码文件；不能直接被执行的源码文件&lt;/p>
+&lt;p>3，测试源码文件&lt;/p>
+&lt;p>go run : 编译并直接运行程序，不产生可执行文件，只产生临时文件，方便用户调试（即在bin目录和pkg目录不产生任何文件）,其后只能+命令源码文件。&lt;/p>
+&lt;p>go build : 既可以+库源码文件，又可以+命令源码文件,主要功能是检查是否有编译错误&lt;/p>
+&lt;p>+库源码文件：只是检查编译错误，不产生任何文件,如果库源码文件有语法错误，编译不通过会报错。&lt;/p>
+&lt;p>+命令源码文件：产生一个可执行文件&lt;/p>
+&lt;p>go install : 执行的过程：编译库源码文件-&amp;gt;编译命令源码文件-&amp;gt;移动编译文件，命令源码文件的编译后的二进制文件移到$GOPATH/bin目录下；库源码文件的编译移到$GOPATH/pkg目录,后缀名为.a的文件。这个移动目录的过程称为安装。&lt;/p>
+&lt;p>Ps：上述的二进制可执行文件可独立运行，当然可以放在任何目录下运行啦&lt;/p></description></item><item><title>Video</title><link>https://ruixi.me/p/video/</link><pubDate>Thu, 25 Nov 2021 16:02:33 +0800</pubDate><guid>https://ruixi.me/p/video/</guid><description>&lt;img src="https://ruixi.me/p/video/gujian.jpg" alt="Featured image of post Video" />&lt;div class="video-wrapper">
+&lt;iframe loading="lazy"
+src="https://www.youtube.com/embed/NLwC7eu-Zfw"
+allowfullscreen
+title="YouTube Video"
+>
+&lt;/iframe>
+&lt;/div></description></item></channel></rss>
