@@ -1,4 +1,131 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ruixi-Let's Go!</title><link>https://ruixi.me/</link><description>Recent content on ruixi-Let's Go!</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 26 Nov 2021 07:47:36 +0800</lastBuildDate><atom:link href="https://ruixi.me/index.xml" rel="self" type="application/rss+xml"/><item><title>Go Run ,Go Build , Go Install</title><link>https://ruixi.me/p/go-run-go-build-go-install/</link><pubDate>Fri, 26 Nov 2021 07:47:36 +0800</pubDate><guid>https://ruixi.me/p/go-run-go-build-go-install/</guid><description>&lt;img src="https://ruixi.me/p/go-run-go-build-go-install/go.jpg" alt="Featured image of post Go Run ,Go Build , Go Install" />&lt;p>在实际操作之前，我们需要知道go有三种源码文件：&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ruixi-Let's Go!</title><link>https://ruixi.me/</link><description>Recent content on ruixi-Let's Go!</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 28 Nov 2021 17:09:23 +0800</lastBuildDate><atom:link href="https://ruixi.me/index.xml" rel="self" type="application/rss+xml"/><item><title>解决Gotest对单个文件进行单元测试提示undefiend</title><link>https://ruixi.me/p/%E8%A7%A3%E5%86%B3gotest%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/</link><pubDate>Sun, 28 Nov 2021 17:09:23 +0800</pubDate><guid>https://ruixi.me/p/%E8%A7%A3%E5%86%B3gotest%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/</guid><description>&lt;img src="https://ruixi.me/p/%E8%A7%A3%E5%86%B3gotest%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/feature.png" alt="Featured image of post 解决Gotest对单个文件进行单元测试提示undefiend" />&lt;p>&lt;em>&lt;strong>我的报错截图:&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;figure
+class="gallery-image"
+style="
+flex-grow: 136;
+flex-basis: 326px"
+>
+&lt;a href="https://ruixi.me/p/%E8%A7%A3%E5%86%B3gotest%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/error.jpg" data-size="850x624">
+&lt;img src="https://ruixi.me/p/%E8%A7%A3%E5%86%B3gotest%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/error.jpg"
+width="850"
+height="624"
+srcset="https://ruixi.me/p/%E8%A7%A3%E5%86%B3gotest%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/error_hue036e71731a728d226cddfaab0bfae22_85845_480x0_resize_q75_box.jpg 480w, https://ruixi.me/p/%E8%A7%A3%E5%86%B3gotest%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/error_hue036e71731a728d226cddfaab0bfae22_85845_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+>
+&lt;/a>
+&lt;/figure>&lt;/p>
+&lt;h2 id="具体解决方案">具体解决方案:&lt;/h2>
+&lt;h2 id="文章转载自httpswwwcnblogscomdetectorp10010292htmlhttpswwwcnblogscomdetectorp10010292html">(文章转载自&lt;a class="link" href="https://www.cnblogs.com/Detector/p/10010292.html" target="_blank" rel="noopener"
+>https://www.cnblogs.com/Detector/p/10010292.html&lt;/a>)&lt;/h2>
+&lt;p>很多人记录过怎么执行Go test单个文件或者单个函数，但是要么对执行单文件用例存在函数或变量引用的场景避而不谈，要么提示调用了其它文件中的模块会报错。其实了解了Golang命令程序的机制之后，这个问题就迎刃而解了。&lt;/p>
+&lt;h1 id="阅读目录">&lt;strong>阅读目录&lt;/strong>&lt;/h1>
+&lt;ul>
+&lt;li>&lt;a class="link" href="#_label0" >背景&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="#_label1" >根本原因&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="#_label2" >解决方法&lt;/a>&lt;/li>
+&lt;li>&lt;a class="link" href="#_label3" >总结&lt;/a>&lt;/li>
+&lt;/ul>
+&lt;hr>
+&lt;h2 id="背景">背景&lt;/h2>
+&lt;p>很多人记录过怎么执行Go test单个文件或者单个函数，但是要么对执行单文件用例存在函数或变量引用的场景避而不谈，要么提示调用了其它文件中的模块会报错。其实了解了go test命令的机制之后，这个问题就迎刃而解了。&lt;/p>
+&lt;p>也是一个同事向我求助我才知道有这样一个问题存在，因为场景特殊他只想执行我们的测试代码其中一个文件中的测试代码，因为调用的信息都在同一目录（package）下，原代码执行是不存在引用问题的，直接执行&lt;code>go test&lt;/code>也是可以运行的，但是单独运行其中一个文件时，出现了下面的错误：&lt;/p>
+&lt;pre>&lt;code>bingo@Mac Interface_test$ go test -v getinfo_test.go
+# command-line-arguments
+./getinfo_test.go:34:23: undefined: touch
+./getinfo_test.go:35:23: undefined: verify
+...
+FAIL command-line-arguments [build failed]
+&lt;/code>&lt;/pre>
+&lt;p>这也许是很多数人会遇到的一个错误，搜索引擎上没有找到相关的信息，有的人做了相关的记录来提示后来人：执行单文件存在引用时会报错。&lt;/p>
+&lt;p>这可能也是使用golang 做测试的弊端，因为发展时间不长，没有像Python或者Java那样成熟的社区；废话不多说，我们一起来看看这个问题为什么会发生。&lt;/p>
+&lt;h2 id="根本原因">根本原因&lt;/h2>
+&lt;p>其实从看看上面的这段提示：&lt;code>build failed&lt;/code>，构建失败，我们应该就能看出一下信息。go test与其他的指定源码文件进行编译或运行的命令程序一样（参考：&lt;code>go run&lt;/code>和&lt;code>go build&lt;/code>），会为指定的源码文件生成一个虚拟代码包——“command-line-arguments”，对于运行这次测试的命令程序来说，测试源码文件&lt;code>getinfo_test.go&lt;/code>是属于代码包“command-line-arguments”的，可是它引用了其他包中的数据并不属于代码包“command-line-arguments”，编译不通过，错误自然发生了。&lt;/p>
+&lt;h2 id="解决方法">解决方法&lt;/h2>
+&lt;h4 id="解决">解决&lt;/h4>
+&lt;p>知道了原因之后，解决的方法就出来了，&lt;strong>执行命令时加入这个测试文件需要引用的源码文件&lt;/strong>，&lt;strong>在命令行后方的文件都会被加载到&lt;code>command-line-arguments&lt;/code>中进行编译。&lt;/strong>。示例如下：&lt;/p>
+&lt;pre>&lt;code>bingo@Mac Interface_test$ go test -v getinfo_test.go lib.go
+ok command-line-arguments 0.008s
+&lt;/code>&lt;/pre>
+&lt;h4 id="多级引用或多个引用包的情况">多级引用或多个引用包的情况&lt;/h4>
+&lt;p>如果对多个包存在引用关系，或者引用的包对当前目录的其他文件存在引用，也都是一样的方法，把他们加在命令后方即可。&lt;/p>
+&lt;h2 id="总结">总结&lt;/h2>
+&lt;p>测试单个文件，一定要带上被测试的原文件，如果原文件有其他引用，也需一并带上。&lt;/p></description></item><item><title>浅谈GoMod</title><link>https://ruixi.me/p/%E6%B5%85%E8%B0%88gomod/</link><pubDate>Sun, 28 Nov 2021 16:24:57 +0800</pubDate><guid>https://ruixi.me/p/%E6%B5%85%E8%B0%88gomod/</guid><description>&lt;img src="https://ruixi.me/p/%E6%B5%85%E8%B0%88gomod/feature.png" alt="Featured image of post 浅谈GoMod" />&lt;p>如果使用之前的&lt;strong>GOPATH&lt;/strong>进行包管理的话会面临以下问题:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>在不使用额外的工具的情况下，Go的依赖包需要手工下载&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>第三方包没有版本的概念，如果第三方包的作者做了不兼容升级，会让开发者很难受&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>协作开发时，需要统一各个开发成员本地&lt;code>$GOPATH/src&lt;/code>下的依赖包&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>引用的包引用了已经转移的包，而作者没改的话，需要自己修改引用&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>第三方包和自己的包的源码都在src下，很混乱。对于混合技术栈的项目来说，目录的存放会有一些问题&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;p>新的包管理模式&lt;strong>go mod&lt;/strong>解决了以上问题:&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>自动下载依赖包(有前提)&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>项目不必放在GOPATH/src内了&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>项目内会生成一个go.mod文件，列出包依赖&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>所有来的第三方包会准确的指定版本号&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>对于已经转移的包，可以用replace 申明替换，不需要改代码&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;h2 id="准备工作">准备工作&lt;/h2>
+&lt;p>1.golang版本必须支持go mod&lt;/p>
+&lt;p>2.添加环境变量 &lt;strong>GO111MODULE&lt;/strong> 为 &lt;strong>on&lt;/strong> 或者&lt;strong>auto&lt;/strong>&lt;/p>
+&lt;h2 id="创建一个项目">创建一个项目&lt;/h2>
+&lt;p>首先，在$GOPATH/src路径外的你喜欢的地方创建一个目录，cd 进入目录，新建一个hello.go文件，内容如下&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-golang" data-lang="golang"> &lt;span class="kn">package&lt;/span> &lt;span class="nx">main&lt;/span>
+&lt;span class="kn">import&lt;/span> &lt;span class="p">(&lt;/span>
+&lt;span class="s">&amp;#34;fmt&amp;#34;&lt;/span>
+&lt;span class="p">)&lt;/span>
+&lt;span class="kd">func&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Hello, world!&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="初始化模块">初始化模块&lt;/h2>
+&lt;p>在当前目录下，命令行运行 go mod init + 模块名称 初始化模块&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-golang" data-lang="golang"> &lt;span class="k">go&lt;/span> &lt;span class="nx">mod&lt;/span> &lt;span class="nx">init&lt;/span> &lt;span class="nx">hello&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>运行完后，会在当前项目目录下生成一个go.mod 文件，这是一个关键文件，之后的包的管理都是通过这个文件管理。&lt;/p>
+&lt;blockquote>
+&lt;p>官方说明：除了go.mod之外，go命令还维护一个名为go.sum的文件，其中包含特定模块版本内容的预期加密哈希&lt;br>
+go命令使用go.sum文件确保这些模块的未来下载检索与第一次下载相同的位，以确保项目所依赖的模块不会出现意外更改，无论是出于恶意、意外还是其他原因。 go.mod和go.sum都应检入版本控制。&lt;br>
+go.sum 不需要手工维护，所以可以不用太关注。&lt;/p>
+&lt;/blockquote>
+&lt;p>生成出来的文件包含模块名称和当前的go版本号&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-golang" data-lang="golang"> &lt;span class="nx">module&lt;/span> &lt;span class="nx">hello&lt;/span>
+&lt;span class="k">go&lt;/span> &lt;span class="mf">1.17&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>注意&lt;/strong>：子目录里是不需要init的，所有的子目录里的依赖都会组织在根目录的go.mod文件里&lt;/p>
+&lt;h2 id="看看go-mod-如何工作的">看看go mod 如何工作的&lt;/h2>
+&lt;p>接下来，让项目依赖一下第三方包以大部分人都熟悉的beego为例吧！修改Hello.go文件：&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-golang" data-lang="golang"> &lt;span class="kn">package&lt;/span> &lt;span class="nx">main&lt;/span>
+&lt;span class="kn">import&lt;/span> &lt;span class="s">&amp;#34;github.com/astaxie/beego&amp;#34;&lt;/span>
+&lt;span class="kd">func&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;span class="nx">beego&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Run&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;span class="p">}&lt;/span>
+&lt;/code>&lt;/pre>&lt;/div>&lt;p>接下来执行go run hello.go 然后会提示叫用go get 下载引用第三方包，那就用呗。&lt;/p>
+&lt;p>下载完第三方包后，再次go run hello.go就跑起来啦！&lt;/p>
+&lt;h2 id="问题依赖的包下载到哪里了">问题：依赖的包下载到哪里了？&lt;/h2>
+&lt;p>使用Go的包管理方式，依赖的第三方包被下载到了$GOPATH/pkg/mod路径下。（可以自行更改下载路径）&lt;/p></description></item><item><title>回车 &amp; 换行</title><link>https://ruixi.me/p/%E5%9B%9E%E8%BD%A6-%E6%8D%A2%E8%A1%8C/</link><pubDate>Sun, 28 Nov 2021 16:12:56 +0800</pubDate><guid>https://ruixi.me/p/%E5%9B%9E%E8%BD%A6-%E6%8D%A2%E8%A1%8C/</guid><description>&lt;img src="https://ruixi.me/p/%E5%9B%9E%E8%BD%A6-%E6%8D%A2%E8%A1%8C/feature.png" alt="Featured image of post 回车 &amp; 换行" />&lt;h1 id="关于回车carriage-return和换行line-feed这两个概念的来历和区别">关于“回车”（carriage return）和“换行”（line feed）这两个概念的来历和区别&lt;/h1>
+&lt;p>关于换行和回车其实平时我们不太在意，所以关于两者的区别也不太清楚，在平时开发时可能会遇到一些文件处理的问题，放到不同的操作系统上出现各种坑。那么回车和换行到底有哪些区别呢？今天咱们就来总结一下。&lt;/p>
+&lt;h3 id="1-由来">1. 由来&lt;/h3>
+&lt;p>在计算机还没有出现之前，有一种叫做电传打字机（Teletype Model 33）的机械打字机，每秒钟可以打10个字符。但是它有一个问题，就是打完一行换行的时候，要用去0.2秒，正好可以打两个字符。要是在这0.2秒里面，又有新的字符传过来，那么这个字符将丢失。&lt;/p>
+&lt;p>于是，研制人员想了个办法解决这个问题，就是在每行后面加两个表示结束的字符。一个叫做“回车”，告诉打字机把打印头定位在左边界，不卷动滚筒；另一个叫做“换行”，告诉打字机把滚筒卷一格，不改变水平位置。&lt;/p>
+&lt;p>这就是“换行”和“回车”的由来。&lt;/p>
+&lt;h3 id="2-使用">2. 使用&lt;/h3>
+&lt;p>后来，计算机发明了，这两个概念也就被般到了计算机上。那时，存储器很贵，一些科学家认为在每行结尾加两个字符太浪费了，加一个就可以。于是，就出现了分歧。&lt;/p>
+&lt;p>回车 \r 本义是光标重新回到本行开头，r的英文return，控制字符可以写成CR，即Carriage Return&lt;/p>
+&lt;p>换行 \n 本义是光标往下一行（不一定到下一行行首），n的英文newline，控制字符可以写成LF，即Line Feed&lt;/p>
+&lt;p>符号    ASCII码      意义&lt;/p>
+&lt;p>\n        10        换行NL&lt;/p>
+&lt;p>\r        13        回车CR&lt;/p>
+&lt;p>在不同的操作系统这几个字符表现不同，比如在WIN系统下，这两个字符就是表现的本义，在UNIX类系统，换行\n就表现为光标下一行并回到行首，在MAC上，\r就表现为回到本行开头并往下一行，至于ENTER键的定义是与操作系统有关的。通常用的Enter是两个加起来。&lt;/p>
+&lt;p>不同操作系统下的含义：&lt;/p>
+&lt;p>\n:  UNIX 系统行末结束符&lt;/p>
+&lt;p>\n\r: window 系统行末结束符&lt;/p>
+&lt;p>\r:  MAC OS 系统行末结束符&lt;/p>
+&lt;p>我们经常遇到的一个问题就是，Unix/Mac系统下的文件在Windows里打开的话，所有文字会变成一行；而Windows里的文件在Unix/Mac下打开的话，在每行的结尾可能会多出一个^M符号。&lt;/p>
+&lt;h3 id="3-软回车和硬回车">3. 软回车和硬回车&lt;/h3>
+&lt;p>再扩展一下回车的一些知识。&lt;/p>
+&lt;p>硬回车就是普通我们按回车产生的，它在换行的同时也起着段落分隔的作用。 &lt;/p>
+&lt;p>软回车是用 Shift + Enter 产生的，它换行，但是并不换段，即前后两段文字在 Word 中属于同一“段”。在应用格式时你会体会到这一点。&lt;/p>
+&lt;p>软回车能使前后两行的行间距大幅度缩小，因为它不是段落标记，要和法定的段落标记——硬回车区别出来。硬回车的html代码是&amp;lt;p&amp;gt;..&amp;lt;/p&amp;gt;，段落的内容就夹在里面，而软回车的代码很精悍：&amp;lt;br&amp;gt;。网页的文字如果复制到word中，则硬回车变为弯曲的箭头，软回车变为向下的箭头。&lt;/p>
+&lt;p>转载在自:&lt;a class="link" href="https://www.pythontab.com/html/2017/linuxkaiyuan_0115/1116.html" target="_blank" rel="noopener"
+>https://www.pythontab.com/html/2017/linuxkaiyuan_0115/1116.html&lt;/a>&lt;/p></description></item><item><title>Go Run ,Go Build , Go Install</title><link>https://ruixi.me/p/go-run-go-build-go-install/</link><pubDate>Fri, 26 Nov 2021 07:47:36 +0800</pubDate><guid>https://ruixi.me/p/go-run-go-build-go-install/</guid><description>&lt;img src="https://ruixi.me/p/go-run-go-build-go-install/go.jpg" alt="Featured image of post Go Run ,Go Build , Go Install" />&lt;p>在实际操作之前，我们需要知道go有三种源码文件：&lt;/p>
 &lt;p>1，命令源码文件；声明自己属于main包，并且包含main函数的文件，每个项目只能有一个这样的文件，即程序的入口文件&lt;/p>
 &lt;p>2，库源码文件；不能直接被执行的源码文件&lt;/p>
 &lt;p>3，测试源码文件&lt;/p>

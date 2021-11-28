@@ -1,4 +1,25 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Go on ruixi-Let's Go!</title><link>https://ruixi.me/tags/go/</link><description>Recent content in Go on ruixi-Let's Go!</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Fri, 26 Nov 2021 07:47:36 +0800</lastBuildDate><atom:link href="https://ruixi.me/tags/go/index.xml" rel="self" type="application/rss+xml"/><item><title>Go Run ,Go Build , Go Install</title><link>https://ruixi.me/p/go-run-go-build-go-install/</link><pubDate>Fri, 26 Nov 2021 07:47:36 +0800</pubDate><guid>https://ruixi.me/p/go-run-go-build-go-install/</guid><description>在实际操作之前，我们需要知道go有三种源码文件：
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Go on ruixi-Let's Go!</title><link>https://ruixi.me/tags/go/</link><description>Recent content in Go on ruixi-Let's Go!</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sun, 28 Nov 2021 17:09:23 +0800</lastBuildDate><atom:link href="https://ruixi.me/tags/go/index.xml" rel="self" type="application/rss+xml"/><item><title>解决Gotest对单个文件进行单元测试提示undefiend</title><link>https://ruixi.me/p/%E8%A7%A3%E5%86%B3gotest%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/</link><pubDate>Sun, 28 Nov 2021 17:09:23 +0800</pubDate><guid>https://ruixi.me/p/%E8%A7%A3%E5%86%B3gotest%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/</guid><description>我的报错截图:
+具体解决方案: (文章转载自https://www.cnblogs.com/Detector/p/10010292.html) 很多人记录过怎么执行Go test单个文件或者单个函数，但是要么对执行单文件用例存在函数或变量引用的场景避而不谈，要么提示调用了其它文件中的模块会报错。其实了解了Golang命令程序的机制之后，这个问题就迎刃而解了。
+阅读目录 背景 根本原因 解决方法 总结 背景 很多人记录过怎么执行Go test单个文件或者单个函数，但是要么对执行单文件用例存在函数或变量引用的场景避而不谈，要么提示调用了其它文件中的模块会报错。其实了解了go test命令的机制之后，这个问题就迎刃而解了。
+也是一个同事向我求助我才知道有这样一个问题存在，因为场景特殊他只想执行我们的测试代码其中一个文件中的测试代码，因为调用的信息都在同一目录（package）下，原代码执行是不存在引用问题的，直接执行go test也是可以运行的，但是单独运行其中一个文件时，出现了下面的错误：
+bingo@Mac Interface_test$ go test -v getinfo_test.go # command-line-arguments ./getinfo_test.go:34:23: undefined: touch ./getinfo_test.go:35:23: undefined: verify ... FAIL command-line-arguments [build failed] 这也许是很多数人会遇到的一个错误，搜索引擎上没有找到相关的信息，有的人做了相关的记录来提示后来人：执行单文件存在引用时会报错。
+这可能也是使用golang 做测试的弊端，因为发展时间不长，没有像Python或者Java那样成熟的社区；废话不多说，我们一起来看看这个问题为什么会发生。
+根本原因 其实从看看上面的这段提示：build failed，构建失败，我们应该就能看出一下信息。go test与其他的指定源码文件进行编译或运行的命令程序一样（参考：go run和go build），会为指定的源码文件生成一个虚拟代码包——“command-line-arguments”，对于运行这次测试的命令程序来说，测试源码文件getinfo_test.go是属于代码包“command-line-arguments”的，可是它引用了其他包中的数据并不属于代码包“command-line-arguments”，编译不通过，错误自然发生了。
+解决方法 解决 知道了原因之后，解决的方法就出来了，执行命令时加入这个测试文件需要引用的源码文件，在命令行后方的文件都会被加载到command-line-arguments中进行编译。。示例如下：
+bingo@Mac Interface_test$ go test -v getinfo_test.go lib.go ok command-line-arguments 0.008s 多级引用或多个引用包的情况 如果对多个包存在引用关系，或者引用的包对当前目录的其他文件存在引用，也都是一样的方法，把他们加在命令后方即可。
+总结 测试单个文件，一定要带上被测试的原文件，如果原文件有其他引用，也需一并带上。</description></item><item><title>浅谈GoMod</title><link>https://ruixi.me/p/%E6%B5%85%E8%B0%88gomod/</link><pubDate>Sun, 28 Nov 2021 16:24:57 +0800</pubDate><guid>https://ruixi.me/p/%E6%B5%85%E8%B0%88gomod/</guid><description>如果使用之前的GOPATH进行包管理的话会面临以下问题:
+在不使用额外的工具的情况下，Go的依赖包需要手工下载 第三方包没有版本的概念，如果第三方包的作者做了不兼容升级，会让开发者很难受 协作开发时，需要统一各个开发成员本地$GOPATH/src下的依赖包 引用的包引用了已经转移的包，而作者没改的话，需要自己修改引用 第三方包和自己的包的源码都在src下，很混乱。对于混合技术栈的项目来说，目录的存放会有一些问题 新的包管理模式go mod解决了以上问题:
+自动下载依赖包(有前提) 项目不必放在GOPATH/src内了 项目内会生成一个go.mod文件，列出包依赖 所有来的第三方包会准确的指定版本号 对于已经转移的包，可以用replace 申明替换，不需要改代码 准备工作 1.golang版本必须支持go mod
+2.添加环境变量 GO111MODULE 为 on 或者auto
+创建一个项目 首先，在$GOPATH/src路径外的你喜欢的地方创建一个目录，cd 进入目录，新建一个hello.go文件，内容如下
+package main import ( &amp;#34;fmt&amp;#34; ) func main() { fmt.Println(&amp;#34;Hello, world!&amp;#34;) } 初始化模块 在当前目录下，命令行运行 go mod init + 模块名称 初始化模块
+go mod init hello 运行完后，会在当前项目目录下生成一个go.mod 文件，这是一个关键文件，之后的包的管理都是通过这个文件管理。
+官方说明：除了go.mod之外，go命令还维护一个名为go.sum的文件，其中包含特定模块版本内容的预期加密哈希
+go命令使用go.sum文件确保这些模块的未来下载检索与第一次下载相同的位，以确保项目所依赖的模块不会出现意外更改，无论是出于恶意、意外还是其他原因。 go.mod和go.sum都应检入版本控制。
+go.sum 不需要手工维护，所以可以不用太关注。
+生成出来的文件包含模块名称和当前的go版本号
+module hello go 1.17 注意：子目录里是不需要init的，所有的子目录里的依赖都会组织在根目录的go.mod文件里
+看看go mod 如何工作的 接下来，让项目依赖一下第三方包以大部分人都熟悉的beego为例吧！修改Hello.</description></item><item><title>Go Run ,Go Build , Go Install</title><link>https://ruixi.me/p/go-run-go-build-go-install/</link><pubDate>Fri, 26 Nov 2021 07:47:36 +0800</pubDate><guid>https://ruixi.me/p/go-run-go-build-go-install/</guid><description>在实际操作之前，我们需要知道go有三种源码文件：
 1，命令源码文件；声明自己属于main包，并且包含main函数的文件，每个项目只能有一个这样的文件，即程序的入口文件
 2，库源码文件；不能直接被执行的源码文件
 3，测试源码文件

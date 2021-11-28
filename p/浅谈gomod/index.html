@@ -1,0 +1,228 @@
+<!doctype html><html lang=en-us>
+<head><meta charset=utf-8>
+<meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="如果使用之前的GOPATH进行包管理的话会面临以下问题:
+ 在不使用额外的工具的情况下，Go的依赖包需要手工下载 第三方包没有版本的概念，如果第三方包的作者做了不兼容升级，会让开发者很难受 协作开发时，需要统一各个开发成员本地$GOPATH/src下的依赖包 引用的包引用了已经转移的包，而作者没改的话，需要自己修改引用 第三方包和自己的包的源码都在src下，很混乱。对于混合技术栈的项目来说，目录的存放会有一些问题  新的包管理模式go mod解决了以上问题:
+ 自动下载依赖包(有前提) 项目不必放在GOPATH/src内了 项目内会生成一个go.mod文件，列出包依赖 所有来的第三方包会准确的指定版本号 对于已经转移的包，可以用replace 申明替换，不需要改代码  准备工作 1.golang版本必须支持go mod
+2.添加环境变量 GO111MODULE 为 on 或者auto
+创建一个项目 首先，在$GOPATH/src路径外的你喜欢的地方创建一个目录，cd 进入目录，新建一个hello.go文件，内容如下
+package main import ( &amp;#34;fmt&amp;#34; ) func main() { fmt.Println(&amp;#34;Hello, world!&amp;#34;) } 初始化模块 在当前目录下，命令行运行 go mod init + 模块名称 初始化模块
+go mod init hello 运行完后，会在当前项目目录下生成一个go.mod 文件，这是一个关键文件，之后的包的管理都是通过这个文件管理。
+ 官方说明：除了go.mod之外，go命令还维护一个名为go.sum的文件，其中包含特定模块版本内容的预期加密哈希
+go命令使用go.sum文件确保这些模块的未来下载检索与第一次下载相同的位，以确保项目所依赖的模块不会出现意外更改，无论是出于恶意、意外还是其他原因。 go.mod和go.sum都应检入版本控制。
+go.sum 不需要手工维护，所以可以不用太关注。
+ 生成出来的文件包含模块名称和当前的go版本号
+module hello go 1.17 注意：子目录里是不需要init的，所有的子目录里的依赖都会组织在根目录的go.mod文件里
+看看go mod 如何工作的 接下来，让项目依赖一下第三方包以大部分人都熟悉的beego为例吧！修改Hello."><title>浅谈GoMod</title>
+<link rel=canonical href=https://ruixi.me/p/%E6%B5%85%E8%B0%88gomod/>
+<link rel=stylesheet href=/scss/style.min.css><meta property="og:title" content="浅谈GoMod">
+<meta property="og:description" content="如果使用之前的GOPATH进行包管理的话会面临以下问题:
+ 在不使用额外的工具的情况下，Go的依赖包需要手工下载 第三方包没有版本的概念，如果第三方包的作者做了不兼容升级，会让开发者很难受 协作开发时，需要统一各个开发成员本地$GOPATH/src下的依赖包 引用的包引用了已经转移的包，而作者没改的话，需要自己修改引用 第三方包和自己的包的源码都在src下，很混乱。对于混合技术栈的项目来说，目录的存放会有一些问题  新的包管理模式go mod解决了以上问题:
+ 自动下载依赖包(有前提) 项目不必放在GOPATH/src内了 项目内会生成一个go.mod文件，列出包依赖 所有来的第三方包会准确的指定版本号 对于已经转移的包，可以用replace 申明替换，不需要改代码  准备工作 1.golang版本必须支持go mod
+2.添加环境变量 GO111MODULE 为 on 或者auto
+创建一个项目 首先，在$GOPATH/src路径外的你喜欢的地方创建一个目录，cd 进入目录，新建一个hello.go文件，内容如下
+package main import ( &amp;#34;fmt&amp;#34; ) func main() { fmt.Println(&amp;#34;Hello, world!&amp;#34;) } 初始化模块 在当前目录下，命令行运行 go mod init + 模块名称 初始化模块
+go mod init hello 运行完后，会在当前项目目录下生成一个go.mod 文件，这是一个关键文件，之后的包的管理都是通过这个文件管理。
+ 官方说明：除了go.mod之外，go命令还维护一个名为go.sum的文件，其中包含特定模块版本内容的预期加密哈希
+go命令使用go.sum文件确保这些模块的未来下载检索与第一次下载相同的位，以确保项目所依赖的模块不会出现意外更改，无论是出于恶意、意外还是其他原因。 go.mod和go.sum都应检入版本控制。
+go.sum 不需要手工维护，所以可以不用太关注。
+ 生成出来的文件包含模块名称和当前的go版本号
+module hello go 1.17 注意：子目录里是不需要init的，所有的子目录里的依赖都会组织在根目录的go.mod文件里
+看看go mod 如何工作的 接下来，让项目依赖一下第三方包以大部分人都熟悉的beego为例吧！修改Hello.">
+<meta property="og:url" content="https://ruixi.me/p/%E6%B5%85%E8%B0%88gomod/">
+<meta property="og:site_name" content="ruixi-Let's Go!">
+<meta property="og:type" content="article"><meta property="article:section" content="Post"><meta property="article:tag" content="Go"><meta property="article:published_time" content="2021-11-28T16:24:57+08:00"><meta property="article:modified_time" content="2021-11-28T16:24:57+08:00"><meta property="og:image" content="https://ruixi.me/p/%E6%B5%85%E8%B0%88gomod/feature.png">
+<meta name=twitter:site content="@ArielAxionL">
+<meta name=twitter:creator content="@ArielAxionL"><meta name=twitter:title content="浅谈GoMod">
+<meta name=twitter:description content="如果使用之前的GOPATH进行包管理的话会面临以下问题:
+ 在不使用额外的工具的情况下，Go的依赖包需要手工下载 第三方包没有版本的概念，如果第三方包的作者做了不兼容升级，会让开发者很难受 协作开发时，需要统一各个开发成员本地$GOPATH/src下的依赖包 引用的包引用了已经转移的包，而作者没改的话，需要自己修改引用 第三方包和自己的包的源码都在src下，很混乱。对于混合技术栈的项目来说，目录的存放会有一些问题  新的包管理模式go mod解决了以上问题:
+ 自动下载依赖包(有前提) 项目不必放在GOPATH/src内了 项目内会生成一个go.mod文件，列出包依赖 所有来的第三方包会准确的指定版本号 对于已经转移的包，可以用replace 申明替换，不需要改代码  准备工作 1.golang版本必须支持go mod
+2.添加环境变量 GO111MODULE 为 on 或者auto
+创建一个项目 首先，在$GOPATH/src路径外的你喜欢的地方创建一个目录，cd 进入目录，新建一个hello.go文件，内容如下
+package main import ( &amp;#34;fmt&amp;#34; ) func main() { fmt.Println(&amp;#34;Hello, world!&amp;#34;) } 初始化模块 在当前目录下，命令行运行 go mod init + 模块名称 初始化模块
+go mod init hello 运行完后，会在当前项目目录下生成一个go.mod 文件，这是一个关键文件，之后的包的管理都是通过这个文件管理。
+ 官方说明：除了go.mod之外，go命令还维护一个名为go.sum的文件，其中包含特定模块版本内容的预期加密哈希
+go命令使用go.sum文件确保这些模块的未来下载检索与第一次下载相同的位，以确保项目所依赖的模块不会出现意外更改，无论是出于恶意、意外还是其他原因。 go.mod和go.sum都应检入版本控制。
+go.sum 不需要手工维护，所以可以不用太关注。
+ 生成出来的文件包含模块名称和当前的go版本号
+module hello go 1.17 注意：子目录里是不需要init的，所有的子目录里的依赖都会组织在根目录的go.mod文件里
+看看go mod 如何工作的 接下来，让项目依赖一下第三方包以大部分人都熟悉的beego为例吧！修改Hello."><meta name=twitter:card content="summary_large_image">
+<meta name=twitter:image content="https://ruixi.me/p/%E6%B5%85%E8%B0%88gomod/feature.png">
+<link rel="shortcut icon" href=https://i.loli.net/2021/11/24/xcTV47ta1uENHly.png>
+</head>
+<body class="article-page has-toc">
+<script>(function(){const a='StackColorScheme';localStorage.getItem(a)||localStorage.setItem(a,"dark")})()</script><script>(function(){const b='StackColorScheme',a=localStorage.getItem(b),c=window.matchMedia('(prefers-color-scheme: dark)').matches===!0;a=='dark'||a==='auto'&&c?document.documentElement.dataset.scheme='dark':document.documentElement.dataset.scheme='light'})()</script>
+<div class=main-container-background>
+<div class="container main-container flex
+extended">
+<div id=article-toolbar>
+<a href=/ class=back-home><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-chevron-left" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><polyline points="15 6 9 12 15 18"/></svg>
+<span>返回</span>
+</a>
+</div>
+<main class="main full-width">
+<article class="has-image main-article">
+<header class=article-header>
+<div class=article-image>
+<a href=/p/%E6%B5%85%E8%B0%88gomod/>
+<img src=/p/%E6%B5%85%E8%B0%88gomod/feature_hub77d8aefc3f93e91b3b5a5aca129e83e_217071_800x0_resize_box_3.png srcset="/p/%E6%B5%85%E8%B0%88gomod/feature_hub77d8aefc3f93e91b3b5a5aca129e83e_217071_800x0_resize_box_3.png 800w, /p/%E6%B5%85%E8%B0%88gomod/feature_hub77d8aefc3f93e91b3b5a5aca129e83e_217071_1600x0_resize_box_3.png 1600w" width=800 height=408 loading=lazy alt="Featured image of post 浅谈GoMod">
+</a>
+</div>
+<div class=article-details>
+<h2 class=article-title>
+<a href=/p/%E6%B5%85%E8%B0%88gomod/>浅谈GoMod</a>
+</h2>
+<footer class=article-time>
+<div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-calendar-time" width="56" height="56" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><path d="M11.795 21H5a2 2 0 01-2-2V7a2 2 0 012-2h12a2 2 0 012 2v4"/><circle cx="18" cy="18" r="4"/><path d="M15 3v4"/><path d="M7 3v4"/><path d="M3 11h16"/><path d="M18 16.496V18l1 1"/></svg>
+<time class=article-time--published>Nov 28, 2021</time>
+</div>
+<div><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-clock" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><circle cx="12" cy="12" r="9"/><polyline points="12 7 12 12 15 15"/></svg>
+<time class=article-time--reading>
+阅读时长: 1 分钟
+</time>
+</div>
+</footer>
+</div>
+</header>
+<section class=article-content>
+<p>如果使用之前的<strong>GOPATH</strong>进行包管理的话会面临以下问题:</p>
+<ul>
+<li><strong>在不使用额外的工具的情况下，Go的依赖包需要手工下载</strong></li>
+<li><strong>第三方包没有版本的概念，如果第三方包的作者做了不兼容升级，会让开发者很难受</strong></li>
+<li><strong>协作开发时，需要统一各个开发成员本地<code>$GOPATH/src</code>下的依赖包</strong></li>
+<li><strong>引用的包引用了已经转移的包，而作者没改的话，需要自己修改引用</strong></li>
+<li><strong>第三方包和自己的包的源码都在src下，很混乱。对于混合技术栈的项目来说，目录的存放会有一些问题</strong></li>
+</ul>
+<p>新的包管理模式<strong>go mod</strong>解决了以上问题:</p>
+<ul>
+<li><strong>自动下载依赖包(有前提)</strong></li>
+<li><strong>项目不必放在GOPATH/src内了</strong></li>
+<li><strong>项目内会生成一个go.mod文件，列出包依赖</strong></li>
+<li><strong>所有来的第三方包会准确的指定版本号</strong></li>
+<li><strong>对于已经转移的包，可以用replace 申明替换，不需要改代码</strong></li>
+</ul>
+<h2 id=准备工作>准备工作</h2>
+<p>1.golang版本必须支持go mod</p>
+<p>2.添加环境变量 <strong>GO111MODULE</strong> 为 <strong>on</strong> 或者<strong>auto</strong></p>
+<h2 id=创建一个项目>创建一个项目</h2>
+<p>首先，在$GOPATH/src路径外的你喜欢的地方创建一个目录，cd 进入目录，新建一个hello.go文件，内容如下</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-golang data-lang=golang>     <span class=kn>package</span> <span class=nx>main</span>
+     <span class=kn>import</span> <span class=p>(</span>
+         <span class=s>&#34;fmt&#34;</span>
+     <span class=p>)</span>
+     <span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>    
+         <span class=nx>fmt</span><span class=p>.</span><span class=nf>Println</span><span class=p>(</span><span class=s>&#34;Hello, world!&#34;</span><span class=p>)</span>
+     <span class=p>}</span>
+</code></pre></div><h2 id=初始化模块>初始化模块</h2>
+<p>在当前目录下，命令行运行 go mod init + 模块名称 初始化模块</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-golang data-lang=golang>    <span class=k>go</span> <span class=nx>mod</span> <span class=nx>init</span> <span class=nx>hello</span>
+</code></pre></div><p>运行完后，会在当前项目目录下生成一个go.mod 文件，这是一个关键文件，之后的包的管理都是通过这个文件管理。</p>
+<blockquote>
+<p>官方说明：除了go.mod之外，go命令还维护一个名为go.sum的文件，其中包含特定模块版本内容的预期加密哈希<br>
+go命令使用go.sum文件确保这些模块的未来下载检索与第一次下载相同的位，以确保项目所依赖的模块不会出现意外更改，无论是出于恶意、意外还是其他原因。 go.mod和go.sum都应检入版本控制。<br>
+go.sum 不需要手工维护，所以可以不用太关注。</p>
+</blockquote>
+<p>生成出来的文件包含模块名称和当前的go版本号</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-golang data-lang=golang>    <span class=nx>module</span> <span class=nx>hello</span>
+    <span class=k>go</span> <span class=mf>1.17</span>
+</code></pre></div><p><strong>注意</strong>：子目录里是不需要init的，所有的子目录里的依赖都会组织在根目录的go.mod文件里</p>
+<h2 id=看看go-mod-如何工作的>看看go mod 如何工作的</h2>
+<p>接下来，让项目依赖一下第三方包以大部分人都熟悉的beego为例吧！修改Hello.go文件：</p>
+<div class=highlight><pre tabindex=0 class=chroma><code class=language-golang data-lang=golang>    <span class=kn>package</span> <span class=nx>main</span>
+    <span class=kn>import</span> <span class=s>&#34;github.com/astaxie/beego&#34;</span>
+    <span class=kd>func</span> <span class=nf>main</span><span class=p>()</span> <span class=p>{</span>
+        <span class=nx>beego</span><span class=p>.</span><span class=nf>Run</span><span class=p>()</span>
+    <span class=p>}</span>
+</code></pre></div><p>接下来执行go run hello.go 然后会提示叫用go get 下载引用第三方包，那就用呗。</p>
+<p>下载完第三方包后，再次go run hello.go就跑起来啦！</p>
+<h2 id=问题依赖的包下载到哪里了>问题：依赖的包下载到哪里了？</h2>
+<p>使用Go的包管理方式，依赖的第三方包被下载到了$GOPATH/pkg/mod路径下。（可以自行更改下载路径）</p>
+</section>
+<footer class=article-footer>
+<section class=article-tags>
+<a href=/tags/go/>Go</a>
+</section>
+</footer>
+<link rel=stylesheet href=https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.css integrity=sha384-RZU/ijkSsFbcmivfdRBQDtwuwVqK7GMOw6IMvKyeWL2K5UAlyp6WonmB8m7Jd0Hn crossorigin=anonymous><script src=https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/katex.min.js integrity=sha384-pK1WpvzWVBQiP0/GjnvRxV4mOb0oxFuyRxJlk6vVw146n3egcN5C925NCP7a7BY8 crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/katex@0.13.13/dist/contrib/auto-render.min.js integrity=sha384-vZTG03m+2yp6N6BNi5iM4rW4oIwk5DfcNdFfxkk9ZWpDriOkXX8voJBFrAO7MpVl crossorigin=anonymous defer></script><script>window.addEventListener("DOMContentLoaded",()=>{renderMathInElement(document.querySelector(`.article-content`),{delimiters:[{left:"$$",right:"$$",display:!0},{left:"$",right:"$",display:!1},{left:"\\(",right:"\\)",display:!1},{left:"\\[",right:"\\]",display:!0}]})})</script>
+</article>
+<aside class=related-contents--wrapper>
+</aside>
+<div class=disqus-container>
+<div id=disqus_thread></div>
+<script type=application/javascript>var disqus_config=function(){};(function(){if(["localhost","127.0.0.1"].indexOf(window.location.hostname)!=-1){document.getElementById('disqus_thread').innerHTML='Disqus comments not available by default when the website is previewed locally.';return}var b=document,a=b.createElement('script');a.async=!0,a.src='//ruixi.disqus.com/embed.js',a.setAttribute('data-timestamp',+new Date),(b.head||b.body).appendChild(a)})()</script>
+<noscript>Please enable JavaScript to view the <a href=https://disqus.com/?ref_noscript>comments powered by Disqus.</a></noscript>
+<a href=https://disqus.com class=dsq-brlink>comments powered by <span class=logo-disqus>Disqus</span></a>
+</div>
+<style>.disqus-container{background-color:var(--card-background);border-radius:var(--card-border-radius);box-shadow:var(--shadow-l1);padding:var(--card-padding)}</style>
+<script>window.addEventListener('onColorSchemeChange',a=>{DISQUS&&DISQUS.reset({reload:!0})})</script>
+<footer class=site-footer>
+<section class=copyright>
+&copy;
+2020 -
+2021 ruixi-Let's Go!
+</section>
+<section class=powerby>
+Built with <a href=https://gohugo.io/ target=_blank rel=noopener>Hugo</a> <br>
+Theme <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=noopener data-version=3.5.0>Stack</a></b> designed by <a href=https://jimmycai.com target=_blank rel=noopener>Jimmy</a>
+</section>
+</footer>
+<div class=pswp tabindex=-1 role=dialog aria-hidden=true>
+<div class=pswp__bg></div>
+<div class=pswp__scroll-wrap>
+<div class=pswp__container>
+<div class=pswp__item></div>
+<div class=pswp__item></div>
+<div class=pswp__item></div>
+</div>
+<div class="pswp__ui pswp__ui--hidden">
+<div class=pswp__top-bar>
+<div class=pswp__counter></div>
+<button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+<button class="pswp__button pswp__button--share" title=Share></button>
+<button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+<button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+<div class=pswp__preloader>
+<div class=pswp__preloader__icn>
+<div class=pswp__preloader__cut>
+<div class=pswp__preloader__donut></div>
+</div>
+</div>
+</div>
+</div>
+<div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+<div class=pswp__share-tooltip></div>
+</div>
+<button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+</button>
+<button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+</button>
+<div class=pswp__caption>
+<div class=pswp__caption__center></div>
+</div>
+</div>
+</div>
+</div><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.min.js integrity="sha256-ePwmChbbvXbsO02lbM3HoHbSHTHFAeChekF1xKJdleo=" crossorigin=anonymous defer></script><script src=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe-ui-default.min.js integrity="sha256-UKkzOn/w1mBxRmLLGrSeyB4e1xbrp4xylgAWb3M42pU=" crossorigin=anonymous defer></script><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/default-skin/default-skin.css integrity="sha256-c0uckgykQ9v5k+IqViZOZKc47Jn7KQil4/MP3ySA3F8=" crossorigin=anonymous><link rel=stylesheet href=https://cdn.jsdelivr.net/npm/photoswipe@4.1.3/dist/photoswipe.css integrity="sha256-SBLU4vv6CA6lHsZ1XyTdhyjJxCjPif/TRkjnsyGAGnE=" crossorigin=anonymous>
+</main>
+<aside class="sidebar right-sidebar sticky">
+<section class="widget archives">
+<div class=widget-icon><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-hash" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentcolor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z"/><line x1="5" y1="9" x2="19" y2="9"/><line x1="5" y1="15" x2="19" y2="15"/><line x1="11" y1="4" x2="7" y2="20"/><line x1="17" y1="4" x2="13" y2="20"/></svg>
+</div>
+<h2 class="widget-title section-title">目录</h2>
+<div class=widget--toc>
+<nav id=TableOfContents>
+<ol>
+<li><a href=#准备工作>准备工作</a></li>
+<li><a href=#创建一个项目>创建一个项目</a></li>
+<li><a href=#初始化模块>初始化模块</a></li>
+<li><a href=#看看go-mod-如何工作的>看看go mod 如何工作的</a></li>
+<li><a href=#问题依赖的包下载到哪里了>问题：依赖的包下载到哪里了？</a></li>
+</ol>
+</nav>
+</div>
+</section>
+</aside>
+</div>
+</div>
+<script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin=anonymous defer></script><script type=text/javascript src=/ts/main.js defer></script>
+<script>(function(){const a=document.createElement('link');a.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",a.type="text/css",a.rel="stylesheet",document.head.appendChild(a)})()</script>
+</body>
+</html>
