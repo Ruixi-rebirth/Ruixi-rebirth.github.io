@@ -38,7 +38,7 @@ module hello go 1.17 注意：子目录里是不需要init的，所有的子目�
 3. 软回车和硬回车 再扩展一下回车的一些知识。
 硬回车就是普通我们按回车产生的，它在换行的同时也起着段落分隔的作用。 软回车是用 Shift + Enter 产生的，它换行，但是并不换段，即前后两段文字在 Word 中属于同一“段”。在应用格式时你会体会到这一点。
 软回车能使前后两行的行间距大幅度缩小，因为它不是段落标记，要和法定的段落标记——硬回车区别出来。硬回车的html代码是&amp;lt;p&amp;gt;..&amp;lt;/p&amp;gt;，段落的内容就夹在里面，而软回车的代码很精悍：&amp;lt;br&amp;gt;。网页的文字如果复制到word中，则硬回车变为弯曲的箭头，软回车变为向下的箭头。
-转载在自:https://www.pythontab.com/html/2017/linuxkaiyuan_0115/1116.html</description></item><item><title>Go Run ,Go Build , Go Install</title><link>https://ruixi.me/p/go-run-go-build-go-install/</link><pubDate>Fri, 26 Nov 2021 07:47:36 +0800</pubDate><guid>https://ruixi.me/p/go-run-go-build-go-install/</guid><description>在实际操作之前，我们需要知道go有三种源码文件：
+转载在自:https://www.pythontab.com/html/2017/linuxkaiyuan_0115/1116.html</description></item><item><title>Animate_2021呆唯生日祭——说不完的省略号</title><link>https://ruixi.me/p/animate_2021%E5%91%86%E5%94%AF%E7%94%9F%E6%97%A5%E7%A5%AD%E8%AF%B4%E4%B8%8D%E5%AE%8C%E7%9A%84%E7%9C%81%E7%95%A5%E5%8F%B7/</link><pubDate>Sat, 27 Nov 2021 21:49:15 +0800</pubDate><guid>https://ruixi.me/p/animate_2021%E5%91%86%E5%94%AF%E7%94%9F%E6%97%A5%E7%A5%AD%E8%AF%B4%E4%B8%8D%E5%AE%8C%E7%9A%84%E7%9C%81%E7%95%A5%E5%8F%B7/</guid><description/></item><item><title>Go Run ,Go Build , Go Install</title><link>https://ruixi.me/p/go-run-go-build-go-install/</link><pubDate>Fri, 26 Nov 2021 07:47:36 +0800</pubDate><guid>https://ruixi.me/p/go-run-go-build-go-install/</guid><description>在实际操作之前，我们需要知道go有三种源码文件：
 1，命令源码文件；声明自己属于main包，并且包含main函数的文件，每个项目只能有一个这样的文件，即程序的入口文件
 2，库源码文件；不能直接被执行的源码文件
 3，测试源码文件
