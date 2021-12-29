@@ -12,7 +12,7 @@ bingo@Mac Interface_test$ go test -v getinfo_test.go # command-line-arguments ./
 bingo@Mac Interface_test$ go test -v getinfo_test.go lib.go ok command-line-arguments 0.008s  多级引用或多个引用包的情况 如果对多个包存在引用关系，或者引用的包对当前目录的其他文件存在引用，也都是一样的方法，把他们加在命令后方即可。
 总结 测试单个文件，一定要带上被测试的原文件，如果原文件有其他引用，也需一并带上。"><title>解决Gotest对单个文件进行单元测试提示undefiend</title>
 <link rel=canonical href=https://ruixi.me/p/%E8%A7%A3%E5%86%B3gotest%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/>
-<link rel=stylesheet href=/scss/style.min.css><meta property="og:title" content="解决Gotest对单个文件进行单元测试提示undefiend">
+<link rel=stylesheet href=/scss/style.min.98c858ad696080831fc522826b679010240cb5fec9eb792e57cdc2c83620d5e9.css><meta property="og:title" content="解决Gotest对单个文件进行单元测试提示undefiend">
 <meta property="og:description" content="我的报错截图:
  
 具体解决方案: (文章转载自https://www.cnblogs.com/Detector/p/10010292.html) 很多人记录过怎么执行Go test单个文件或者单个函数，但是要么对执行单文件用例存在函数或变量引用的场景避而不谈，要么提示调用了其它文件中的模块会报错。其实了解了Golang命令程序的机制之后，这个问题就迎刃而解了。
