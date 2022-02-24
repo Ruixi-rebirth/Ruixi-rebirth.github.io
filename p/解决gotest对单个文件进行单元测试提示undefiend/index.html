@@ -1,7 +1,6 @@
 <!doctype html><html lang=en-us>
 <head><meta charset=utf-8>
 <meta name=viewport content="width=device-width,initial-scale=1"><meta name=description content="我的报错截图:
- 
 具体解决方案: (文章转载自https://www.cnblogs.com/Detector/p/10010292.html) 很多人记录过怎么执行Go test单个文件或者单个函数，但是要么对执行单文件用例存在函数或变量引用的场景避而不谈，要么提示调用了其它文件中的模块会报错。其实了解了Golang命令程序的机制之后，这个问题就迎刃而解了。
 阅读目录  背景 根本原因 解决方法 总结   背景 很多人记录过怎么执行Go test单个文件或者单个函数，但是要么对执行单文件用例存在函数或变量引用的场景避而不谈，要么提示调用了其它文件中的模块会报错。其实了解了go test命令的机制之后，这个问题就迎刃而解了。
 也是一个同事向我求助我才知道有这样一个问题存在，因为场景特殊他只想执行我们的测试代码其中一个文件中的测试代码，因为调用的信息都在同一目录（package）下，原代码执行是不存在引用问题的，直接执行go test也是可以运行的，但是单独运行其中一个文件时，出现了下面的错误：
@@ -12,9 +11,8 @@ bingo@Mac Interface_test$ go test -v getinfo_test.go # command-line-arguments ./
 bingo@Mac Interface_test$ go test -v getinfo_test.go lib.go ok command-line-arguments 0.008s  多级引用或多个引用包的情况 如果对多个包存在引用关系，或者引用的包对当前目录的其他文件存在引用，也都是一样的方法，把他们加在命令后方即可。
 总结 测试单个文件，一定要带上被测试的原文件，如果原文件有其他引用，也需一并带上。"><title>解决Gotest对单个文件进行单元测试提示undefiend</title>
 <link rel=canonical href=https://ruixi.me/p/%E8%A7%A3%E5%86%B3gotest%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/>
-<link rel=stylesheet href=/scss/style.min.98c858ad696080831fc522826b679010240cb5fec9eb792e57cdc2c83620d5e9.css><meta property="og:title" content="解决Gotest对单个文件进行单元测试提示undefiend">
+<link rel=stylesheet href=/scss/style.min.6e12c20653ab7e18ed1d001adbbafd9e1e3ea28aa943c97b21334b342aadde0c.css><meta property="og:title" content="解决Gotest对单个文件进行单元测试提示undefiend">
 <meta property="og:description" content="我的报错截图:
- 
 具体解决方案: (文章转载自https://www.cnblogs.com/Detector/p/10010292.html) 很多人记录过怎么执行Go test单个文件或者单个函数，但是要么对执行单文件用例存在函数或变量引用的场景避而不谈，要么提示调用了其它文件中的模块会报错。其实了解了Golang命令程序的机制之后，这个问题就迎刃而解了。
 阅读目录  背景 根本原因 解决方法 总结   背景 很多人记录过怎么执行Go test单个文件或者单个函数，但是要么对执行单文件用例存在函数或变量引用的场景避而不谈，要么提示调用了其它文件中的模块会报错。其实了解了go test命令的机制之后，这个问题就迎刃而解了。
 也是一个同事向我求助我才知道有这样一个问题存在，因为场景特殊他只想执行我们的测试代码其中一个文件中的测试代码，因为调用的信息都在同一目录（package）下，原代码执行是不存在引用问题的，直接执行go test也是可以运行的，但是单独运行其中一个文件时，出现了下面的错误：
@@ -30,7 +28,6 @@ bingo@Mac Interface_test$ go test -v getinfo_test.go lib.go ok command-line-argu
 <meta name=twitter:site content="@ArielAxionL">
 <meta name=twitter:creator content="@ArielAxionL"><meta name=twitter:title content="解决Gotest对单个文件进行单元测试提示undefiend">
 <meta name=twitter:description content="我的报错截图:
- 
 具体解决方案: (文章转载自https://www.cnblogs.com/Detector/p/10010292.html) 很多人记录过怎么执行Go test单个文件或者单个函数，但是要么对执行单文件用例存在函数或变量引用的场景避而不谈，要么提示调用了其它文件中的模块会报错。其实了解了Golang命令程序的机制之后，这个问题就迎刃而解了。
 阅读目录  背景 根本原因 解决方法 总结   背景 很多人记录过怎么执行Go test单个文件或者单个函数，但是要么对执行单文件用例存在函数或变量引用的场景避而不谈，要么提示调用了其它文件中的模块会报错。其实了解了go test命令的机制之后，这个问题就迎刃而解了。
 也是一个同事向我求助我才知道有这样一个问题存在，因为场景特殊他只想执行我们的测试代码其中一个文件中的测试代码，因为调用的信息都在同一目录（package）下，原代码执行是不存在引用问题的，直接执行go test也是可以运行的，但是单独运行其中一个文件时，出现了下面的错误：
@@ -79,11 +76,7 @@ extended">
 </header>
 <section class=article-content>
 <p><em><strong>我的报错截图:</strong></em></p>
-<p><figure class=gallery-image style=flex-grow:136;flex-basis:326px>
-<a href=/p/%E8%A7%A3%E5%86%B3gotest%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/error.jpg data-size=850x624>
-<img src=/p/%E8%A7%A3%E5%86%B3gotest%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/error.jpg width=850 height=624 srcset="/p/%E8%A7%A3%E5%86%B3gotest%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/error_hue036e71731a728d226cddfaab0bfae22_85845_480x0_resize_q75_box.jpg 480w, /p/%E8%A7%A3%E5%86%B3gotest%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/error_hue036e71731a728d226cddfaab0bfae22_85845_1024x0_resize_q75_box.jpg 1024w" loading=lazy>
-</a>
-</figure></p>
+<p><img src=/p/%E8%A7%A3%E5%86%B3gotest%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/error.jpg width=850 height=624 srcset="/p/%E8%A7%A3%E5%86%B3gotest%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/error_hue036e71731a728d226cddfaab0bfae22_85845_480x0_resize_q75_box.jpg 480w, /p/%E8%A7%A3%E5%86%B3gotest%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/error_hue036e71731a728d226cddfaab0bfae22_85845_1024x0_resize_q75_box.jpg 1024w" loading=lazy class=gallery-image data-flex-grow=136 data-flex-basis=326px></p>
 <h2 id=具体解决方案>具体解决方案:</h2>
 <h2 id=文章转载自httpswwwcnblogscomdetectorp10010292htmlhttpswwwcnblogscomdetectorp10010292html>(文章转载自<a class=link href=https://www.cnblogs.com/Detector/p/10010292.html target=_blank rel=noopener>https://www.cnblogs.com/Detector/p/10010292.html</a>)</h2>
 <p>很多人记录过怎么执行Go test单个文件或者单个函数，但是要么对执行单文件用例存在函数或变量引用的场景避而不谈，要么提示调用了其它文件中的模块会报错。其实了解了Golang命令程序的机制之后，这个问题就迎刃而解了。</p>
@@ -215,7 +208,7 @@ Theme <b><a href=https://github.com/CaiJimmy/hugo-theme-stack target=_blank rel=
 </aside>
 </div>
 </div>
-<script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin=anonymous defer></script><script type=text/javascript src=/ts/main.js defer></script>
+<script src=https://cdn.jsdelivr.net/npm/node-vibrant@3.1.5/dist/vibrant.min.js integrity="sha256-5NovOZc4iwiAWTYIFiIM7DxKUXKWvpVEuMEPLzcm5/g=" crossorigin=anonymous></script><script type=text/javascript src=/ts/main.js defer></script>
 <script>(function(){const a=document.createElement('link');a.href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap",a.type="text/css",a.rel="stylesheet",document.head.appendChild(a)})()</script>
 <script type=text/javascript src=https://cdn.jsdelivr.net/npm/live2d-widget@3.1.4/lib/L2Dwidget.min.js></script>
 <script type=text/javascript src=https://cdn.jsdelivr.net/npm/live2d-widget@3.1.4/lib/L2Dwidget.0.min.js></script>
