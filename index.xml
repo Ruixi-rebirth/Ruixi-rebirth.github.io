@@ -64,34 +64,34 @@ ok command-line-arguments 0.008s
 &lt;p>2.添加环境变量 &lt;strong>GO111MODULE&lt;/strong> 为 &lt;strong>on&lt;/strong> 或者&lt;strong>auto&lt;/strong>&lt;/p>
 &lt;h2 id="创建一个项目">创建一个项目&lt;/h2>
 &lt;p>首先，在$GOPATH/src路径外的你喜欢的地方创建一个目录，cd 进入目录，新建一个hello.go文件，内容如下&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-golang" data-lang="golang"> &lt;span class="kn">package&lt;/span> &lt;span class="nx">main&lt;/span>
-&lt;span class="kn">import&lt;/span> &lt;span class="p">(&lt;/span>
-&lt;span class="s">&amp;#34;fmt&amp;#34;&lt;/span>
-&lt;span class="p">)&lt;/span>
-&lt;span class="kd">func&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Hello, world!&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="初始化模块">初始化模块&lt;/h2>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-golang" data-lang="golang">&lt;span class="line">&lt;span class="cl"> &lt;span class="kn">package&lt;/span> &lt;span class="nx">main&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kn">import&lt;/span> &lt;span class="p">(&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="s">&amp;#34;fmt&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">func&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">fmt&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Println&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="s">&amp;#34;Hello, world!&amp;#34;&lt;/span>&lt;span class="p">)&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="初始化模块">初始化模块&lt;/h2>
 &lt;p>在当前目录下，命令行运行 go mod init + 模块名称 初始化模块&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-golang" data-lang="golang"> &lt;span class="k">go&lt;/span> &lt;span class="nx">mod&lt;/span> &lt;span class="nx">init&lt;/span> &lt;span class="nx">hello&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>运行完后，会在当前项目目录下生成一个go.mod 文件，这是一个关键文件，之后的包的管理都是通过这个文件管理。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-golang" data-lang="golang">&lt;span class="line">&lt;span class="cl"> &lt;span class="k">go&lt;/span> &lt;span class="nx">mod&lt;/span> &lt;span class="nx">init&lt;/span> &lt;span class="nx">hello&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>运行完后，会在当前项目目录下生成一个go.mod 文件，这是一个关键文件，之后的包的管理都是通过这个文件管理。&lt;/p>
 &lt;blockquote>
 &lt;p>官方说明：除了go.mod之外，go命令还维护一个名为go.sum的文件，其中包含特定模块版本内容的预期加密哈希&lt;br>
 go命令使用go.sum文件确保这些模块的未来下载检索与第一次下载相同的位，以确保项目所依赖的模块不会出现意外更改，无论是出于恶意、意外还是其他原因。 go.mod和go.sum都应检入版本控制。&lt;br>
 go.sum 不需要手工维护，所以可以不用太关注。&lt;/p>
 &lt;/blockquote>
 &lt;p>生成出来的文件包含模块名称和当前的go版本号&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-golang" data-lang="golang"> &lt;span class="nx">module&lt;/span> &lt;span class="nx">hello&lt;/span>
-&lt;span class="k">go&lt;/span> &lt;span class="mf">1.17&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>注意&lt;/strong>：子目录里是不需要init的，所有的子目录里的依赖都会组织在根目录的go.mod文件里&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-golang" data-lang="golang">&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">module&lt;/span> &lt;span class="nx">hello&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="k">go&lt;/span> &lt;span class="mf">1.17&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>&lt;strong>注意&lt;/strong>：子目录里是不需要init的，所有的子目录里的依赖都会组织在根目录的go.mod文件里&lt;/p>
 &lt;h2 id="看看go-mod-如何工作的">看看go mod 如何工作的&lt;/h2>
 &lt;p>接下来，让项目依赖一下第三方包以大部分人都熟悉的beego为例吧！修改Hello.go文件：&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-golang" data-lang="golang"> &lt;span class="kn">package&lt;/span> &lt;span class="nx">main&lt;/span>
-&lt;span class="kn">import&lt;/span> &lt;span class="s">&amp;#34;github.com/astaxie/beego&amp;#34;&lt;/span>
-&lt;span class="kd">func&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
-&lt;span class="nx">beego&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Run&lt;/span>&lt;span class="p">()&lt;/span>
-&lt;span class="p">}&lt;/span>
-&lt;/code>&lt;/pre>&lt;/div>&lt;p>接下来执行go run hello.go 然后会提示叫用go get 下载引用第三方包，那就用呗。&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-golang" data-lang="golang">&lt;span class="line">&lt;span class="cl"> &lt;span class="kn">package&lt;/span> &lt;span class="nx">main&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kn">import&lt;/span> &lt;span class="s">&amp;#34;github.com/astaxie/beego&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="kd">func&lt;/span> &lt;span class="nf">main&lt;/span>&lt;span class="p">()&lt;/span> &lt;span class="p">{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">beego&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="nf">Run&lt;/span>&lt;span class="p">()&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>接下来执行go run hello.go 然后会提示叫用go get 下载引用第三方包，那就用呗。&lt;/p>
 &lt;p>下载完第三方包后，再次go run hello.go就跑起来啦！&lt;/p>
 &lt;h2 id="问题依赖的包下载到哪里了">问题：依赖的包下载到哪里了？&lt;/h2>
 &lt;p>使用Go的包管理方式，依赖的第三方包被下载到了$GOPATH/pkg/mod路径下。（可以自行更改下载路径）&lt;/p></description></item><item><title>回车 &amp; 换行</title><link>https://ruixi.me/p/%E5%9B%9E%E8%BD%A6-%E6%8D%A2%E8%A1%8C/</link><pubDate>Sun, 28 Nov 2021 16:12:56 +0800</pubDate><guid>https://ruixi.me/p/%E5%9B%9E%E8%BD%A6-%E6%8D%A2%E8%A1%8C/</guid><description>&lt;img src="https://ruixi.me/p/%E5%9B%9E%E8%BD%A6-%E6%8D%A2%E8%A1%8C/feature.png" alt="Featured image of post 回车 &amp; 换行" />&lt;h1 id="关于回车carriage-return和换行line-feed这两个概念的来历和区别">关于“回车”（carriage return）和“换行”（line feed）这两个概念的来历和区别&lt;/h1>
