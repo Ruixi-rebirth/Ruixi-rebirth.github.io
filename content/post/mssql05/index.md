@@ -2,9 +2,9 @@
 title: "Mssql05"
 date: 2022-04-16T12:56:38+08:00
 tags:
-  - mssql
+  - Mssql
 categories:
-  - mssql
+  - Devops
 image: feature.jpg
 draft: false
 ---

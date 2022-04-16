@@ -1,10 +1,10 @@
 ---
-title: "mssql04"
-date: 2022-04-16T10:17:03+08:00
+title: "Mssql04"
+date: 2022-04-16T12:56:36+08:00
 tags:
-  - mssql
+  - Mssql
 categories:
-  - mssql
+  - Devops
 image: feature.jpg
 draft: false
 ---

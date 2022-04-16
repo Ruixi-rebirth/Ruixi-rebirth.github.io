@@ -2,9 +2,9 @@
 title: "Mssql02"
 date: 2022-04-16T12:56:30+08:00
 tags:
-  - mssql
+  - Mssql
 categories:
-  - mssql
+  - Devops
 image: feature.jpg
 draft: false
 ---
