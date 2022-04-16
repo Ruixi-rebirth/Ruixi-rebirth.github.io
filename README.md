@@ -6,14 +6,12 @@
 
 ## Debug Build
 
-``` zsh
-$ git clone https://github.com/Ruixi-rebirth/Ruixi-rebirth.github.io.git --branch=source --depth=1
+```bash
+ git clone https://github.com/Ruixi-rebirth/Ruixi-rebirth.github.io.git --branch=source --depth=1
 
-$ cd Ruixi-rebirth.github.io
+ cd Ruixi-rebirth.github.io
 
-$ hugo server --buildDrafts --forceSyncStatic
+ cp -r ./static/hugo-theme-stack ./themes/hugo-theme-stack/
+
+ hugo server --buildDrafts --forceSyncStatic
 ```
-
-## Theme
-
-[hugo-theme-stack](https://github.com/CaiJimmy/hugo-theme-stack)
