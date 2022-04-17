@@ -6,6 +6,7 @@ tags:
 categories:
   - Devops
 image: feature.jpg
+math: true
 draft: false
 ---
 
@@ -40,7 +41,7 @@ draft: false
 > - 其中 A 称为属性列或者域列
 > - t[A]=([t[A<sub>i1</sub>],t[A<sub>i2</sub>],……,t[A<sub>ik</sub>])表示元组 t 在属性列 A 上诸分量的集合
 > - $\overline{A}$表示{A<sub>1</sub>,A<sub>2</sub>,……,A<sub>n</sub>}中去掉{A<sub>i1</sub>,A<sub>i2</sub>,……,A<sub>ik</sub>}后剩余的属性列
->
+
 > ![](元组的连接.png)\
 > 象集\
 > ![](象集.png)
@@ -57,7 +58,7 @@ draft: false
 > |201215122|大地|男|20|IS|
 >
 > 例 1 查询信息系（IS）全体学生的信息\
-> **σ<sub>Sdept='IS'</sub><sup>(Student)</sup>** (字符串使用单引号)
+> **$$\sigma\_{Sdept='IS'}(Sudent)$$** (字符串使用单引号)
 > |Sno|Sname|Ssex|Sage|Sdept|
 > |---|---|---|---|---|
 > |201215122|刘晨|女|19|IS|
@@ -65,7 +66,7 @@ draft: false
 > |201215122|大地|男|20|IS|
 
 > 例 2 查询**信息系**年龄**小于 20**的学生信息\
-> **σ<sub>Sdept='IS'</sub>∧<sub>Sage<20</sub><sup>(Student)</sup>**
+> **$$\sigma\_{Sdept='IS'\wedge Sage<20}(Sudent)$$**
 > |Sno|Sname|Ssex|Sage|Sdept|
 > |---|---|---|---|---|
 > |201215122|刘晨|女|19|IS|
@@ -77,7 +78,7 @@ draft: false
 >
 > _投影后不仅取消了原关系中的某些列，而且还可能取消某些元组(避免重复行)_\
 >  例 3 求 Student 关系学生姓名和所在系两个属性上的投影：\
->  **π<sub>Sname,Sdept</sub><sup>(Student)</sup>**
+>  **$$\pi_{Sname,Sdept}(Sudent)$$**
 > |Sname|Sdept|
 > |---|---|
 > |刘晨|IS|
@@ -88,7 +89,7 @@ draft: false
 
 > 例 4 查询学生关系 Student 中都有哪些系？(涉及去重)
 >
-> **π<sub>Sdept</sub><sup>(Student)</sup>**
+> **$$\pi_{Sdept}(Sudent)$$**
 > |Sdept|
 > |---|
 > |MA|
@@ -96,7 +97,7 @@ draft: false
 > |IS|
 >
 > 思考：查询信息系年龄<20 岁的学生学号、姓名、年龄？\
-> **π<sub>Sno,Sname,Sage</sub><sup>(σ<sub>Sdept='IS'</sub>∧<sub>Sage<20</sub><sup>(Student)</sup>)</sup>**
+> **$$\pi_{Sno,Sname,Sage}(\sigma_{Sdept=‘IS’\wedge Sage<20}(Student))$$**
 
 ## 连接(join)
 
@@ -186,7 +187,7 @@ draft: false
 ## 选择、投影、(自然)连接综合例题
 
 > ![](选择、投影、连接例题.png)\
-> **π<sub>sno,sname</sub><sup>(σ<sub>cno='2'</sub></sub><sup>(student⋈sc)</sup>)</sup>**
+> **$$\pi_{sno,sname}(\sigma_{cno=‘2’}(student\bowtie sc))$$**
 
 ## 除
 

@@ -6,6 +6,6 @@ tags:
 categories:
     -
 image: 
+math: true
 draft: false
 ---
-
