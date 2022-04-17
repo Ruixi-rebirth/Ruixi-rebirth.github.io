@@ -58,7 +58,7 @@ draft: false
 > |201215122|大地|男|20|IS|
 >
 > 例 1 查询信息系（IS）全体学生的信息\
-> **$$\sigma\_{Sdept='IS'}(Sudent)$$** (字符串使用单引号)
+> **$$\sigma\_{Sdept='IS'}(Stedent)$$** (字符串使用单引号)
 > |Sno|Sname|Ssex|Sage|Sdept|
 > |---|---|---|---|---|
 > |201215122|刘晨|女|19|IS|
@@ -66,7 +66,7 @@ draft: false
 > |201215122|大地|男|20|IS|
 
 > 例 2 查询**信息系**年龄**小于 20**的学生信息\
-> **$$\sigma\_{Sdept='IS'\wedge Sage<20}(Sudent)$$**
+> **$$\sigma\_{Sdept='IS'\wedge Sage<20}(Stedent)$$**
 > |Sno|Sname|Ssex|Sage|Sdept|
 > |---|---|---|---|---|
 > |201215122|刘晨|女|19|IS|
@@ -78,7 +78,7 @@ draft: false
 >
 > _投影后不仅取消了原关系中的某些列，而且还可能取消某些元组(避免重复行)_\
 >  例 3 求 Student 关系学生姓名和所在系两个属性上的投影：\
->  **$$\pi_{Sname,Sdept}(Sudent)$$**
+>  **$$\pi_{Sname,Sdept}(Stedent)$$**
 > |Sname|Sdept|
 > |---|---|
 > |刘晨|IS|
@@ -89,7 +89,7 @@ draft: false
 
 > 例 4 查询学生关系 Student 中都有哪些系？(涉及去重)
 >
-> **$$\pi_{Sdept}(Sudent)$$**
+> **$$\pi_{Sdept}(Stedent)$$**
 > |Sdept|
 > |---|
 > |MA|
