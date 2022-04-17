@@ -94,6 +94,8 @@ data-flex-basis="265px"
 &lt;li>t[A]=([t[A&lt;!-- raw HTML omitted -->i1&lt;!-- raw HTML omitted -->],t[A&lt;!-- raw HTML omitted -->i2&lt;!-- raw HTML omitted -->],……,t[A&lt;!-- raw HTML omitted -->ik&lt;!-- raw HTML omitted -->])表示元组 t 在属性列 A 上诸分量的集合&lt;/li>
 &lt;li>$\overline{A}$表示{A&lt;!-- raw HTML omitted -->1&lt;!-- raw HTML omitted -->,A&lt;!-- raw HTML omitted -->2&lt;!-- raw HTML omitted -->,……,A&lt;!-- raw HTML omitted -->n&lt;!-- raw HTML omitted -->}中去掉{A&lt;!-- raw HTML omitted -->i1&lt;!-- raw HTML omitted -->,A&lt;!-- raw HTML omitted -->i2&lt;!-- raw HTML omitted -->,……,A&lt;!-- raw HTML omitted -->ik&lt;!-- raw HTML omitted -->}后剩余的属性列&lt;/li>
 &lt;/ul>
+&lt;/blockquote>
+&lt;blockquote>
 &lt;p>&lt;img src="https://ruixi.me/p/mssql04/%E5%85%83%E7%BB%84%E7%9A%84%E8%BF%9E%E6%8E%A5.png"
 width="568"
 height="305"
@@ -174,7 +176,7 @@ data-flex-basis="1066px"
 &lt;/tbody>
 &lt;/table>
 &lt;p>例 1 查询信息系（IS）全体学生的信息&lt;br>
-&lt;strong>σ&lt;!-- raw HTML omitted -->Sdept=&amp;lsquo;IS&amp;rsquo;&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->(Student)&lt;!-- raw HTML omitted -->&lt;/strong> (字符串使用单引号)&lt;/p>
+&lt;strong>$$\sigma_{Sdept=&amp;lsquo;IS&amp;rsquo;}(Sudent)$$&lt;/strong> (字符串使用单引号)&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -212,7 +214,7 @@ data-flex-basis="1066px"
 &lt;/blockquote>
 &lt;blockquote>
 &lt;p>例 2 查询&lt;strong>信息系&lt;/strong>年龄&lt;strong>小于 20&lt;/strong>的学生信息&lt;br>
-&lt;strong>σ&lt;!-- raw HTML omitted -->Sdept=&amp;lsquo;IS&amp;rsquo;&lt;!-- raw HTML omitted -->∧&lt;!-- raw HTML omitted -->Sage&amp;lt;20&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->(Student)&lt;!-- raw HTML omitted -->&lt;/strong>&lt;/p>
+&lt;strong>$$\sigma_{Sdept=&amp;lsquo;IS&amp;rsquo;\wedge Sage&amp;lt;20}(Sudent)$$&lt;/strong>&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -254,7 +256,7 @@ data-flex-basis="591px"
 >&lt;/p>
 &lt;p>&lt;em>投影后不仅取消了原关系中的某些列，而且还可能取消某些元组(避免重复行)&lt;/em>&lt;br>
 例 3 求 Student 关系学生姓名和所在系两个属性上的投影：&lt;br>
-&lt;strong>π&lt;!-- raw HTML omitted -->Sname,Sdept&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->(Student)&lt;!-- raw HTML omitted -->&lt;/strong>&lt;/p>
+&lt;strong>$$\pi_{Sname,Sdept}(Sudent)$$&lt;/strong>&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -288,7 +290,7 @@ data-flex-basis="591px"
 &lt;/blockquote>
 &lt;blockquote>
 &lt;p>例 4 查询学生关系 Student 中都有哪些系？(涉及去重)&lt;/p>
-&lt;p>&lt;strong>π&lt;!-- raw HTML omitted -->Sdept&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->(Student)&lt;!-- raw HTML omitted -->&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>$$\pi_{Sdept}(Sudent)$$&lt;/strong>&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -308,7 +310,7 @@ data-flex-basis="591px"
 &lt;/tbody>
 &lt;/table>
 &lt;p>思考：查询信息系年龄&amp;lt;20 岁的学生学号、姓名、年龄？&lt;br>
-&lt;strong>π&lt;!-- raw HTML omitted -->Sno,Sname,Sage&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->(σ&lt;!-- raw HTML omitted -->Sdept=&amp;lsquo;IS&amp;rsquo;&lt;!-- raw HTML omitted -->∧&lt;!-- raw HTML omitted -->Sage&amp;lt;20&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->(Student)&lt;!-- raw HTML omitted -->)&lt;!-- raw HTML omitted -->&lt;/strong>&lt;/p>
+&lt;strong>$$\pi_{Sno,Sname,Sage}(\sigma_{Sdept=‘IS’\wedge Sage&amp;lt;20}(Student))$$&lt;/strong>&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="连接join">连接(join)&lt;/h2>
 &lt;blockquote>
@@ -731,7 +733,7 @@ class="gallery-image"
 data-flex-grow="401"
 data-flex-basis="962px"
 >&lt;br>
-&lt;strong>π&lt;!-- raw HTML omitted -->sno,sname&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->(σ&lt;!-- raw HTML omitted -->cno=&amp;lsquo;2&amp;rsquo;&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->&lt;!-- raw HTML omitted -->(student⋈sc)&lt;!-- raw HTML omitted -->)&lt;!-- raw HTML omitted -->&lt;/strong>&lt;/p>
+&lt;strong>$$\pi_{sno,sname}(\sigma_{cno=‘2’}(student\bowtie sc))$$&lt;/strong>&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="除">除&lt;/h2>
 &lt;blockquote>
