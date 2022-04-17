@@ -176,7 +176,7 @@ data-flex-basis="1066px"
 &lt;/tbody>
 &lt;/table>
 &lt;p>例 1 查询信息系（IS）全体学生的信息&lt;br>
-&lt;strong>$$\sigma_{Sdept=&amp;lsquo;IS&amp;rsquo;}(Sudent)$$&lt;/strong> (字符串使用单引号)&lt;/p>
+&lt;strong>$$\sigma_{Sdept=&amp;lsquo;IS&amp;rsquo;}(Stedent)$$&lt;/strong> (字符串使用单引号)&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -214,7 +214,7 @@ data-flex-basis="1066px"
 &lt;/blockquote>
 &lt;blockquote>
 &lt;p>例 2 查询&lt;strong>信息系&lt;/strong>年龄&lt;strong>小于 20&lt;/strong>的学生信息&lt;br>
-&lt;strong>$$\sigma_{Sdept=&amp;lsquo;IS&amp;rsquo;\wedge Sage&amp;lt;20}(Sudent)$$&lt;/strong>&lt;/p>
+&lt;strong>$$\sigma_{Sdept=&amp;lsquo;IS&amp;rsquo;\wedge Sage&amp;lt;20}(Stedent)$$&lt;/strong>&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -256,7 +256,7 @@ data-flex-basis="591px"
 >&lt;/p>
 &lt;p>&lt;em>投影后不仅取消了原关系中的某些列，而且还可能取消某些元组(避免重复行)&lt;/em>&lt;br>
 例 3 求 Student 关系学生姓名和所在系两个属性上的投影：&lt;br>
-&lt;strong>$$\pi_{Sname,Sdept}(Sudent)$$&lt;/strong>&lt;/p>
+&lt;strong>$$\pi_{Sname,Sdept}(Stedent)$$&lt;/strong>&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
@@ -290,7 +290,7 @@ data-flex-basis="591px"
 &lt;/blockquote>
 &lt;blockquote>
 &lt;p>例 4 查询学生关系 Student 中都有哪些系？(涉及去重)&lt;/p>
-&lt;p>&lt;strong>$$\pi_{Sdept}(Sudent)$$&lt;/strong>&lt;/p>
+&lt;p>&lt;strong>$$\pi_{Sdept}(Stedent)$$&lt;/strong>&lt;/p>
 &lt;table>
 &lt;thead>
 &lt;tr>
