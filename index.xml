@@ -69,6 +69,112 @@
 &lt;h3 id="语法-6">语法&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">TRUNCATE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Name&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">of&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">the&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">to&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">be&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">truncated&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="delete">DELETE&lt;/h2>
+&lt;p>SQL 中的 DELETE 语句用于从表中删除现有记录。 根据我们在 WHERE 子句中指定的条件，我们可以删除单个记录或多个记录。&lt;/p>
+&lt;h3 id="基本语法">基本语法&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">DELETE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">FROM&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">WHERE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">some_condition&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">name&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">of&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">the&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">some_condition&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">condition&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">to&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">choose&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">particular&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">record&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="示例-2">示例&lt;/h3>
+&lt;p>&lt;img src="https://ruixi.me/delete.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">DELETE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">FROM&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Student&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">WHERE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">NAME&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;Ram&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Output:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">Sno&lt;/th>
+&lt;th style="text-align:center">Sname&lt;/th>
+&lt;th style="text-align:center">Saddress&lt;/th>
+&lt;th style="text-align:center">Sphone&lt;/th>
+&lt;th style="text-align:center">Sage&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">2&lt;/td>
+&lt;td style="text-align:center">Rash&lt;/td>
+&lt;td style="text-align:center">Aaa&lt;/td>
+&lt;td style="text-align:center">xxxxxx&lt;/td>
+&lt;td style="text-align:center">18&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">3&lt;/td>
+&lt;td style="text-align:center">Stuff&lt;/td>
+&lt;td style="text-align:center">Bbb&lt;/td>
+&lt;td style="text-align:center">xxxxxx&lt;/td>
+&lt;td style="text-align:center">20&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">4&lt;/td>
+&lt;td style="text-align:center">Sbt&lt;/td>
+&lt;td style="text-align:center">Ccc&lt;/td>
+&lt;td style="text-align:center">xxxxxx&lt;/td>
+&lt;td style="text-align:center">18&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">5&lt;/td>
+&lt;td style="text-align:center">Chen&lt;/td>
+&lt;td style="text-align:center">Ddd&lt;/td>
+&lt;td style="text-align:center">xxxxxx&lt;/td>
+&lt;td style="text-align:center">20&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">6&lt;/td>
+&lt;td style="text-align:center">Fres&lt;/td>
+&lt;td style="text-align:center">Eee&lt;/td>
+&lt;td style="text-align:center">xxxxxx&lt;/td>
+&lt;td style="text-align:center">18&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">DELETE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">FROM&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Student&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">WHERE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Age&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="mi">20&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Output:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">Sno&lt;/th>
+&lt;th style="text-align:center">Sname&lt;/th>
+&lt;th style="text-align:center">Saddress&lt;/th>
+&lt;th style="text-align:center">Sphone&lt;/th>
+&lt;th style="text-align:center">Sage&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">1&lt;/td>
+&lt;td style="text-align:center">Ram&lt;/td>
+&lt;td style="text-align:center">Delhi&lt;/td>
+&lt;td style="text-align:center">xxxxxx&lt;/td>
+&lt;td style="text-align:center">18&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">2&lt;/td>
+&lt;td style="text-align:center">Rash&lt;/td>
+&lt;td style="text-align:center">Aaa&lt;/td>
+&lt;td style="text-align:center">xxxxxx&lt;/td>
+&lt;td style="text-align:center">18&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">4&lt;/td>
+&lt;td style="text-align:center">Sbt&lt;/td>
+&lt;td style="text-align:center">Ccc&lt;/td>
+&lt;td style="text-align:center">xxxxxx&lt;/td>
+&lt;td style="text-align:center">18&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">6&lt;/td>
+&lt;td style="text-align:center">Fres&lt;/td>
+&lt;td style="text-align:center">Eee&lt;/td>
+&lt;td style="text-align:center">xxxxxx&lt;/td>
+&lt;td style="text-align:center">18&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>删除所有记录？&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">DELETE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">FROM&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Student&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Mssql06</title><link>https://ruixi.me/p/mssql06/</link><pubDate>Mon, 18 Apr 2022 17:35:01 +0800</pubDate><guid>https://ruixi.me/p/mssql06/</guid><description>&lt;img src="https://ruixi.me/p/mssql06/feature.jpg" alt="Featured image of post Mssql06" />&lt;p>&lt;img src="https://ruixi.me/p/mssql06/new-768x645.png"
 width="768"
 height="645"
@@ -96,11 +202,11 @@ data-flex-basis="285px"
 &lt;ul>
 &lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql06_1/#create" target="_blank" rel="noopener"
 >CREATE&lt;/a> ：此命令用于创建数据库或其对象（如表、索引、函数、视图、存储过程和触发器）。&lt;/li>
-&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql06_2/#drop" target="_blank" rel="noopener"
+&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql06_1/#drop" target="_blank" rel="noopener"
 >DROP&lt;/a> ：此命令用于从数据库中删除对象。&lt;/li>
-&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql06_3/#alter" target="_blank" rel="noopener"
+&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql06_1/#alter" target="_blank" rel="noopener"
 >ALTER&lt;/a> ： 这用于更改数据库的结构。&lt;/li>
-&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql06_4/#truncate" target="_blank" rel="noopener"
+&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql06_1/#truncate" target="_blank" rel="noopener"
 >TRUNCATE&lt;/a> ： 这用于从表中删除所有记录，包括删除为记录分配的所有空间。&lt;/li>
 &lt;li>COMMENT ：用于向数据字典添加注释。&lt;/li>
 &lt;li>RENAME ： 这用于重命名数据库中存在的对象。&lt;/li>
