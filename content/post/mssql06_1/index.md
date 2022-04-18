@@ -10,12 +10,12 @@ math: true
 draft: false
 ---
 
-> [SQL 中有两个可用的 CREATE 语句：](#create)
->
-> - **创建数据库**
-> - **创建表**
+## CREATE
 
----
+SQL 中有两个可用的 CREATE 语句
+
+- **创建数据库**
+- **创建表**
 
 ## 创建数据库
 

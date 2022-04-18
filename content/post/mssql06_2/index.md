@@ -10,7 +10,7 @@ math: true
 draft: false
 ---
 
-## [DROP](#drop)
+## DROP
 
 DROP 用于删除整个数据库或仅删除一个表。DROP 语句会破坏现有数据库、表、索引或视图等对象。
 
