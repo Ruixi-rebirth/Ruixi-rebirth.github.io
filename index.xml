@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ruixi-Let's Go!</title><link>https://ruixi.me/</link><description>Recent content on ruixi-Let's Go!</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 18 Apr 2022 17:55:28 +0800</lastBuildDate><atom:link href="https://ruixi.me/index.xml" rel="self" type="application/rss+xml"/><item><title>Mssql07</title><link>https://ruixi.me/p/mssql07/</link><pubDate>Mon, 18 Apr 2022 17:55:28 +0800</pubDate><guid>https://ruixi.me/p/mssql07/</guid><description>&lt;img src="https://ruixi.me/p/mssql07/feature.jpg" alt="Featured image of post Mssql07" />&lt;blockquote>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ruixi-Let's Go!</title><link>https://ruixi.me/</link><description>Recent content on ruixi-Let's Go!</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 18 Apr 2022 17:55:28 +0800</lastBuildDate><atom:link href="https://ruixi.me/index.xml" rel="self" type="application/rss+xml"/><item><title>Mssql06_1</title><link>https://ruixi.me/p/mssql06_1/</link><pubDate>Mon, 18 Apr 2022 17:55:28 +0800</pubDate><guid>https://ruixi.me/p/mssql06_1/</guid><description>&lt;img src="https://ruixi.me/p/mssql06_1/feature.jpg" alt="Featured image of post Mssql06_1" />&lt;blockquote>
 &lt;p>&lt;a class="link" href="#create" >SQL 中有两个可用的 CREATE 语句：&lt;/a>&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>创建数据库&lt;/strong>&lt;/li>
@@ -29,10 +29,163 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Sname&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">varchar&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">20&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Sage&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">varchar&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">20&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Mssql6</title><link>https://ruixi.me/p/mssql6/</link><pubDate>Mon, 18 Apr 2022 17:35:01 +0800</pubDate><guid>https://ruixi.me/p/mssql6/</guid><description>&lt;img src="https://ruixi.me/p/mssql6/feature.jpg" alt="Featured image of post Mssql6" />&lt;p>&lt;img src="https://ruixi.me/p/mssql6/new-768x645.png"
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;h2 id="dropdrop">&lt;a class="link" href="#drop" >DROP&lt;/a>&lt;/h2>
+&lt;p>DROP 用于删除整个数据库或仅删除一个表。DROP 语句会破坏现有数据库、表、索引或视图等对象。&lt;/p>
+&lt;h3 id="语法-2">语法&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">DROP&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">object&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">object_name&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Examples&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">DROP&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Name&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">of&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">the&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">to&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">be&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">deleted&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">DROP&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">DATABASE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">database_name&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">database_name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Name&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">of&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">the&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">database&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">to&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">be&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">deleted&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;blockquote>
+&lt;p>&lt;a class="link" href="#alter" >ALTER TABLE 用于添加、删除/删除或修改现有表中的列。 它还用于在现有表上添加和删除各种约束&lt;/a>&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="更改表---添加">更改表 - 添加&lt;/h2>
+&lt;p>ADD 用于将列添加到现有表中。 有时我们可能需要添加额外的信息，在这种情况下我们不需要再次创建整个数据库， ADD 来拯救我们&lt;/p>
+&lt;h3 id="语法-3">语法&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">ALTER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">ADD&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">Columnname_1&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">datatype&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">Columnname_2&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">datatype&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="err">…&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">Columnname_n&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">datatype&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="更改表---删除">更改表 - 删除&lt;/h2>
+&lt;h3 id="语法-4">语法&lt;/h3>
+&lt;p>DROP COLUMN 用于删除表中的列&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">ALTER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">DROP&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">COLUMN&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">column_name&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="改变表---修改">改变表 - 修改&lt;/h2>
+&lt;p>它用于修改表中的现有列&lt;/p>
+&lt;h3 id="语法-5">语法&lt;/h3>
+&lt;p>Syntax(Oracle,MySQL,MariaDB):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">ALTER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">MODIFY&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">column_name&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">column_type&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Syntax(SQL Server):&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">ALTER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">ALTER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">COLUMN&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">column_name&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">column_type&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;h2 id="truncatetruncate">&lt;a class="link" href="#truncate" >TRUNCATE&lt;/a>&lt;/h2>
+&lt;p>truncate 的作用是清空表或者说是截断表，只能作用于表;会清空表中的所有行，但表结构及其约束、索引等保持不变(&lt;strong>empty for reuse&lt;/strong>)&lt;/p>
+&lt;h3 id="语法-6">语法&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">TRUNCATE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Name&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">of&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">the&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">to&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">be&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">truncated&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;hr>
+&lt;h2 id="deletedelete">&lt;a class="link" href="#delete" >DELETE&lt;/a>&lt;/h2>
+&lt;p>SQL 中的 DELETE 语句用于从表中删除现有记录。 根据我们在 WHERE 子句中指定的条件，我们可以删除单个记录或多个记录。&lt;/p>
+&lt;h3 id="基本语法">基本语法&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">DELETE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">FROM&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">WHERE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">some_condition&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">name&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">of&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">the&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">some_condition&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">condition&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">to&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">choose&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">particular&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">record&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="示例-2">示例&lt;/h3>
+&lt;p>&lt;img src="https://ruixi.me/delete.jpg"
+loading="lazy"
+>&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">DELETE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">FROM&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Student&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">WHERE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">NAME&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="s1">&amp;#39;Ram&amp;#39;&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Output:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">Sno&lt;/th>
+&lt;th style="text-align:center">Sname&lt;/th>
+&lt;th style="text-align:center">Saddress&lt;/th>
+&lt;th style="text-align:center">Sphone&lt;/th>
+&lt;th style="text-align:center">Sage&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">2&lt;/td>
+&lt;td style="text-align:center">Rash&lt;/td>
+&lt;td style="text-align:center">Aaa&lt;/td>
+&lt;td style="text-align:center">xxxxxx&lt;/td>
+&lt;td style="text-align:center">18&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">3&lt;/td>
+&lt;td style="text-align:center">Stuff&lt;/td>
+&lt;td style="text-align:center">Bbb&lt;/td>
+&lt;td style="text-align:center">xxxxxx&lt;/td>
+&lt;td style="text-align:center">20&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">4&lt;/td>
+&lt;td style="text-align:center">Sbt&lt;/td>
+&lt;td style="text-align:center">Ccc&lt;/td>
+&lt;td style="text-align:center">xxxxxx&lt;/td>
+&lt;td style="text-align:center">18&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">5&lt;/td>
+&lt;td style="text-align:center">Chen&lt;/td>
+&lt;td style="text-align:center">Ddd&lt;/td>
+&lt;td style="text-align:center">xxxxxx&lt;/td>
+&lt;td style="text-align:center">20&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">6&lt;/td>
+&lt;td style="text-align:center">Fres&lt;/td>
+&lt;td style="text-align:center">Eee&lt;/td>
+&lt;td style="text-align:center">xxxxxx&lt;/td>
+&lt;td style="text-align:center">18&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">DELETE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">FROM&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Student&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">WHERE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Age&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="mi">20&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Output:&lt;/p>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th style="text-align:center">Sno&lt;/th>
+&lt;th style="text-align:center">Sname&lt;/th>
+&lt;th style="text-align:center">Saddress&lt;/th>
+&lt;th style="text-align:center">Sphone&lt;/th>
+&lt;th style="text-align:center">Sage&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td style="text-align:center">1&lt;/td>
+&lt;td style="text-align:center">Ram&lt;/td>
+&lt;td style="text-align:center">Delhi&lt;/td>
+&lt;td style="text-align:center">xxxxxx&lt;/td>
+&lt;td style="text-align:center">18&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">2&lt;/td>
+&lt;td style="text-align:center">Rash&lt;/td>
+&lt;td style="text-align:center">Aaa&lt;/td>
+&lt;td style="text-align:center">xxxxxx&lt;/td>
+&lt;td style="text-align:center">18&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">4&lt;/td>
+&lt;td style="text-align:center">Sbt&lt;/td>
+&lt;td style="text-align:center">Ccc&lt;/td>
+&lt;td style="text-align:center">xxxxxx&lt;/td>
+&lt;td style="text-align:center">18&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td style="text-align:center">6&lt;/td>
+&lt;td style="text-align:center">Fres&lt;/td>
+&lt;td style="text-align:center">Eee&lt;/td>
+&lt;td style="text-align:center">xxxxxx&lt;/td>
+&lt;td style="text-align:center">18&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
+&lt;p>删除所有记录？&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">DELETE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">FROM&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Student&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Mssql06</title><link>https://ruixi.me/p/mssql06/</link><pubDate>Mon, 18 Apr 2022 17:35:01 +0800</pubDate><guid>https://ruixi.me/p/mssql06/</guid><description>&lt;img src="https://ruixi.me/p/mssql06/feature.jpg" alt="Featured image of post Mssql06" />&lt;p>&lt;img src="https://ruixi.me/p/mssql06/new-768x645.png"
 width="768"
 height="645"
-srcset="https://ruixi.me/p/mssql6/new-768x645_hu8b03ae05ff68d4cd0cd58e0ef1c293b7_60332_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql6/new-768x645_hu8b03ae05ff68d4cd0cd58e0ef1c293b7_60332_1024x0_resize_box_3.png 1024w"
+srcset="https://ruixi.me/p/mssql06/new-768x645_hu8b03ae05ff68d4cd0cd58e0ef1c293b7_60332_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql06/new-768x645_hu8b03ae05ff68d4cd0cd58e0ef1c293b7_60332_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="119"
@@ -54,11 +207,14 @@ data-flex-basis="285px"
 &lt;p>DDL 或数据定义语言实际上由可用于定义数据库模式的 SQL 命令组成。 它只处理数据库模式的描述，并用于创建和修改数据库中的数据库对象的结构。DDL 是一组用于创建、修改和删除数据库结构而不是数据的 SQL 命令。 这些命令通常不被一般用户使用，他们应该通过应用程序访问数据库&lt;/p>
 &lt;p>DDL 命令列表：&lt;/p>
 &lt;ul>
-&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql07/#create" target="_blank" rel="noopener"
+&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql06_1/#create" target="_blank" rel="noopener"
 >CREATE&lt;/a> ：此命令用于创建数据库或其对象（如表、索引、函数、视图、存储过程和触发器）。&lt;/li>
-&lt;li>DROP ：此命令用于从数据库中删除对象。&lt;/li>
-&lt;li>ALTER ： 这用于更改数据库的结构。&lt;/li>
-&lt;li>TRUNCATE ： 这用于从表中删除所有记录，包括删除为记录分配的所有空间。&lt;/li>
+&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql06_1/#drop" target="_blank" rel="noopener"
+>DROP&lt;/a> ：此命令用于从数据库中删除对象。&lt;/li>
+&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql06_1/#alter" target="_blank" rel="noopener"
+>ALTER&lt;/a> ： 这用于更改数据库的结构。&lt;/li>
+&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql06_1/#truncate" target="_blank" rel="noopener"
+>TRUNCATE&lt;/a> ： 这用于从表中删除所有记录，包括删除为记录分配的所有空间。&lt;/li>
 &lt;li>COMMENT ：用于向数据字典添加注释。&lt;/li>
 &lt;li>RENAME ： 这用于重命名数据库中存在的对象。&lt;/li>
 &lt;/ul>
@@ -74,7 +230,8 @@ data-flex-basis="285px"
 &lt;ul>
 &lt;li>INSERT ：用于向表中插入数据。&lt;/li>
 &lt;li>UPDATE ： 它用于更新表中的现有数据。&lt;/li>
-&lt;li>DELETE ：用于从数据库表中删除记录。&lt;/li>
+&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql06_1/#delete" target="_blank" rel="noopener"
+>DELETE&lt;/a> ：用于从数据库表中删除记录。&lt;/li>
 &lt;li>LOCK： 表控制并发。&lt;/li>
 &lt;li>CALL： 调用 PL/SQL 或 JAVA 子程序。&lt;/li>
 &lt;li>EXPLAIN PLAN： 描述数据的访问路径。&lt;/li>
