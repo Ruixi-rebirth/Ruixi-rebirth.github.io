@@ -3,9 +3,8 @@
 &lt;h3 id="语法">语法&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">TRUNCATE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Name&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">of&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">the&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">to&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">be&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">truncated&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Mssql06_3</title><link>https://ruixi.me/p/mssql06_3/</link><pubDate>Mon, 18 Apr 2022 22:31:58 +0800</pubDate><guid>https://ruixi.me/p/mssql06_3/</guid><description>&lt;img src="https://ruixi.me/p/mssql06_3/feature.jpg" alt="Featured image of post Mssql06_3" />&lt;blockquote>
-&lt;p>&lt;a class="link" href="#alter" >ALTER TABLE 用于添加、删除/删除或修改现有表中的列。 它还用于在现有表上添加和删除各种约束&lt;/a>&lt;/p>
-&lt;/blockquote>
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Mssql06_3</title><link>https://ruixi.me/p/mssql06_3/</link><pubDate>Mon, 18 Apr 2022 22:31:58 +0800</pubDate><guid>https://ruixi.me/p/mssql06_3/</guid><description>&lt;img src="https://ruixi.me/p/mssql06_3/feature.jpg" alt="Featured image of post Mssql06_3" />&lt;h2 id="alter">ALTER&lt;/h2>
+&lt;p>ALTER TABLE 用于添加、删除/删除或修改现有表中的列。 它还用于在现有表上添加和删除各种约束&lt;/p>
 &lt;h2 id="更改表---添加">更改表 - 添加&lt;/h2>
 &lt;p>ADD 用于将列添加到现有表中。 有时我们可能需要添加额外的信息，在这种情况下我们不需要再次创建整个数据库， ADD 来拯救我们&lt;/p>
 &lt;h3 id="语法">语法&lt;/h3>
@@ -30,7 +29,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Syntax(SQL Server):&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">ALTER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">ALTER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">COLUMN&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">column_name&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">column_type&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Mssql06_2</title><link>https://ruixi.me/p/mssql06_2/</link><pubDate>Mon, 18 Apr 2022 22:31:51 +0800</pubDate><guid>https://ruixi.me/p/mssql06_2/</guid><description>&lt;img src="https://ruixi.me/p/mssql06_2/feature.jpg" alt="Featured image of post Mssql06_2" />&lt;h2 id="dropdrop">&lt;a class="link" href="#drop" >DROP&lt;/a>&lt;/h2>
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Mssql06_2</title><link>https://ruixi.me/p/mssql06_2/</link><pubDate>Mon, 18 Apr 2022 22:31:51 +0800</pubDate><guid>https://ruixi.me/p/mssql06_2/</guid><description>&lt;img src="https://ruixi.me/p/mssql06_2/feature.jpg" alt="Featured image of post Mssql06_2" />&lt;h2 id="drop">DROP&lt;/h2>
 &lt;p>DROP 用于删除整个数据库或仅删除一个表。DROP 语句会破坏现有数据库、表、索引或视图等对象。&lt;/p>
 &lt;h3 id="语法">语法&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">DROP&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">object&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">object_name&lt;/span>&lt;span class="w">
@@ -41,14 +40,12 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">DROP&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">DATABASE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">database_name&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">database_name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Name&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">of&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">the&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">database&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">to&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">be&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">deleted&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Mssql06_1</title><link>https://ruixi.me/p/mssql06_1/</link><pubDate>Mon, 18 Apr 2022 17:55:28 +0800</pubDate><guid>https://ruixi.me/p/mssql06_1/</guid><description>&lt;img src="https://ruixi.me/p/mssql06_1/feature.jpg" alt="Featured image of post Mssql06_1" />&lt;blockquote>
-&lt;p>&lt;a class="link" href="#create" >SQL 中有两个可用的 CREATE 语句：&lt;/a>&lt;/p>
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Mssql06_1</title><link>https://ruixi.me/p/mssql06_1/</link><pubDate>Mon, 18 Apr 2022 17:55:28 +0800</pubDate><guid>https://ruixi.me/p/mssql06_1/</guid><description>&lt;img src="https://ruixi.me/p/mssql06_1/feature.jpg" alt="Featured image of post Mssql06_1" />&lt;h2 id="create">CREATE&lt;/h2>
+&lt;p>SQL 中有两个可用的 CREATE 语句&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>创建数据库&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>创建表&lt;/strong>&lt;/li>
 &lt;/ul>
-&lt;/blockquote>
-&lt;hr>
 &lt;h2 id="创建数据库">创建数据库&lt;/h2>
 &lt;p>数据库 被定义为一组结构化的数据,因此，在 SQL 中，以结构良好的方式存储数据的第一步是创建数据库。&lt;/p>
 &lt;h3 id="语法">语法&lt;/h3>
