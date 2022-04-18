@@ -1,4 +1,99 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ruixi-Let's Go!</title><link>https://ruixi.me/</link><description>Recent content on ruixi-Let's Go!</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Sat, 16 Apr 2022 12:56:38 +0800</lastBuildDate><atom:link href="https://ruixi.me/index.xml" rel="self" type="application/rss+xml"/><item><title>Mssql05</title><link>https://ruixi.me/p/mssql05/</link><pubDate>Sat, 16 Apr 2022 12:56:38 +0800</pubDate><guid>https://ruixi.me/p/mssql05/</guid><description>&lt;img src="https://ruixi.me/p/mssql05/feature.jpg" alt="Featured image of post Mssql05" />&lt;p>&lt;img src="https://ruixi.me/p/mssql05/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_1.png"
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ruixi-Let's Go!</title><link>https://ruixi.me/</link><description>Recent content on ruixi-Let's Go!</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 18 Apr 2022 17:55:28 +0800</lastBuildDate><atom:link href="https://ruixi.me/index.xml" rel="self" type="application/rss+xml"/><item><title>Mssql07</title><link>https://ruixi.me/p/mssql07/</link><pubDate>Mon, 18 Apr 2022 17:55:28 +0800</pubDate><guid>https://ruixi.me/p/mssql07/</guid><description>&lt;img src="https://ruixi.me/p/mssql07/feature.jpg" alt="Featured image of post Mssql07" />&lt;blockquote>
+&lt;p>&lt;a class="link" href="#create" >SQL 中有两个可用的 CREATE 语句：&lt;/a>&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>创建数据库&lt;/strong>&lt;/li>
+&lt;li>&lt;strong>创建表&lt;/strong>&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;hr>
+&lt;h2 id="创建数据库">创建数据库&lt;/h2>
+&lt;p>数据库 被定义为一组结构化的数据,因此，在 SQL 中，以结构良好的方式存储数据的第一步是创建数据库。&lt;/p>
+&lt;h3 id="语法">语法&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">CREATE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">DATABASE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">database_name&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="示例">示例&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">CREATE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">DATABASE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">StudentScore&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="创建表">创建表&lt;/h2>
+&lt;p>我们已经在上面了解了创建数据库。 现在要存储数据，我们需要一个表来执行此操作。 CREATE TABLE 语句用于在 SQL 中创建表。 我们知道一个表由行和列组成。 因此，在创建表时，我们必须向 SQL 提供有关列名、要存储在列中的数据类型、数据大小等所有信息。现在让我们深入了解如何使用 CREATE TABLE 语句创建 SQL 中的表。&lt;/p>
+&lt;h3 id="语法-1">语法&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">CREATE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">column1&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">data_type&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">size&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">column2&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">data_type&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">size&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">column3&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">data_type&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">size&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">....&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="示例-1">示例&lt;/h3>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQl" data-lang="SQl">&lt;span class="line">&lt;span class="cl">&lt;span class="k">CREATE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Students&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Sno&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Sname&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">varchar&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">20&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Sage&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">varchar&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">20&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Mssql6</title><link>https://ruixi.me/p/mssql6/</link><pubDate>Mon, 18 Apr 2022 17:35:01 +0800</pubDate><guid>https://ruixi.me/p/mssql6/</guid><description>&lt;img src="https://ruixi.me/p/mssql6/feature.jpg" alt="Featured image of post Mssql6" />&lt;p>&lt;img src="https://ruixi.me/p/mssql6/new-768x645.png"
+width="768"
+height="645"
+srcset="https://ruixi.me/p/mssql6/new-768x645_hu8b03ae05ff68d4cd0cd58e0ef1c293b7_60332_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql6/new-768x645_hu8b03ae05ff68d4cd0cd58e0ef1c293b7_60332_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="119"
+data-flex-basis="285px"
+>&lt;/p>
+&lt;blockquote>
+&lt;p>众所周知，结构化查询语言（SQL）是一种数据库语言，通过它我们可以对现有的数据库执行某些操作，也可以使用这种语言来创建数据库。 SQL 使用某些命令（如 Create、Drop、Insert 等）来执行所需的任务。
+这些 SQL 命令主要分为四类：&lt;/p>
+&lt;ul>
+&lt;li>&lt;strong>DDL&lt;/strong> – 数据定义语言&lt;/li>
+&lt;li>&lt;strong>DQL&lt;/strong> – 数据查询语言&lt;/li>
+&lt;li>&lt;strong>DML&lt;/strong> – 数据操作语言&lt;/li>
+&lt;li>&lt;strong>DCL&lt;/strong> – 数据控制语言&lt;/li>
+&lt;li>尽管许多资源声称存在另一类 SQL 子句 &lt;strong>TCL&lt;/strong> – 事务控制语言 。 因此，我们还将详细了解 &lt;strong>TCL&lt;/strong>。&lt;/li>
+&lt;/ul>
+&lt;/blockquote>
+&lt;hr>
+&lt;h2 id="ddl数据定义语言">DDL（数据定义语言）&lt;/h2>
+&lt;p>DDL 或数据定义语言实际上由可用于定义数据库模式的 SQL 命令组成。 它只处理数据库模式的描述，并用于创建和修改数据库中的数据库对象的结构。DDL 是一组用于创建、修改和删除数据库结构而不是数据的 SQL 命令。 这些命令通常不被一般用户使用，他们应该通过应用程序访问数据库&lt;/p>
+&lt;p>DDL 命令列表：&lt;/p>
+&lt;ul>
+&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql07/#create" target="_blank" rel="noopener"
+>CREATE&lt;/a> ：此命令用于创建数据库或其对象（如表、索引、函数、视图、存储过程和触发器）。&lt;/li>
+&lt;li>DROP ：此命令用于从数据库中删除对象。&lt;/li>
+&lt;li>ALTER ： 这用于更改数据库的结构。&lt;/li>
+&lt;li>TRUNCATE ： 这用于从表中删除所有记录，包括删除为记录分配的所有空间。&lt;/li>
+&lt;li>COMMENT ：用于向数据字典添加注释。&lt;/li>
+&lt;li>RENAME ： 这用于重命名数据库中存在的对象。&lt;/li>
+&lt;/ul>
+&lt;h2 id="dql数据查询语言">DQL（数据查询语言）&lt;/h2>
+&lt;p>DQL 语句用于对模式对象中的数据执行查询。 DQL 命令的目的是根据传递给它的查询获取一些模式关系。 我们可以将 DQL 定义如下，它是 SQL 语句的一个组件，允许从数据库中获取数据并对其进行排序。 它包括 SELECT 语句。 此命令允许从数据库中获取数据以对其执行操作。 当对一个或多个表触发 SELECT 时，结果会编译到另一个临时表中，该表会显示或可能由程序（即前端）接收。&lt;/p>
+&lt;p>DQL 列表:&lt;/p>
+&lt;ul>
+&lt;li>SELECT ： 用于从数据库中检索数据。&lt;/li>
+&lt;/ul>
+&lt;h2 id="dml数据操作语言">DML（数据操作语言）&lt;/h2>
+&lt;p>处理数据库中存在的数据操作的 SQL 命令属于 DML 或数据操作语言，这包括大多数 SQL 语句。 它是控制对数据和数据库的访问的 SQL 语句的组件。 基本上，DCL 语句与 DML 语句组合在一起。&lt;/p>
+&lt;p>DML 命令列表：&lt;/p>
+&lt;ul>
+&lt;li>INSERT ：用于向表中插入数据。&lt;/li>
+&lt;li>UPDATE ： 它用于更新表中的现有数据。&lt;/li>
+&lt;li>DELETE ：用于从数据库表中删除记录。&lt;/li>
+&lt;li>LOCK： 表控制并发。&lt;/li>
+&lt;li>CALL： 调用 PL/SQL 或 JAVA 子程序。&lt;/li>
+&lt;li>EXPLAIN PLAN： 描述数据的访问路径。&lt;/li>
+&lt;/ul>
+&lt;h2 id="dcl数据控制语言">DCL（数据控制语言）&lt;/h2>
+&lt;p>DCL 包括 GRANT、REVOKE 等命令，主要处理数据库系统的权限、权限等控制。&lt;/p>
+&lt;p>DCL 命令列表：&lt;/p>
+&lt;ul>
+&lt;li>GRANT： 此命令授予用户访问数据库的权限。&lt;/li>
+&lt;li>REVOKE： 此命令撤销用户使用 GRANT 命令赋予的访问权限。&lt;/li>
+&lt;/ul>
+&lt;h2 id="tcl事务控制语言">TCL（事务控制语言）&lt;/h2>
+&lt;p>TCL 命令列表：&lt;/p>
+&lt;ul>
+&lt;li>COMMIT ： 提交事务。&lt;/li>
+&lt;li>ROLLBACK ： 在发生任何错误的情况下回滚事务。&lt;/li>
+&lt;li>SAVEPOINT ： 在事务中设置保存点。&lt;/li>
+&lt;li>SET TRANSACTION： 指定交易的特征。&lt;/li>
+&lt;/ul></description></item><item><title>Mssql05</title><link>https://ruixi.me/p/mssql05/</link><pubDate>Sat, 16 Apr 2022 12:56:38 +0800</pubDate><guid>https://ruixi.me/p/mssql05/</guid><description>&lt;img src="https://ruixi.me/p/mssql05/feature.jpg" alt="Featured image of post Mssql05" />&lt;p>&lt;img src="https://ruixi.me/p/mssql05/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_1.png"
 width="927"
 height="551"
 srcset="https://ruixi.me/p/mssql05/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_1_hub00b40925f3daf742e51fe64329a7ac9_435549_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql05/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_1_hub00b40925f3daf742e51fe64329a7ac9_435549_1024x0_resize_box_3.png 1024w"
