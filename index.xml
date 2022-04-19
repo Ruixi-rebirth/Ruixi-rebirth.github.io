@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ruixi-Let's Go!</title><link>https://ruixi.me/</link><description>Recent content on ruixi-Let's Go!</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 18 Apr 2022 17:55:28 +0800</lastBuildDate><atom:link href="https://ruixi.me/index.xml" rel="self" type="application/rss+xml"/><item><title>Mssql06_1</title><link>https://ruixi.me/p/mssql06_1/</link><pubDate>Mon, 18 Apr 2022 17:55:28 +0800</pubDate><guid>https://ruixi.me/p/mssql06_1/</guid><description>&lt;img src="https://ruixi.me/p/mssql06_1/feature.jpg" alt="Featured image of post Mssql06_1" />&lt;h2 id="create">CREATE&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ruixi-Let's Go!</title><link>https://ruixi.me/</link><description>Recent content on ruixi-Let's Go!</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 18 Apr 2022 17:55:28 +0800</lastBuildDate><atom:link href="https://ruixi.me/index.xml" rel="self" type="application/rss+xml"/><item><title>Mssql02_1</title><link>https://ruixi.me/p/mssql02_1/</link><pubDate>Mon, 18 Apr 2022 17:55:28 +0800</pubDate><guid>https://ruixi.me/p/mssql02_1/</guid><description>&lt;img src="https://ruixi.me/p/mssql02_1/feature.jpg" alt="Featured image of post Mssql02_1" />&lt;h2 id="create">CREATE&lt;/h2>
 &lt;p>SQL 中有两个可用的 CREATE 语句&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>创建数据库&lt;/strong>&lt;/li>
@@ -175,10 +175,10 @@ loading="lazy"
 &lt;/table>
 &lt;p>删除所有记录？&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">DELETE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">FROM&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Student&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Mssql06</title><link>https://ruixi.me/p/mssql06/</link><pubDate>Mon, 18 Apr 2022 17:35:01 +0800</pubDate><guid>https://ruixi.me/p/mssql06/</guid><description>&lt;img src="https://ruixi.me/p/mssql06/feature.jpg" alt="Featured image of post Mssql06" />&lt;p>&lt;img src="https://ruixi.me/p/mssql06/new-768x645.png"
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div></description></item><item><title>Mssql02</title><link>https://ruixi.me/p/mssql02/</link><pubDate>Mon, 18 Apr 2022 17:35:01 +0800</pubDate><guid>https://ruixi.me/p/mssql02/</guid><description>&lt;img src="https://ruixi.me/p/mssql02/feature.jpg" alt="Featured image of post Mssql02" />&lt;p>&lt;img src="https://ruixi.me/p/mssql02/new-768x645.png"
 width="768"
 height="645"
-srcset="https://ruixi.me/p/mssql06/new-768x645_hu8b03ae05ff68d4cd0cd58e0ef1c293b7_60332_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql06/new-768x645_hu8b03ae05ff68d4cd0cd58e0ef1c293b7_60332_1024x0_resize_box_3.png 1024w"
+srcset="https://ruixi.me/p/mssql02/new-768x645_hu8b03ae05ff68d4cd0cd58e0ef1c293b7_60332_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql02/new-768x645_hu8b03ae05ff68d4cd0cd58e0ef1c293b7_60332_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="119"
@@ -200,13 +200,13 @@ data-flex-basis="285px"
 &lt;p>DDL 或数据定义语言实际上由可用于定义数据库模式的 SQL 命令组成。 它只处理数据库模式的描述，并用于创建和修改数据库中的数据库对象的结构。DDL 是一组用于创建、修改和删除数据库结构而不是数据的 SQL 命令。 这些命令通常不被一般用户使用，他们应该通过应用程序访问数据库&lt;/p>
 &lt;p>DDL 命令列表：&lt;/p>
 &lt;ul>
-&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql06_1/#create" target="_blank" rel="noopener"
+&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql02_1/#create" target="_blank" rel="noopener"
 >CREATE&lt;/a> ：此命令用于创建数据库或其对象（如表、索引、函数、视图、存储过程和触发器）。&lt;/li>
-&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql06_1/#drop" target="_blank" rel="noopener"
+&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql02_1/#drop" target="_blank" rel="noopener"
 >DROP&lt;/a> ：此命令用于从数据库中删除对象。&lt;/li>
-&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql06_1/#alter" target="_blank" rel="noopener"
+&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql02_1/#alter" target="_blank" rel="noopener"
 >ALTER&lt;/a> ： 这用于更改数据库的结构。&lt;/li>
-&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql06_1/#truncate" target="_blank" rel="noopener"
+&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql02_1/#truncate" target="_blank" rel="noopener"
 >TRUNCATE&lt;/a> ： 这用于从表中删除所有记录，包括删除为记录分配的所有空间。&lt;/li>
 &lt;li>COMMENT ：用于向数据字典添加注释。&lt;/li>
 &lt;li>RENAME ： 这用于重命名数据库中存在的对象。&lt;/li>
@@ -223,7 +223,7 @@ data-flex-basis="285px"
 &lt;ul>
 &lt;li>INSERT ：用于向表中插入数据。&lt;/li>
 &lt;li>UPDATE ： 它用于更新表中的现有数据。&lt;/li>
-&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql06_1/#delete" target="_blank" rel="noopener"
+&lt;li>&lt;a class="link" href="http://ruixi.me/p/mssql02_1/#delete" target="_blank" rel="noopener"
 >DELETE&lt;/a> ：用于从数据库表中删除记录。&lt;/li>
 &lt;li>LOCK： 表控制并发。&lt;/li>
 &lt;li>CALL： 调用 PL/SQL 或 JAVA 子程序。&lt;/li>
@@ -243,42 +243,135 @@ data-flex-basis="285px"
 &lt;li>ROLLBACK ： 在发生任何错误的情况下回滚事务。&lt;/li>
 &lt;li>SAVEPOINT ： 在事务中设置保存点。&lt;/li>
 &lt;li>SET TRANSACTION： 指定交易的特征。&lt;/li>
-&lt;/ul></description></item><item><title>Mssql05</title><link>https://ruixi.me/p/mssql05/</link><pubDate>Sat, 16 Apr 2022 12:56:38 +0800</pubDate><guid>https://ruixi.me/p/mssql05/</guid><description>&lt;img src="https://ruixi.me/p/mssql05/feature.jpg" alt="Featured image of post Mssql05" />&lt;p>&lt;img src="https://ruixi.me/p/mssql05/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_1.png"
-width="927"
-height="551"
-srcset="https://ruixi.me/p/mssql05/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_1_hub00b40925f3daf742e51fe64329a7ac9_435549_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql05/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_1_hub00b40925f3daf742e51fe64329a7ac9_435549_1024x0_resize_box_3.png 1024w"
+&lt;/ul></description></item><item><title>Mssql01</title><link>https://ruixi.me/p/mssql01/</link><pubDate>Sat, 16 Apr 2022 12:56:25 +0800</pubDate><guid>https://ruixi.me/p/mssql01/</guid><description>&lt;img src="https://ruixi.me/p/mssql01/feature.jpg" alt="Featured image of post Mssql01" />&lt;h2 id="数据">数据&lt;/h2>
+&lt;pre tabindex="0">&lt;code>描述事物的符号记录
+&lt;/code>&lt;/pre>&lt;h2 id="数据库">数据库&lt;/h2>
+&lt;pre tabindex="0">&lt;code>长期存储在计算机内、有组织的、可共享的大量数据的集合
+&lt;/code>&lt;/pre>&lt;h2 id="dbmsdatabase-manager-system">DBMS(Database Manager System)&lt;/h2>
+&lt;pre tabindex="0">&lt;code>数据库管理软件。如mysql,sqlserver,mariadb,Access等等内部都内置了各种的DBMS,所以也称这些都是DBMS,换言之，目前流行的DBMS有mysql,sqlserver等等
+&lt;/code>&lt;/pre>&lt;h2 id="dbs">DBS&lt;/h2>
+&lt;pre tabindex="0">&lt;code>数据库系统也简称为数据库。由数据库，DBMS及其开发工具、应用程序(如学生管理系统的前台界面)、DBA及其用户构成
+&lt;/code>&lt;/pre>&lt;h2 id="数据模型">数据模型&lt;/h2>
+&lt;pre tabindex="0">&lt;code>(1)概念模型：按照用户的观点来对数据和信息建模（很重要，会影响到逻辑模型和物理模型）
+(2)逻辑模型和物理模型：主要包括网状模型、层次模型、关系模型等，它是按照计算机系统的观点对数据建模。用于DBMS的实现
+&lt;/code>&lt;/pre>&lt;h3 id="数据模型的组成要素">数据模型的组成要素&lt;/h3>
+&lt;pre tabindex="0">&lt;code>1.数据结构
+2.数据操作
+3.数据的约束条件
+&lt;/code>&lt;/pre>&lt;h2 id="实体">实体&lt;/h2>
+&lt;pre tabindex="0">&lt;code>如一个学生、老师与院系的工作关系等
+&lt;/code>&lt;/pre>&lt;h2 id="属性">属性&lt;/h2>
+&lt;pre tabindex="0">&lt;code>如学生实体中的姓名、学号等
+&lt;/code>&lt;/pre>&lt;h2 id="码">码&lt;/h2>
+&lt;pre tabindex="0">&lt;code>唯一标识实体的属性集。如学生实体的学号
+&lt;/code>&lt;/pre>&lt;h2 id="域">域&lt;/h2>
+&lt;pre tabindex="0">&lt;code>属性的取值范围。如性别域（男、女）
+&lt;/code>&lt;/pre>&lt;h2 id="实体型">实体型&lt;/h2>
+&lt;pre tabindex="0">&lt;code>实体名及其属性名集合来抽象刻画同类实体。如学生(姓名 学号 班级)就是一个实体型
+&lt;/code>&lt;/pre>&lt;h2 id="实体集">实体集&lt;/h2>
+&lt;pre tabindex="0">&lt;code>如全体学生
+&lt;/code>&lt;/pre>&lt;h2 id="概念模型标识方法">概念模型标识方法&lt;/h2>
+&lt;pre tabindex="0">&lt;code>E-R 方法 即实体-联系方法
+&lt;/code>&lt;/pre>&lt;h2 id="数据库系统的三级模式">数据库系统的三级模式&lt;/h2>
+&lt;pre tabindex="0">&lt;code>模式(逻辑模式)是全体数据，外模式(子模式)是全体数据中的某一部分，内模式也称存储模式
+&lt;/code>&lt;/pre>&lt;h2 id="外模式模式映像">外模式/模式映像&lt;/h2>
+&lt;pre tabindex="0">&lt;code>定义了外模式与模式之间的对应关系
+每个外模式都对应一个外模式/模式映像（映像数量多个）
+映像定义通常包含在各自外模式的描述中
+&lt;/code>&lt;/pre>&lt;h2 id="模式内模式映像">模式/内模式映像&lt;/h2>
+&lt;pre tabindex="0">&lt;code>定义了数据全局逻辑结构与存储结构之间的对应关系
+数据库中模式/内模式映像是唯一的
+该映像的定义通常包含在模式描述中
+&lt;/code>&lt;/pre>&lt;h2 id="关系数据模型">关系数据模型&lt;/h2>
+&lt;p>其数据结构是一张二维的表格&lt;/p>
+&lt;h2 id="候选码">候选码&lt;/h2>
+&lt;pre tabindex="0">&lt;code>能够被选为主码的属性或属性组，说明主码不唯一
+&lt;/code>&lt;/pre>&lt;h2 id="主属性">主属性&lt;/h2>
+&lt;blockquote>
+&lt;p>定义：包含在任何候选码中的属性(主码一定是候选码，候选码不一定是主码，因为主码是人选的，是随机的)
+例：比如，竞赛表（竞赛编号，竞赛名称，竞赛组织者） PS：竞赛名称和竞赛组织者都可以重复&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>很明显可以看出竞赛编号能够唯一标识整张竞赛表，因此候选码是竞赛编号，并且仅此一个候选码，其他属性都不能唯一标识整张表，所竞赛编号同时也是主码。&lt;/p>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;p>这时候判断一下这几个属性 or 属性组是否是主属性，（竞赛编号）（竞赛编号，竞赛名称）（竞赛名称，竞赛组织者），（竞赛编号）只有一个属性，这个属性是主码，主码必定为候选码，因此属性含有一个候选码，这个属性是主属性。（竞赛编号，竞赛名称）有两个属性，其中竞赛编号是候选码，而竞赛名称不是候选码，那他是啥呢~前面有提到了，因为它跟候选码在同一个属性组里，所以，竞赛名称是超码，回过头来，最后得出该属性组含有了一个候选码，因此该属性组中的各个属性都是主属性。（竞赛名称，竞赛组织者）有两个属性，可以看出这两个属性都不是候选码，因此这个属性组不包含候选码，属性组中中得各个元素称为非主属性。&lt;/p>
+&lt;/blockquote>
+&lt;h2 id="misc">misc&lt;/h2>
+&lt;pre tabindex="0">&lt;code>主码=主键=主关键字，关键字=候选码 候选关键字=候选码中除去主码的其他候选码
+&lt;/code>&lt;/pre>&lt;h2 id="分量">分量&lt;/h2>
+&lt;pre tabindex="0">&lt;code>如在二位表格中的单元格的值。关系的分量必须是一个不可分的数据项(如工资被分为奖金、工龄、基本，这样对于关系来说是不规范的)
+&lt;/code>&lt;/pre>&lt;h2 id="元组">元组&lt;/h2>
+&lt;pre tabindex="0">&lt;code>表中的每行（即数据库中的每条记录）就是一个元组;元组的个数为基数
+&lt;/code>&lt;/pre>&lt;h2 id="目度">目（度）&lt;/h2>
+&lt;pre tabindex="0">&lt;code>属性个数，也即列数
+&lt;/code>&lt;/pre>&lt;h2 id="关系模型中的三类完整性约束">关系模型中的三类完整性约束&lt;/h2>
+&lt;pre tabindex="0">&lt;code>1. 实体完整性
+2. 参照完整性
+3. 用户定义完整性
+&lt;/code>&lt;/pre>&lt;h2 id="实体完整性">实体完整性&lt;/h2>
+&lt;pre tabindex="0">&lt;code>实体完整性规则规定基本关系的所有主属性不能取空值，当我给某个表设置主键时，由于给主属性设置了空值，始终创建不了主码
+&lt;/code>&lt;/pre>&lt;h2 id="参照完整性">参照完整性&lt;/h2>
+&lt;pre tabindex="0">&lt;code>在关系模型中实体与实体之间的联系都是用关系来描述的，因此存在关系与关系之间的引用
+&lt;/code>&lt;/pre>&lt;blockquote>
+&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_1.png"
+width="535"
+height="197"
+srcset="https://ruixi.me/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_1_hu438336521bc7e5180c15ae88050a82e7_63778_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_1_hu438336521bc7e5180c15ae88050a82e7_63778_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
-data-flex-grow="168"
-data-flex-basis="403px"
+data-flex-grow="271"
+data-flex-basis="651px"
+> &lt;br>
+&lt;img src="https://ruixi.me/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_2.png"
+width="527"
+height="257"
+srcset="https://ruixi.me/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_2_hu89252f545fda7d50df9ff124a0a54986_82530_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_2_hu89252f545fda7d50df9ff124a0a54986_82530_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="205"
+data-flex-basis="492px"
+> &lt;br>
+&lt;img src="https://ruixi.me/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_3.png"
+width="586"
+height="82"
+srcset="https://ruixi.me/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_3_hu40a494cb27d2c538a0978342b0727a6d_43967_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_3_hu40a494cb27d2c538a0978342b0727a6d_43967_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="714"
+data-flex-basis="1715px"
 >&lt;/p>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql05/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_2.png"
-width="872"
-height="666"
-srcset="https://ruixi.me/p/mssql05/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_2_hu5451ee30d1f4a267bd05f5589834525e_606772_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql05/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_2_hu5451ee30d1f4a267bd05f5589834525e_606772_1024x0_resize_box_3.png 1024w"
-loading="lazy"
-class="gallery-image"
-data-flex-grow="130"
-data-flex-basis="314px"
->&lt;/p>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql05/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_3.png"
-width="934"
-height="436"
-srcset="https://ruixi.me/p/mssql05/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_3_hua04301b80e6360c28737cf7cb8b3e867_112499_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql05/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_3_hua04301b80e6360c28737cf7cb8b3e867_112499_1024x0_resize_box_3.png 1024w"
-loading="lazy"
-class="gallery-image"
-data-flex-grow="214"
-data-flex-basis="514px"
->&lt;/p>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql05/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_4.jpg"
-width="1920"
-height="1738"
-srcset="https://ruixi.me/p/mssql05/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_4_hufce5555ea114c52e0c18951db64a152f_204458_480x0_resize_q75_box.jpg 480w, https://ruixi.me/p/mssql05/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_4_hufce5555ea114c52e0c18951db64a152f_204458_1024x0_resize_q75_box.jpg 1024w"
-loading="lazy"
-class="gallery-image"
-data-flex-grow="110"
-data-flex-basis="265px"
->&lt;/p></description></item><item><title>Mssql04</title><link>https://ruixi.me/p/mssql04/</link><pubDate>Sat, 16 Apr 2022 12:56:36 +0800</pubDate><guid>https://ruixi.me/p/mssql04/</guid><description>&lt;img src="https://ruixi.me/p/mssql04/feature.jpg" alt="Featured image of post Mssql04" />&lt;table>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;blockquote>
+&lt;p>&lt;em>外码&lt;/em> &lt;br>
+&lt;code>设F是基本关系R中的一个或一组属性，但不是关系R的码。如果F与基本关系S中的主码K相对应，那么F是基本关系R的外码（外码取值可取空值，因为不是主属性;外码可取S中某个元组的主码值）&lt;/code> &lt;br>
+&lt;em>参照关系&lt;/em> &lt;br>
+&lt;code>外码所在的关系，即关系R为参照关系&lt;/code> &lt;br>
+&lt;em>被参照关系(目标关系)&lt;/em> &lt;br>
+&lt;code>关系S为参照关系&lt;/code>&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;blockquote>
+&lt;blockquote>
+&lt;p>例 1&lt;br>
+外码：专业    参照关系:学生关系    被参照关系：专业关系&lt;br>
+例 2&lt;br>
+外码：学号、课程号    参照关系:选修    被参照关系：学生关系、课程关系&lt;br>
+例 3&lt;br>
+外码：班长    参照关系:学生关系    被参照关系：学生关系&lt;/p>
+&lt;/blockquote>
+&lt;/blockquote>
+&lt;h2 id="用户定义完整性">用户定义完整性&lt;/h2>
+&lt;pre tabindex="0">&lt;code>例：课程(课程号，课程名，学分) 主码为课程号
+- “课程名”属性必须取唯一值
+- 非主属性“课程名”不能取空值
+- “学分”属性只能取值{1,2,3,4}
+&lt;/code>&lt;/pre>&lt;h2 id="关系代数运算的分类">关系代数运算的分类&lt;/h2>
+&lt;pre tabindex="0">&lt;code>1.传统的集合运算：并、交、差、广义笛卡尔积
+2.专门的关系运算：选择、投影、连接、除
+&lt;/code>&lt;/pre>&lt;h2 id="运算符及其对应关系">运算符及其对应关系&lt;/h2>
+&lt;table>
 &lt;thead>
 &lt;tr>
 &lt;th style="text-align:center">运算符&lt;/th>
@@ -341,20 +434,20 @@ data-flex-basis="265px"
 &lt;/ul>
 &lt;/blockquote>
 &lt;blockquote>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql04/%E5%85%83%E7%BB%84%E7%9A%84%E8%BF%9E%E6%8E%A5.png"
+&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E5%85%83%E7%BB%84%E7%9A%84%E8%BF%9E%E6%8E%A5.png"
 width="568"
 height="305"
-srcset="https://ruixi.me/p/mssql04/%E5%85%83%E7%BB%84%E7%9A%84%E8%BF%9E%E6%8E%A5_huc1f8372d8e95580a1f559b5054a753fc_110695_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql04/%E5%85%83%E7%BB%84%E7%9A%84%E8%BF%9E%E6%8E%A5_huc1f8372d8e95580a1f559b5054a753fc_110695_1024x0_resize_box_3.png 1024w"
+srcset="https://ruixi.me/p/mssql01/%E5%85%83%E7%BB%84%E7%9A%84%E8%BF%9E%E6%8E%A5_huc1f8372d8e95580a1f559b5054a753fc_110695_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%85%83%E7%BB%84%E7%9A%84%E8%BF%9E%E6%8E%A5_huc1f8372d8e95580a1f559b5054a753fc_110695_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="186"
 data-flex-basis="446px"
 >&lt;br>
 象集&lt;br>
-&lt;img src="https://ruixi.me/p/mssql04/%E8%B1%A1%E9%9B%86.png"
+&lt;img src="https://ruixi.me/p/mssql01/%E8%B1%A1%E9%9B%86.png"
 width="559"
 height="338"
-srcset="https://ruixi.me/p/mssql04/%E8%B1%A1%E9%9B%86_huf29f71a86f866347cf6eecb7ed5909f9_108465_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql04/%E8%B1%A1%E9%9B%86_huf29f71a86f866347cf6eecb7ed5909f9_108465_1024x0_resize_box_3.png 1024w"
+srcset="https://ruixi.me/p/mssql01/%E8%B1%A1%E9%9B%86_huf29f71a86f866347cf6eecb7ed5909f9_108465_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E8%B1%A1%E9%9B%86_huf29f71a86f866347cf6eecb7ed5909f9_108465_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="165"
@@ -363,10 +456,10 @@ data-flex-basis="396px"
 &lt;/blockquote>
 &lt;h2 id="选择">选择&lt;/h2>
 &lt;blockquote>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql04/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E9%80%89%E6%8B%A9.png"
+&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E9%80%89%E6%8B%A9.png"
 width="369"
 height="83"
-srcset="https://ruixi.me/p/mssql04/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E9%80%89%E6%8B%A9_hud5268d17c201681387c2eff9acb57729_26818_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql04/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E9%80%89%E6%8B%A9_hud5268d17c201681387c2eff9acb57729_26818_1024x0_resize_box_3.png 1024w"
+srcset="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E9%80%89%E6%8B%A9_hud5268d17c201681387c2eff9acb57729_26818_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E9%80%89%E6%8B%A9_hud5268d17c201681387c2eff9acb57729_26818_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="444"
@@ -490,10 +583,10 @@ data-flex-basis="1066px"
 &lt;/blockquote>
 &lt;h2 id="投影">投影&lt;/h2>
 &lt;blockquote>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql04/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E6%8A%95%E5%BD%B1.png"
+&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E6%8A%95%E5%BD%B1.png"
 width="291"
 height="118"
-srcset="https://ruixi.me/p/mssql04/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E6%8A%95%E5%BD%B1_hu254a57d66fc32c785e7107ff423f5d3c_26135_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql04/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E6%8A%95%E5%BD%B1_hu254a57d66fc32c785e7107ff423f5d3c_26135_1024x0_resize_box_3.png 1024w"
+srcset="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E6%8A%95%E5%BD%B1_hu254a57d66fc32c785e7107ff423f5d3c_26135_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E6%8A%95%E5%BD%B1_hu254a57d66fc32c785e7107ff423f5d3c_26135_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="246"
@@ -623,10 +716,10 @@ data-flex-basis="591px"
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql04/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%BF%9E%E6%8E%A5.png"
+&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%BF%9E%E6%8E%A5.png"
 width="114"
 height="52"
-srcset="https://ruixi.me/p/mssql04/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%BF%9E%E6%8E%A5_hucee491063472b30841abc775ff8e47ae_4370_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql04/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%BF%9E%E6%8E%A5_hucee491063472b30841abc775ff8e47ae_4370_1024x0_resize_box_3.png 1024w"
+srcset="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%BF%9E%E6%8E%A5_hucee491063472b30841abc775ff8e47ae_4370_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%BF%9E%E6%8E%A5_hucee491063472b30841abc775ff8e47ae_4370_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="219"
@@ -836,10 +929,10 @@ data-flex-basis="526px"
 &lt;/tbody>
 &lt;/table>
 &lt;p>&lt;strong>2.等值连接&lt;/strong>&lt;br>
-&lt;img src="https://ruixi.me/p/mssql04/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E7%AD%89%E5%80%BC%E8%BF%9E%E6%8E%A5.png"
+&lt;img src="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E7%AD%89%E5%80%BC%E8%BF%9E%E6%8E%A5.png"
 width="162"
 height="39"
-srcset="https://ruixi.me/p/mssql04/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E7%AD%89%E5%80%BC%E8%BF%9E%E6%8E%A5_hu98f35a76655a0fcde889f19ee018f2d1_6682_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql04/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E7%AD%89%E5%80%BC%E8%BF%9E%E6%8E%A5_hu98f35a76655a0fcde889f19ee018f2d1_6682_1024x0_resize_box_3.png 1024w"
+srcset="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E7%AD%89%E5%80%BC%E8%BF%9E%E6%8E%A5_hu98f35a76655a0fcde889f19ee018f2d1_6682_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E7%AD%89%E5%80%BC%E8%BF%9E%E6%8E%A5_hu98f35a76655a0fcde889f19ee018f2d1_6682_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="415"
@@ -902,10 +995,10 @@ data-flex-basis="996px"
 &lt;/table>
 &lt;p>&lt;strong>3.自然连接&lt;/strong>&lt;br>
 &lt;code>是一种特殊的等值连接&lt;/code>&lt;br>
-&lt;img src="https://ruixi.me/p/mssql04/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%87%AA%E7%84%B6%E8%BF%9E%E6%8E%A5.png"
+&lt;img src="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%87%AA%E7%84%B6%E8%BF%9E%E6%8E%A5.png"
 width="176"
 height="32"
-srcset="https://ruixi.me/p/mssql04/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%87%AA%E7%84%B6%E8%BF%9E%E6%8E%A5_hue8bfd4e9aad9e7ff799acd76056526e2_5725_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql04/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%87%AA%E7%84%B6%E8%BF%9E%E6%8E%A5_hue8bfd4e9aad9e7ff799acd76056526e2_5725_1024x0_resize_box_3.png 1024w"
+srcset="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%87%AA%E7%84%B6%E8%BF%9E%E6%8E%A5_hue8bfd4e9aad9e7ff799acd76056526e2_5725_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%87%AA%E7%84%B6%E8%BF%9E%E6%8E%A5_hue8bfd4e9aad9e7ff799acd76056526e2_5725_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="550"
@@ -969,10 +1062,10 @@ data-flex-basis="1320px"
 &lt;/blockquote>
 &lt;h2 id="选择投影自然连接综合例题">选择、投影、(自然)连接综合例题&lt;/h2>
 &lt;blockquote>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql04/%E9%80%89%E6%8B%A9%E3%80%81%E6%8A%95%E5%BD%B1%E3%80%81%E8%BF%9E%E6%8E%A5%E4%BE%8B%E9%A2%98.png"
+&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E9%80%89%E6%8B%A9%E3%80%81%E6%8A%95%E5%BD%B1%E3%80%81%E8%BF%9E%E6%8E%A5%E4%BE%8B%E9%A2%98.png"
 width="353"
 height="88"
-srcset="https://ruixi.me/p/mssql04/%E9%80%89%E6%8B%A9%E3%80%81%E6%8A%95%E5%BD%B1%E3%80%81%E8%BF%9E%E6%8E%A5%E4%BE%8B%E9%A2%98_hub3fae7b828fa91e2a4a3fc836d295a9f_30512_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql04/%E9%80%89%E6%8B%A9%E3%80%81%E6%8A%95%E5%BD%B1%E3%80%81%E8%BF%9E%E6%8E%A5%E4%BE%8B%E9%A2%98_hub3fae7b828fa91e2a4a3fc836d295a9f_30512_1024x0_resize_box_3.png 1024w"
+srcset="https://ruixi.me/p/mssql01/%E9%80%89%E6%8B%A9%E3%80%81%E6%8A%95%E5%BD%B1%E3%80%81%E8%BF%9E%E6%8E%A5%E4%BE%8B%E9%A2%98_hub3fae7b828fa91e2a4a3fc836d295a9f_30512_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E9%80%89%E6%8B%A9%E3%80%81%E6%8A%95%E5%BD%B1%E3%80%81%E8%BF%9E%E6%8E%A5%E4%BE%8B%E9%A2%98_hub3fae7b828fa91e2a4a3fc836d295a9f_30512_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="401"
@@ -982,150 +1075,61 @@ data-flex-basis="962px"
 &lt;/blockquote>
 &lt;h2 id="除">除&lt;/h2>
 &lt;blockquote>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql04/%E9%99%A4_1.png"
+&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E9%99%A4_1.png"
 width="392"
 height="254"
-srcset="https://ruixi.me/p/mssql04/%E9%99%A4_1_hu2771cc8dcbb7f2d692a5bfc5e1b0c8df_51037_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql04/%E9%99%A4_1_hu2771cc8dcbb7f2d692a5bfc5e1b0c8df_51037_1024x0_resize_box_3.png 1024w"
+srcset="https://ruixi.me/p/mssql01/%E9%99%A4_1_hu2771cc8dcbb7f2d692a5bfc5e1b0c8df_51037_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E9%99%A4_1_hu2771cc8dcbb7f2d692a5bfc5e1b0c8df_51037_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="154"
 data-flex-basis="370px"
-> &lt;img src="https://ruixi.me/p/mssql04/%E9%99%A4_2.png"
+> &lt;img src="https://ruixi.me/p/mssql01/%E9%99%A4_2.png"
 width="359"
 height="215"
-srcset="https://ruixi.me/p/mssql04/%E9%99%A4_2_hu286ae05f2ac5a8aa33446528806beaae_63628_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql04/%E9%99%A4_2_hu286ae05f2ac5a8aa33446528806beaae_63628_1024x0_resize_box_3.png 1024w"
+srcset="https://ruixi.me/p/mssql01/%E9%99%A4_2_hu286ae05f2ac5a8aa33446528806beaae_63628_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E9%99%A4_2_hu286ae05f2ac5a8aa33446528806beaae_63628_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="166"
 data-flex-basis="400px"
 >&lt;/p>
-&lt;/blockquote></description></item><item><title>Mssql03</title><link>https://ruixi.me/p/mssql03/</link><pubDate>Sat, 16 Apr 2022 12:56:34 +0800</pubDate><guid>https://ruixi.me/p/mssql03/</guid><description>&lt;img src="https://ruixi.me/p/mssql03/feature.jpg" alt="Featured image of post Mssql03" />&lt;h2 id="候选码">候选码&lt;/h2>
-&lt;pre tabindex="0">&lt;code>能够被选为主码的属性或属性组，说明主码不唯一
-&lt;/code>&lt;/pre>&lt;h2 id="主属性">主属性&lt;/h2>
-&lt;blockquote>
-&lt;p>定义：包含在任何候选码中的属性(主码一定是候选码，候选码不一定是主码，因为主码是人选的，是随机的)
-例：比如，竞赛表（竞赛编号，竞赛名称，竞赛组织者） PS：竞赛名称和竞赛组织者都可以重复&lt;/p>
 &lt;/blockquote>
-&lt;blockquote>
-&lt;p>很明显可以看出竞赛编号能够唯一标识整张竞赛表，因此候选码是竞赛编号，并且仅此一个候选码，其他属性都不能唯一标识整张表，所竞赛编号同时也是主码。&lt;/p>
-&lt;/blockquote>
-&lt;blockquote>
-&lt;p>这时候判断一下这几个属性 or 属性组是否是主属性，（竞赛编号）（竞赛编号，竞赛名称）（竞赛名称，竞赛组织者），（竞赛编号）只有一个属性，这个属性是主码，主码必定为候选码，因此属性含有一个候选码，这个属性是主属性。（竞赛编号，竞赛名称）有两个属性，其中竞赛编号是候选码，而竞赛名称不是候选码，那他是啥呢~前面有提到了，因为它跟候选码在同一个属性组里，所以，竞赛名称是超码，回过头来，最后得出该属性组含有了一个候选码，因此该属性组中的各个属性都是主属性。（竞赛名称，竞赛组织者）有两个属性，可以看出这两个属性都不是候选码，因此这个属性组不包含候选码，属性组中中得各个元素称为非主属性。&lt;/p>
-&lt;/blockquote>
-&lt;h2 id="misc">misc&lt;/h2>
-&lt;pre tabindex="0">&lt;code>主码=主键=主关键字，关键字=候选码 候选关键字=候选码中除去主码的其他候选码
-&lt;/code>&lt;/pre>&lt;h2 id="元组">元组&lt;/h2>
-&lt;pre tabindex="0">&lt;code>表中的每行（即数据库中的每条记录）就是一个元组;元组的个数为基数
-&lt;/code>&lt;/pre>&lt;h2 id="目度">目（度）&lt;/h2>
-&lt;pre tabindex="0">&lt;code>属性个数，也即列数
-&lt;/code>&lt;/pre>&lt;h2 id="关系模型中的三类完整性约束">关系模型中的三类完整性约束&lt;/h2>
-&lt;pre tabindex="0">&lt;code>1. 实体完整性
-2. 参照完整性
-3. 用户定义完整性
-&lt;/code>&lt;/pre>&lt;h2 id="实体完整性">实体完整性&lt;/h2>
-&lt;pre tabindex="0">&lt;code>实体完整性规则规定基本关系的所有主属性不能取空值，当我给某个表设置主键时，由于给主属性设置了空值，始终创建不了主码
-&lt;/code>&lt;/pre>&lt;h2 id="参照完整性">参照完整性&lt;/h2>
-&lt;pre tabindex="0">&lt;code>在关系模型中实体与实体之间的联系都是用关系来描述的，因此存在关系与关系之间的引用
-&lt;/code>&lt;/pre>&lt;blockquote>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql03/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_1.png"
-width="535"
-height="197"
-srcset="https://ruixi.me/p/mssql03/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_1_hu438336521bc7e5180c15ae88050a82e7_63778_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql03/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_1_hu438336521bc7e5180c15ae88050a82e7_63778_1024x0_resize_box_3.png 1024w"
+&lt;h2 id="课后习题">课后习题&lt;/h2>
+&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_1.png"
+width="927"
+height="551"
+srcset="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_1_hub00b40925f3daf742e51fe64329a7ac9_435549_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_1_hub00b40925f3daf742e51fe64329a7ac9_435549_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
-data-flex-grow="271"
-data-flex-basis="651px"
-> &lt;br>
-&lt;img src="https://ruixi.me/p/mssql03/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_2.png"
-width="527"
-height="257"
-srcset="https://ruixi.me/p/mssql03/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_2_hu89252f545fda7d50df9ff124a0a54986_82530_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql03/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_2_hu89252f545fda7d50df9ff124a0a54986_82530_1024x0_resize_box_3.png 1024w"
-loading="lazy"
-class="gallery-image"
-data-flex-grow="205"
-data-flex-basis="492px"
-> &lt;br>
-&lt;img src="https://ruixi.me/p/mssql03/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_3.png"
-width="586"
-height="82"
-srcset="https://ruixi.me/p/mssql03/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_3_hu40a494cb27d2c538a0978342b0727a6d_43967_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql03/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_3_hu40a494cb27d2c538a0978342b0727a6d_43967_1024x0_resize_box_3.png 1024w"
-loading="lazy"
-class="gallery-image"
-data-flex-grow="714"
-data-flex-basis="1715px"
+data-flex-grow="168"
+data-flex-basis="403px"
 >&lt;/p>
-&lt;/blockquote>
-&lt;blockquote>
-&lt;blockquote>
-&lt;p>&lt;em>外码&lt;/em> &lt;br>
-&lt;code>设F是基本关系R中的一个或一组属性，但不是关系R的码。如果F与基本关系S中的主码K相对应，那么F是基本关系R的外码（外码取值可取空值，因为不是主属性;外码可取S中某个元组的主码值）&lt;/code> &lt;br>
-&lt;em>参照关系&lt;/em> &lt;br>
-&lt;code>外码所在的关系，即关系R为参照关系&lt;/code> &lt;br>
-&lt;em>被参照关系(目标关系)&lt;/em> &lt;br>
-&lt;code>关系S为参照关系&lt;/code>&lt;/p>
-&lt;/blockquote>
-&lt;/blockquote>
-&lt;blockquote>
-&lt;blockquote>
-&lt;p>例 1&lt;br>
-外码：专业    参照关系:学生关系    被参照关系：专业关系&lt;br>
-例 2&lt;br>
-外码：学号、课程号    参照关系:选修    被参照关系：学生关系、课程关系&lt;br>
-例 3&lt;br>
-外码：班长    参照关系:学生关系    被参照关系：学生关系&lt;/p>
-&lt;/blockquote>
-&lt;/blockquote>
-&lt;h2 id="用户定义完整性">用户定义完整性&lt;/h2>
-&lt;pre tabindex="0">&lt;code>例：课程(课程号，课程名，学分) 主码为课程号
-- “课程名”属性必须取唯一值
-- 非主属性“课程名”不能取空值
-- “学分”属性只能取值{1,2,3,4}
-&lt;/code>&lt;/pre>&lt;h2 id="关系代数运算的分类">关系代数运算的分类&lt;/h2>
-&lt;pre tabindex="0">&lt;code>1.传统的集合运算：并、交、差、广义笛卡尔积
-2.专门的关系运算：选择、投影、连接、除
-&lt;/code>&lt;/pre></description></item><item><title>Mssql02</title><link>https://ruixi.me/p/mssql02/</link><pubDate>Sat, 16 Apr 2022 12:56:30 +0800</pubDate><guid>https://ruixi.me/p/mssql02/</guid><description>&lt;img src="https://ruixi.me/p/mssql02/feature.jpg" alt="Featured image of post Mssql02" />&lt;p>###关系数据模型（其数据结构是一张二维的表格）&lt;/p>
-&lt;h2 id="分量">分量&lt;/h2>
-&lt;pre tabindex="0">&lt;code>如在二位表格中的单元格的值。关系的分量必须是一个不可分的数据项(如工资被分为奖金、工龄、基本，这样对于关系来说是不规范的)
-&lt;/code>&lt;/pre>&lt;h2 id="数据库系统的三级模式">数据库系统的三级模式&lt;/h2>
-&lt;pre tabindex="0">&lt;code>模式(逻辑模式)是全体数据，外模式(子模式)是全体数据中的某一部分，内模式也称存储模式
-&lt;/code>&lt;/pre>&lt;h2 id="外模式模式映像">外模式/模式映像&lt;/h2>
-&lt;pre tabindex="0">&lt;code>定义了外模式与模式之间的对应关系
-每个外模式都对应一个外模式/模式映像（映像数量多个）
-映像定义通常包含在各自外模式的描述中
-&lt;/code>&lt;/pre>&lt;h2 id="模式内模式映像">模式/内模式映像&lt;/h2>
-&lt;pre tabindex="0">&lt;code>定义了数据全局逻辑结构与存储结构之间的对应关系
-数据库中模式/内模式映像是唯一的
-该映像的定义通常包含在模式描述中
-&lt;/code>&lt;/pre></description></item><item><title>Mssql01</title><link>https://ruixi.me/p/mssql01/</link><pubDate>Sat, 16 Apr 2022 12:56:25 +0800</pubDate><guid>https://ruixi.me/p/mssql01/</guid><description>&lt;img src="https://ruixi.me/p/mssql01/feature.jpg" alt="Featured image of post Mssql01" />&lt;h2 id="数据">数据&lt;/h2>
-&lt;pre tabindex="0">&lt;code>描述事物的符号记录
-&lt;/code>&lt;/pre>&lt;h2 id="数据库">数据库&lt;/h2>
-&lt;pre tabindex="0">&lt;code>长期存储在计算机内、有组织的、可共享的大量数据的集合
-&lt;/code>&lt;/pre>&lt;h2 id="dbmsdatabase-manager-system">DBMS(Database Manager System)&lt;/h2>
-&lt;pre tabindex="0">&lt;code>数据库管理软件。如mysql,sqlserver,mariadb,Access等等内部都内置了各种的DBMS,所以也称这些都是DBMS,换言之，目前流行的DBMS有mysql,sqlserver等等
-&lt;/code>&lt;/pre>&lt;h2 id="dbs">DBS&lt;/h2>
-&lt;pre tabindex="0">&lt;code>数据库系统也简称为数据库。由数据库，DBMS及其开发工具、应用程序(如学生管理系统的前台界面)、DBA及其用户构成
-&lt;/code>&lt;/pre>&lt;h2 id="数据模型">数据模型&lt;/h2>
-&lt;pre tabindex="0">&lt;code>(1)概念模型：按照用户的观点来对数据和信息建模（很重要，会影响到逻辑模型和物理模型）
-(2)逻辑模型和物理模型：主要包括网状模型、层次模型、关系模型等，它是按照计算机系统的观点对数据建模。用于DBMS的实现
-&lt;/code>&lt;/pre>&lt;h4 id="数据模型的组成要素">数据模型的组成要素&lt;/h4>
-&lt;pre tabindex="0">&lt;code>1.数据结构
-2.数据操作
-3.数据的约束条件
-&lt;/code>&lt;/pre>&lt;h2 id="实体">实体&lt;/h2>
-&lt;pre tabindex="0">&lt;code>如一个学生、老师与院系的工作关系等
-&lt;/code>&lt;/pre>&lt;h2 id="属性">属性&lt;/h2>
-&lt;pre tabindex="0">&lt;code>如学生实体中的姓名、学号等
-&lt;/code>&lt;/pre>&lt;h2 id="码">码&lt;/h2>
-&lt;pre tabindex="0">&lt;code>唯一标识实体的属性集。如学生实体的学号
-&lt;/code>&lt;/pre>&lt;h2 id="域">域&lt;/h2>
-&lt;pre tabindex="0">&lt;code>属性的取值范围。如性别域（男、女）
-&lt;/code>&lt;/pre>&lt;h2 id="实体型">实体型&lt;/h2>
-&lt;pre tabindex="0">&lt;code>实体名及其属性名集合来抽象刻画同类实体。如学生(姓名 学号 班级)就是一个实体型
-&lt;/code>&lt;/pre>&lt;h2 id="实体集">实体集&lt;/h2>
-&lt;pre tabindex="0">&lt;code>如全体学生
-&lt;/code>&lt;/pre>&lt;h2 id="概念模型标识方法">概念模型标识方法&lt;/h2>
-&lt;pre tabindex="0">&lt;code>E-R 方法 即实体-联系方法
-&lt;/code>&lt;/pre></description></item><item><title>解决go test对单个文件进行单元测试提示undefiend</title><link>https://ruixi.me/p/%E8%A7%A3%E5%86%B3go-test%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/</link><pubDate>Sun, 28 Nov 2021 17:09:23 +0800</pubDate><guid>https://ruixi.me/p/%E8%A7%A3%E5%86%B3go-test%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/</guid><description>&lt;img src="https://ruixi.me/p/%E8%A7%A3%E5%86%B3go-test%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/feature.png" alt="Featured image of post 解决go test对单个文件进行单元测试提示undefiend" />&lt;p>&lt;em>&lt;strong>我的报错截图:&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_2.png"
+width="872"
+height="666"
+srcset="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_2_hu5451ee30d1f4a267bd05f5589834525e_606772_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_2_hu5451ee30d1f4a267bd05f5589834525e_606772_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="130"
+data-flex-basis="314px"
+>&lt;/p>
+&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_3.png"
+width="934"
+height="436"
+srcset="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_3_hua04301b80e6360c28737cf7cb8b3e867_112499_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_3_hua04301b80e6360c28737cf7cb8b3e867_112499_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="214"
+data-flex-basis="514px"
+>&lt;/p>
+&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_4.jpg"
+width="1920"
+height="1738"
+srcset="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_4_hufce5555ea114c52e0c18951db64a152f_204458_480x0_resize_q75_box.jpg 480w, https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_4_hufce5555ea114c52e0c18951db64a152f_204458_1024x0_resize_q75_box.jpg 1024w"
+loading="lazy"
+class="gallery-image"
+data-flex-grow="110"
+data-flex-basis="265px"
+>&lt;/p></description></item><item><title>解决go test对单个文件进行单元测试提示undefiend</title><link>https://ruixi.me/p/%E8%A7%A3%E5%86%B3go-test%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/</link><pubDate>Sun, 28 Nov 2021 17:09:23 +0800</pubDate><guid>https://ruixi.me/p/%E8%A7%A3%E5%86%B3go-test%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/</guid><description>&lt;img src="https://ruixi.me/p/%E8%A7%A3%E5%86%B3go-test%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/feature.png" alt="Featured image of post 解决go test对单个文件进行单元测试提示undefiend" />&lt;p>&lt;em>&lt;strong>我的报错截图:&lt;/strong>&lt;/em>&lt;/p>
 &lt;p>&lt;img src="https://ruixi.me/p/%E8%A7%A3%E5%86%B3go-test%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/error.jpg"
 width="850"
 height="624"
