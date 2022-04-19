@@ -1,9 +1,4 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>ruixi-Let's Go!</title><link>https://ruixi.me/</link><description>Recent content on ruixi-Let's Go!</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 18 Apr 2022 17:55:28 +0800</lastBuildDate><atom:link href="https://ruixi.me/index.xml" rel="self" type="application/rss+xml"/><item><title>Mssql02_1</title><link>https://ruixi.me/p/mssql02_1/</link><pubDate>Mon, 18 Apr 2022 17:55:28 +0800</pubDate><guid>https://ruixi.me/p/mssql02_1/</guid><description>&lt;img src="https://ruixi.me/p/mssql02_1/feature.jpg" alt="Featured image of post Mssql02_1" />&lt;h2 id="create">CREATE&lt;/h2>
-&lt;p>SQL 中有两个可用的 CREATE 语句&lt;/p>
-&lt;ul>
-&lt;li>&lt;strong>创建数据库&lt;/strong>&lt;/li>
-&lt;li>&lt;strong>创建表&lt;/strong>&lt;/li>
-&lt;/ul>
 &lt;h3 id="创建数据库">创建数据库&lt;/h3>
 &lt;p>数据库 被定义为一组结构化的数据,因此，在 SQL 中，以结构良好的方式存储数据的第一步是创建数据库。&lt;/p>
 &lt;h4 id="语法">语法&lt;/h4>
@@ -20,16 +15,77 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">column3&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">data_type&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="k">size&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">....&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="示例-1">示例&lt;/h4>
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="示例-1">示例 1&lt;/h4>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQl" data-lang="SQl">&lt;span class="line">&lt;span class="cl">&lt;span class="k">CREATE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Students&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Sno&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">int&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">3&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Sname&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">varchar&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">20&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Sage&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">varchar&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">20&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="示例-2">示例 2&lt;/h4>
+&lt;p>建立一个“学生”表 Student、它由学号 Sno、学生姓名 Sname、性别 Ssex、年龄 Sage、所在系 Sdept 组成，其中 Sno 为主码&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">CREATE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Student&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Sno&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">CHAR&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">9&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">PRIMARY&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">KEY&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Sname&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">CHAR&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">20&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">UNIQUE&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Ssex&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">CHAR&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Sage&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">SMALLINT&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Sdept&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">CHAR&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">20&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="示例-3">示例 3&lt;/h4>
+&lt;p>建立一个“课程”表 Course,它由课程号 Cno、课程名 Cname、先行课号 Cpno、学分 Ccredit 组成，其中 Cno 为主码&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">CREATE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Course&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Cno&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">CHAR&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">PRIMARY&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">KEY&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Cname&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">CHAR&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">40&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Cpno&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">CHAR&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Ccredit&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">SMALLINT&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">FOREIGN&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">KEY&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Cpno&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">REFERENCES&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Course&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Cno&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="示例-4">示例 4&lt;/h4>
+&lt;p>建立一个“学生选课”表 Sc,它是由学号 Sno、课程号 Cno、选课成绩 Grade 组成，其中(Sno,Cno)为主码&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">CREATE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Sc&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Sno&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">CHAR&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">9&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Cno&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">CHAR&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="mi">4&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Grade&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">SMALLINT&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">PRIMARY&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">KEY&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Sno&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="n">Cno&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">FOREIGN&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">KEY&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Sno&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">REFERENCES&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Student&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Sno&lt;/span>&lt;span class="p">),&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">FOREIGN&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">KEY&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Cno&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">REFERENCES&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Student&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Cno&lt;/span>&lt;span class="p">)&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="cm">/*PRIMARY KEY 只能出现一次*/&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="建立索引">建立索引&lt;/h3>
+&lt;h4 id="语法-2">语法&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">CREATE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="k">UNIQUE&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="n">CLUMSTER&lt;/span>&lt;span class="p">]&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">INDEX&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="err">索引名&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">ON&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="err">表名&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="err">列名&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="err">次序&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">][,&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="err">列名&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">[&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="err">次序&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="p">]]&lt;/span>&lt;span class="err">……&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">注意&lt;/span>&lt;span class="c1">--&amp;gt;
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span>&lt;span class="o">&amp;lt;&lt;/span>&lt;span class="err">次序&lt;/span>&lt;span class="o">&amp;gt;&lt;/span>&lt;span class="err">：&lt;/span>&lt;span class="k">DESC&lt;/span>&lt;span class="err">、&lt;/span>&lt;span class="k">ASC&lt;/span>&lt;span class="err">。缺省为升序&lt;/span>&lt;span class="k">ASC&lt;/span>&lt;span class="err">。&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">UNIQUE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">表明此索引的每一个索引值只能对应唯一的数据记录（一对一）&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">对于含有重复值的属性列不能建立&lt;/span>&lt;span class="n">UNIQUE索引&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">对某个列建立&lt;/span>&lt;span class="n">UNIQUE索引后&lt;/span>&lt;span class="err">，插入新记录时&lt;/span>&lt;span class="n">DBMS会自动检查新记录在该列上是否取了重复值&lt;/span>&lt;span class="err">。这相当于增加了一个&lt;/span>&lt;span class="n">UNIQUE约束&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">CLUSTEM&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="err">表示建立的索引是聚簇索引&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">建立聚簇索引后，基本表中数据也需要按指定的聚簇属性值的升序或降序存放。即聚簇索引的索引项顺序与表中记录的物理顺序一致&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">在一个基本标上最多只能建立一个聚簇索引&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">聚簇索引用途：对于某些类型的查询，可以提高查询效率&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="err">聚簇索引适用范围：&lt;/span>&lt;span class="mi">1&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="err">很少对基表增删改查&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="mi">2&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="err">很少对其中的变长列进行修改操作&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="示例-1-1">示例 1&lt;/h4>
+&lt;p>为学生-课程数据库中的 Course，Sc 表建立索引。其中 Course 表按课程号升序建立唯一索引，Sc 表按学号升序和课程号降序建唯一索引&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">CREATE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">UNIQUE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">INDEX&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Coucno&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">ON&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Course&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Cno&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">ASC&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">CREATE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">UNIQUE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">INDEX&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Scno&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">ON&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Sc&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Cno&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">ASC&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Sno&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">DESC&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="示例-2-1">示例 2&lt;/h4>
+&lt;p>为学生-课程数据库中的 Student 表的 Sname 列上建立一个聚簇索引，而且 Student 表中的记录按照 Sname 值的升序存放&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">CREATE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">CLUSTERM&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">INDEX&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Stusname&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">ON&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Student&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Sname&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">ASC&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="drop">DROP&lt;/h2>
 &lt;p>DROP 用于删除整个数据库或仅删除一个表。DROP 语句会破坏现有数据库、表、索引或视图等对象。&lt;/p>
-&lt;h3 id="语法-2">语法&lt;/h3>
+&lt;h3 id="语法-3">语法&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">DROP&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">object&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">object_name&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">Examples&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w">
@@ -38,11 +94,13 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">DROP&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">DATABASE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">database_name&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">database_name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Name&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">of&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">the&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">database&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">to&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">be&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">deleted&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="例-1">例 1&lt;/h3>
+&lt;p>删除 Student 表的 Stuname 索引&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">DROP&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">INDEX&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Stuname&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="alter">ALTER&lt;/h2>
 &lt;p>ALTER TABLE 用于添加、删除/删除或修改现有表中的列。 它还用于在现有表上添加和删除各种约束&lt;/p>
 &lt;h3 id="更改表---添加">更改表 - 添加&lt;/h3>
-&lt;p>ADD 用于将列添加到现有表中。 有时我们可能需要添加额外的信息，在这种情况下我们不需要再次创建整个数据库， ADD 来拯救我们&lt;/p>
-&lt;h4 id="语法-3">语法&lt;/h4>
+&lt;h4 id="语法-4">语法&lt;/h4>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">ALTER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="k">ADD&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">Columnname_1&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">datatype&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
@@ -50,23 +108,32 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="err">…&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="n">Columnname_n&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">datatype&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w"> &lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="示例-1-2">示例 1&lt;/h4>
+&lt;p>向 Student 中增加“入学时间”列&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">ALTER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Student&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">ADD&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">S_entrance&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">DATE&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="示例-2-2">示例 2&lt;/h4>
+&lt;p>增加课程名称必须取唯一值的约束条件&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="n">ATLER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Course&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">ADD&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">UNIQUE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="p">(&lt;/span>&lt;span class="n">Cname&lt;/span>&lt;span class="p">);&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="更改表---删除">更改表 - 删除&lt;/h3>
-&lt;h4 id="语法-4">语法&lt;/h4>
+&lt;h4 id="语法-5">语法&lt;/h4>
 &lt;p>DROP COLUMN 用于删除表中的列&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">ALTER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">DROP&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">COLUMN&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">column_name&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="改变表---修改">改变表 - 修改&lt;/h3>
 &lt;p>它用于修改表中的现有列&lt;/p>
-&lt;h4 id="语法-5">语法&lt;/h4>
-&lt;p>Syntax(Oracle,MySQL,MariaDB):&lt;/p>
-&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">ALTER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">MODIFY&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">column_name&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">column_type&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;p>Syntax(SQL Server):&lt;/p>
+&lt;h4 id="语法-6">语法&lt;/h4>
+&lt;p>Syntax(SQL Server):&lt;/p>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">ALTER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">ALTER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">COLUMN&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">column_name&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">column_type&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="示例-1-3">示例 1&lt;/h4>
+&lt;p>将 Student 表中的年龄的数据类型由字符型改为整数&lt;/p>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">ALTER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Student&lt;/span>&lt;span class="w">
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">ALTER&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">COLUMN&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Sage&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="nb">INT&lt;/span>&lt;span class="p">,&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="truncate">TRUNCATE&lt;/h2>
 &lt;p>truncate 的作用是清空表或者说是截断表，只能作用于表;会清空表中的所有行，但表结构及其约束、索引等保持不变(&lt;strong>empty for reuse&lt;/strong>)&lt;/p>
-&lt;h3 id="语法-6">语法&lt;/h3>
+&lt;h3 id="语法-7">语法&lt;/h3>
 &lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">TRUNCATE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">TABLE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Name&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">of&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">the&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">to&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">be&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">truncated&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h2 id="delete">DELETE&lt;/h2>
@@ -76,7 +143,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="k">table_name&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">name&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">of&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">the&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">table&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="w">&lt;/span>&lt;span class="n">some_condition&lt;/span>&lt;span class="p">:&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">condition&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">to&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">choose&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">particular&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">record&lt;/span>&lt;span class="p">.&lt;/span>&lt;span class="w">
-&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="示例-2">示例&lt;/h3>
+&lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="示例-5">示例&lt;/h3>
 &lt;p>&lt;img src="https://ruixi.me/delete.jpg"
 loading="lazy"
 >&lt;/p>
@@ -211,6 +278,42 @@ data-flex-basis="285px"
 &lt;li>COMMENT ：用于向数据字典添加注释。&lt;/li>
 &lt;li>RENAME ： 这用于重命名数据库中存在的对象。&lt;/li>
 &lt;/ul>
+&lt;table>
+&lt;thead>
+&lt;tr>
+&lt;th>操作对象&lt;/th>
+&lt;th>操作方式/创建&lt;/th>
+&lt;th>操作方式/删除&lt;/th>
+&lt;th>操作方式/修改&lt;/th>
+&lt;/tr>
+&lt;/thead>
+&lt;tbody>
+&lt;tr>
+&lt;td>数据库&lt;/td>
+&lt;td>CREATE DATABASE&lt;/td>
+&lt;td>DROP DATABASE&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>表&lt;/td>
+&lt;td>CREATE TABLE&lt;/td>
+&lt;td>DROP TABLE&lt;/td>
+&lt;td>ALTER TABLE&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>视图&lt;/td>
+&lt;td>CREATE VIEW&lt;/td>
+&lt;td>DROP VIEW&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;tr>
+&lt;td>索引&lt;/td>
+&lt;td>CREATE INDEX&lt;/td>
+&lt;td>DROP INDEX&lt;/td>
+&lt;td>&lt;/td>
+&lt;/tr>
+&lt;/tbody>
+&lt;/table>
 &lt;h2 id="dql数据查询语言">DQL（数据查询语言）&lt;/h2>
 &lt;p>DQL 语句用于对模式对象中的数据执行查询。 DQL 命令的目的是根据传递给它的查询获取一些模式关系。 我们可以将 DQL 定义如下，它是 SQL 语句的一个组件，允许从数据库中获取数据并对其进行排序。 它包括 SELECT 语句。 此命令允许从数据库中获取数据以对其执行操作。 当对一个或多个表触发 SELECT 时，结果会编译到另一个临时表中，该表会显示或可能由程序（即前端）接收。&lt;/p>
 &lt;p>DQL 列表:&lt;/p>
@@ -243,6 +346,21 @@ data-flex-basis="285px"
 &lt;li>ROLLBACK ： 在发生任何错误的情况下回滚事务。&lt;/li>
 &lt;li>SAVEPOINT ： 在事务中设置保存点。&lt;/li>
 &lt;li>SET TRANSACTION： 指定交易的特征。&lt;/li>
+&lt;/ul>
+&lt;h2 id="misc">MISC&lt;/h2>
+&lt;p>支持 SQL 的 RDBMS 同样支持关系数据库三级模式&lt;/p>
+&lt;h3 id="基本表">基本表&lt;/h3>
+&lt;p>本身独立存放的表（模式），在 SQL 中一个关系对应一个基本表。基本表和索引对应存储文件（内模式）&lt;/p>
+&lt;h3 id="视图">视图&lt;/h3>
+&lt;p>从一个或者几个基本表导出的表（外模式），是虚表，数据库中只是存放视图的定义而不存放视图对应的数据&lt;/p>
+&lt;h3 id="建立与删除索引">建立与删除索引&lt;/h3>
+&lt;p>索引的作用：加快查询速度
+谁来建立索引：&lt;/p>
+&lt;ul>
+&lt;li>DBA 或表的属主&lt;/li>
+&lt;li>有些 DBMS 自动建立以下列上的索引：PRIMARY KEY,UNIQUE
+谁来维护索引：DBMS 自动完成
+如何引用索引：DBMS 自动选择是否使用索引以及使用哪些索引&lt;/li>
 &lt;/ul></description></item><item><title>Mssql01</title><link>https://ruixi.me/p/mssql01/</link><pubDate>Sat, 16 Apr 2022 12:56:25 +0800</pubDate><guid>https://ruixi.me/p/mssql01/</guid><description>&lt;img src="https://ruixi.me/p/mssql01/feature.jpg" alt="Featured image of post Mssql01" />&lt;h2 id="数据">数据&lt;/h2>
 &lt;pre tabindex="0">&lt;code>描述事物的符号记录
 &lt;/code>&lt;/pre>&lt;h2 id="数据库">数据库&lt;/h2>
