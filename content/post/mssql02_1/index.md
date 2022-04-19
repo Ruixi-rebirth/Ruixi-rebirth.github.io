@@ -168,7 +168,7 @@ database_name: Name of the database to be deleted.
 删除 Student 表的 Stuname 索引
 
 ```SQL
-DROP INDEX Stuname;
+DROP INDEX Stuname ON Student;
 ```
 
 ## ALTER
@@ -216,6 +216,16 @@ DROP COLUMN 用于删除表中的列
 ```SQL
 ALTER TABLE table_name
 DROP COLUMN column_name;
+```
+
+#### 示例 1
+
+删除 Student 表中的 PRIMARY KEY(SqlServer)
+
+```SQL
+ALTER TABLE Student
+DROP CONSTRAINT Student_PK;
+/*Student_PK 是主键的名称，如果创建主键时没有指定名称，就会随机设置一个名称*/
 ```
 
 ### 改变表 - 修改
