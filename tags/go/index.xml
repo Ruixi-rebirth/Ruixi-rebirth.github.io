@@ -6,14 +6,14 @@ bingo@Mac Interface_test$ go test -v getinfo_test.go # command-line-arguments ./
 这可能也是使用 golang 做测试的弊端，因为发展时间不长，没有像 Python 或者 Java 那样成熟的社区；废话不多说，我们一起来看看这个问题为什么会发生。
 根本原因 其实从看看上面的这段提示：build failed，构建失败，我们应该就能看出一下信息。go test 与其他的指定源码文件进行编译或运行的命令程序一样（参考：go run和go build），会为指定的源码文件生成一个虚拟代码包——“command-line-arguments”，对于运行这次测试的命令程序来说，测试源码文件getinfo_test.go是属于代码包“command-line-arguments”的，可是它引用了其他包中的数据并不属于代码包“command-line-arguments”，编译不通过，错误自然发生了。
 解决方法 解决 知道了原因之后，解决的方法就出来了，执行命令时加入这个测试文件需要引用的源码文件，在命令行后方的文件都会被加载到command-line-arguments中进行编译。。示例如下：
-bingo@Mac Interface_test$ go test -v getinfo_test.go lib.go ok command-line-arguments 0.</description></item><item><title>浅谈GoMod</title><link>https://ruixi.me/p/%E6%B5%85%E8%B0%88gomod/</link><pubDate>Sun, 28 Nov 2021 16:24:57 +0800</pubDate><guid>https://ruixi.me/p/%E6%B5%85%E8%B0%88gomod/</guid><description>如果使用之前的GOPATH进行包管理的话会面临以下问题:
+bingo@Mac Interface_test$ go test -v getinfo_test.go lib.go ok command-line-arguments 0.008s 多级引用或多个引用包的情况 如果对多个包存在引用关系，或者引用的包对当前目录的其他文件存在引用，也都是一样的方法，把他们加在命令后方即可。</description></item><item><title>浅谈GoMod</title><link>https://ruixi.me/p/%E6%B5%85%E8%B0%88gomod/</link><pubDate>Sun, 28 Nov 2021 16:24:57 +0800</pubDate><guid>https://ruixi.me/p/%E6%B5%85%E8%B0%88gomod/</guid><description>如果使用之前的GOPATH进行包管理的话会面临以下问题:
 在不使用额外的工具的情况下，Go 的依赖包需要手工下载 第三方包没有版本的概念，如果第三方包的作者做了不兼容升级，会让开发者很难受 协作开发时，需要统一各个开发成员本地$GOPATH/src下的依赖包 引用的包引用了已经转移的包，而作者没改的话，需要自己修改引用 第三方包和自己的包的源码都在 src 下，很混乱。对于混合技术栈的项目来说，目录的存放会有一些问题 新的包管理模式go mod解决了以上问题:
 自动下载依赖包(有前提) 项目不必放在 GOPATH/src 内了 项目内会生成一个 go.mod 文件，列出包依赖 所有来的第三方包会准确的指定版本号 对于已经转移的包，可以用 replace 申明替换，不需要改代码 准备工作 1.golang 版本必须支持 go mod
 2.添加环境变量 GO111MODULE 为 on 或者auto
 创建一个项目 首先，在$GOPATH/src 路径外的你喜欢的地方创建一个目录，cd 进入目录，新建一个 hello.go 文件，内容如下
 package main import ( &amp;#34;fmt&amp;#34; ) func main() { fmt.Println(&amp;#34;Hello, world!&amp;#34;) } 初始化模块 在当前目录下，命令行运行 go mod init + 模块名称 初始化模块
 go mod init hello 运行完后，会在当前项目目录下生成一个 go.mod 文件，这是一个关键文件，之后的包的管理都是通过这个文件管理。
-官方说明：除了 go.</description></item><item><title>Go Run ,Go Build , Go Install</title><link>https://ruixi.me/p/go-run-go-build-go-install/</link><pubDate>Fri, 26 Nov 2021 07:47:36 +0800</pubDate><guid>https://ruixi.me/p/go-run-go-build-go-install/</guid><description>在实际操作之前，我们需要知道 go 有三种源码文件：
+官方说明：除了 go.mod 之外，go 命令还维护一个名为 go.sum 的文件，其中包含特定模块版本内容的预期加密哈希</description></item><item><title>Go Run ,Go Build , Go Install</title><link>https://ruixi.me/p/go-run-go-build-go-install/</link><pubDate>Fri, 26 Nov 2021 07:47:36 +0800</pubDate><guid>https://ruixi.me/p/go-run-go-build-go-install/</guid><description>在实际操作之前，我们需要知道 go 有三种源码文件：
 1，命令源码文件；声明自己属于 main 包，并且包含 main 函数的文件，每个项目只能有一个这样的文件，即程序的入口文件
 2，库源码文件；不能直接被执行的源码文件
 3，测试源码文件
