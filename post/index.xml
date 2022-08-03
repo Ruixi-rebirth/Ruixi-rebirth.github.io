@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Ruixi-rebirth</title><link>https://ruixi.me/post/</link><description>Recent content in Posts on Ruixi-rebirth</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 18 Apr 2022 17:55:28 +0800</lastBuildDate><atom:link href="https://ruixi.me/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Mssql02_1</title><link>https://ruixi.me/p/mssql02_1/</link><pubDate>Mon, 18 Apr 2022 17:55:28 +0800</pubDate><guid>https://ruixi.me/p/mssql02_1/</guid><description>&lt;img src="https://ruixi.me/p/mssql02_1/feature.jpg" alt="Featured image of post Mssql02_1" />&lt;h2 id="create">CREATE&lt;/h2>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on Ruixi-rebirth</title><link>https://rayxi.top/post/</link><description>Recent content in Posts on Ruixi-rebirth</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 18 Apr 2022 17:55:28 +0800</lastBuildDate><atom:link href="https://rayxi.top/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Mssql02_1</title><link>https://rayxi.top/p/mssql02_1/</link><pubDate>Mon, 18 Apr 2022 17:55:28 +0800</pubDate><guid>https://rayxi.top/p/mssql02_1/</guid><description>&lt;img src="https://rayxi.top/p/mssql02_1/feature.jpg" alt="Featured image of post Mssql02_1" />&lt;h2 id="create">CREATE&lt;/h2>
 &lt;h3 id="创建数据库">创建数据库&lt;/h3>
 &lt;p>数据库 被定义为一组结构化的数据,因此，在 SQL 中，以结构良好的方式存储数据的第一步是创建数据库。&lt;/p>
 &lt;h4 id="语法">语法&lt;/h4>
@@ -374,7 +374,7 @@
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h3 id="示例-5">示例&lt;/h3>
-&lt;p>&lt;img src="https://ruixi.me/delete.jpg"
+&lt;p>&lt;img src="https://rayxi.top/delete.jpg"
 loading="lazy"
 >&lt;/p>
 &lt;div class="highlight">&lt;div class="chroma">
@@ -493,10 +493,10 @@ loading="lazy"
 &lt;pre tabindex="0" class="chroma">&lt;code class="language-SQL" data-lang="SQL">&lt;span class="line">&lt;span class="cl">&lt;span class="k">DELETE&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="k">FROM&lt;/span>&lt;span class="w"> &lt;/span>&lt;span class="n">Student&lt;/span>&lt;span class="p">;&lt;/span>&lt;span class="w">
 &lt;/span>&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div></description></item><item><title>Mssql02</title><link>https://ruixi.me/p/mssql02/</link><pubDate>Mon, 18 Apr 2022 17:35:01 +0800</pubDate><guid>https://ruixi.me/p/mssql02/</guid><description>&lt;img src="https://ruixi.me/p/mssql02/feature.jpg" alt="Featured image of post Mssql02" />&lt;p>&lt;img src="https://ruixi.me/p/mssql02/new-768x645.png"
+&lt;/div></description></item><item><title>Mssql02</title><link>https://rayxi.top/p/mssql02/</link><pubDate>Mon, 18 Apr 2022 17:35:01 +0800</pubDate><guid>https://rayxi.top/p/mssql02/</guid><description>&lt;img src="https://rayxi.top/p/mssql02/feature.jpg" alt="Featured image of post Mssql02" />&lt;p>&lt;img src="https://rayxi.top/p/mssql02/new-768x645.png"
 width="768"
 height="645"
-srcset="https://ruixi.me/p/mssql02/new-768x645_hu8b03ae05ff68d4cd0cd58e0ef1c293b7_60332_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql02/new-768x645_hu8b03ae05ff68d4cd0cd58e0ef1c293b7_60332_1024x0_resize_box_3.png 1024w"
+srcset="https://rayxi.top/p/mssql02/new-768x645_hu8b03ae05ff68d4cd0cd58e0ef1c293b7_60332_480x0_resize_box_3.png 480w, https://rayxi.top/p/mssql02/new-768x645_hu8b03ae05ff68d4cd0cd58e0ef1c293b7_60332_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="119"
@@ -612,7 +612,7 @@ data-flex-basis="285px"
 &lt;li>有些 DBMS 自动建立以下列上的索引：PRIMARY KEY,UNIQUE
 谁来维护索引：DBMS 自动完成
 如何引用索引：DBMS 自动选择是否使用索引以及使用哪些索引&lt;/li>
-&lt;/ul></description></item><item><title>Mssql01</title><link>https://ruixi.me/p/mssql01/</link><pubDate>Sat, 16 Apr 2022 12:56:25 +0800</pubDate><guid>https://ruixi.me/p/mssql01/</guid><description>&lt;img src="https://ruixi.me/p/mssql01/feature.jpg" alt="Featured image of post Mssql01" />&lt;h2 id="数据">数据&lt;/h2>
+&lt;/ul></description></item><item><title>Mssql01</title><link>https://rayxi.top/p/mssql01/</link><pubDate>Sat, 16 Apr 2022 12:56:25 +0800</pubDate><guid>https://rayxi.top/p/mssql01/</guid><description>&lt;img src="https://rayxi.top/p/mssql01/feature.jpg" alt="Featured image of post Mssql01" />&lt;h2 id="数据">数据&lt;/h2>
 &lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
 &lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
@@ -860,28 +860,28 @@ data-flex-basis="285px"
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;blockquote>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_1.png"
+&lt;p>&lt;img src="https://rayxi.top/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_1.png"
 width="535"
 height="197"
-srcset="https://ruixi.me/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_1_hu438336521bc7e5180c15ae88050a82e7_63778_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_1_hu438336521bc7e5180c15ae88050a82e7_63778_1024x0_resize_box_3.png 1024w"
+srcset="https://rayxi.top/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_1_hu438336521bc7e5180c15ae88050a82e7_63778_480x0_resize_box_3.png 480w, https://rayxi.top/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_1_hu438336521bc7e5180c15ae88050a82e7_63778_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="271"
 data-flex-basis="651px"
 > &lt;br>
-&lt;img src="https://ruixi.me/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_2.png"
+&lt;img src="https://rayxi.top/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_2.png"
 width="527"
 height="257"
-srcset="https://ruixi.me/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_2_hu89252f545fda7d50df9ff124a0a54986_82530_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_2_hu89252f545fda7d50df9ff124a0a54986_82530_1024x0_resize_box_3.png 1024w"
+srcset="https://rayxi.top/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_2_hu89252f545fda7d50df9ff124a0a54986_82530_480x0_resize_box_3.png 480w, https://rayxi.top/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_2_hu89252f545fda7d50df9ff124a0a54986_82530_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="205"
 data-flex-basis="492px"
 > &lt;br>
-&lt;img src="https://ruixi.me/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_3.png"
+&lt;img src="https://rayxi.top/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_3.png"
 width="586"
 height="82"
-srcset="https://ruixi.me/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_3_hu40a494cb27d2c538a0978342b0727a6d_43967_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_3_hu40a494cb27d2c538a0978342b0727a6d_43967_1024x0_resize_box_3.png 1024w"
+srcset="https://rayxi.top/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_3_hu40a494cb27d2c538a0978342b0727a6d_43967_480x0_resize_box_3.png 480w, https://rayxi.top/p/mssql01/%E5%8F%82%E7%85%A7%E5%85%B3%E7%B3%BB_3_hu40a494cb27d2c538a0978342b0727a6d_43967_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="714"
@@ -1005,20 +1005,20 @@ data-flex-basis="1715px"
 &lt;/ul>
 &lt;/blockquote>
 &lt;blockquote>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E5%85%83%E7%BB%84%E7%9A%84%E8%BF%9E%E6%8E%A5.png"
+&lt;p>&lt;img src="https://rayxi.top/p/mssql01/%E5%85%83%E7%BB%84%E7%9A%84%E8%BF%9E%E6%8E%A5.png"
 width="568"
 height="305"
-srcset="https://ruixi.me/p/mssql01/%E5%85%83%E7%BB%84%E7%9A%84%E8%BF%9E%E6%8E%A5_huc1f8372d8e95580a1f559b5054a753fc_110695_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%85%83%E7%BB%84%E7%9A%84%E8%BF%9E%E6%8E%A5_huc1f8372d8e95580a1f559b5054a753fc_110695_1024x0_resize_box_3.png 1024w"
+srcset="https://rayxi.top/p/mssql01/%E5%85%83%E7%BB%84%E7%9A%84%E8%BF%9E%E6%8E%A5_huc1f8372d8e95580a1f559b5054a753fc_110695_480x0_resize_box_3.png 480w, https://rayxi.top/p/mssql01/%E5%85%83%E7%BB%84%E7%9A%84%E8%BF%9E%E6%8E%A5_huc1f8372d8e95580a1f559b5054a753fc_110695_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="186"
 data-flex-basis="446px"
 >&lt;br>
 象集&lt;br>
-&lt;img src="https://ruixi.me/p/mssql01/%E8%B1%A1%E9%9B%86.png"
+&lt;img src="https://rayxi.top/p/mssql01/%E8%B1%A1%E9%9B%86.png"
 width="559"
 height="338"
-srcset="https://ruixi.me/p/mssql01/%E8%B1%A1%E9%9B%86_huf29f71a86f866347cf6eecb7ed5909f9_108465_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E8%B1%A1%E9%9B%86_huf29f71a86f866347cf6eecb7ed5909f9_108465_1024x0_resize_box_3.png 1024w"
+srcset="https://rayxi.top/p/mssql01/%E8%B1%A1%E9%9B%86_huf29f71a86f866347cf6eecb7ed5909f9_108465_480x0_resize_box_3.png 480w, https://rayxi.top/p/mssql01/%E8%B1%A1%E9%9B%86_huf29f71a86f866347cf6eecb7ed5909f9_108465_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="165"
@@ -1027,10 +1027,10 @@ data-flex-basis="396px"
 &lt;/blockquote>
 &lt;h2 id="选择">选择&lt;/h2>
 &lt;blockquote>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E9%80%89%E6%8B%A9.png"
+&lt;p>&lt;img src="https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E9%80%89%E6%8B%A9.png"
 width="369"
 height="83"
-srcset="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E9%80%89%E6%8B%A9_hud5268d17c201681387c2eff9acb57729_26818_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E9%80%89%E6%8B%A9_hud5268d17c201681387c2eff9acb57729_26818_1024x0_resize_box_3.png 1024w"
+srcset="https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E9%80%89%E6%8B%A9_hud5268d17c201681387c2eff9acb57729_26818_480x0_resize_box_3.png 480w, https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E9%80%89%E6%8B%A9_hud5268d17c201681387c2eff9acb57729_26818_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="444"
@@ -1154,10 +1154,10 @@ data-flex-basis="1066px"
 &lt;/blockquote>
 &lt;h2 id="投影">投影&lt;/h2>
 &lt;blockquote>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E6%8A%95%E5%BD%B1.png"
+&lt;p>&lt;img src="https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E6%8A%95%E5%BD%B1.png"
 width="291"
 height="118"
-srcset="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E6%8A%95%E5%BD%B1_hu254a57d66fc32c785e7107ff423f5d3c_26135_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E6%8A%95%E5%BD%B1_hu254a57d66fc32c785e7107ff423f5d3c_26135_1024x0_resize_box_3.png 1024w"
+srcset="https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E6%8A%95%E5%BD%B1_hu254a57d66fc32c785e7107ff423f5d3c_26135_480x0_resize_box_3.png 480w, https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E6%8A%95%E5%BD%B1_hu254a57d66fc32c785e7107ff423f5d3c_26135_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="246"
@@ -1287,10 +1287,10 @@ data-flex-basis="591px"
 &lt;/tr>
 &lt;/tbody>
 &lt;/table>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%BF%9E%E6%8E%A5.png"
+&lt;p>&lt;img src="https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%BF%9E%E6%8E%A5.png"
 width="114"
 height="52"
-srcset="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%BF%9E%E6%8E%A5_hucee491063472b30841abc775ff8e47ae_4370_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%BF%9E%E6%8E%A5_hucee491063472b30841abc775ff8e47ae_4370_1024x0_resize_box_3.png 1024w"
+srcset="https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%BF%9E%E6%8E%A5_hucee491063472b30841abc775ff8e47ae_4370_480x0_resize_box_3.png 480w, https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%BF%9E%E6%8E%A5_hucee491063472b30841abc775ff8e47ae_4370_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="219"
@@ -1500,10 +1500,10 @@ data-flex-basis="526px"
 &lt;/tbody>
 &lt;/table>
 &lt;p>&lt;strong>2.等值连接&lt;/strong>&lt;br>
-&lt;img src="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E7%AD%89%E5%80%BC%E8%BF%9E%E6%8E%A5.png"
+&lt;img src="https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E7%AD%89%E5%80%BC%E8%BF%9E%E6%8E%A5.png"
 width="162"
 height="39"
-srcset="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E7%AD%89%E5%80%BC%E8%BF%9E%E6%8E%A5_hu98f35a76655a0fcde889f19ee018f2d1_6682_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E7%AD%89%E5%80%BC%E8%BF%9E%E6%8E%A5_hu98f35a76655a0fcde889f19ee018f2d1_6682_1024x0_resize_box_3.png 1024w"
+srcset="https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E7%AD%89%E5%80%BC%E8%BF%9E%E6%8E%A5_hu98f35a76655a0fcde889f19ee018f2d1_6682_480x0_resize_box_3.png 480w, https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E7%AD%89%E5%80%BC%E8%BF%9E%E6%8E%A5_hu98f35a76655a0fcde889f19ee018f2d1_6682_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="415"
@@ -1566,10 +1566,10 @@ data-flex-basis="996px"
 &lt;/table>
 &lt;p>&lt;strong>3.自然连接&lt;/strong>&lt;br>
 &lt;code>是一种特殊的等值连接&lt;/code>&lt;br>
-&lt;img src="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%87%AA%E7%84%B6%E8%BF%9E%E6%8E%A5.png"
+&lt;img src="https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%87%AA%E7%84%B6%E8%BF%9E%E6%8E%A5.png"
 width="176"
 height="32"
-srcset="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%87%AA%E7%84%B6%E8%BF%9E%E6%8E%A5_hue8bfd4e9aad9e7ff799acd76056526e2_5725_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%87%AA%E7%84%B6%E8%BF%9E%E6%8E%A5_hue8bfd4e9aad9e7ff799acd76056526e2_5725_1024x0_resize_box_3.png 1024w"
+srcset="https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%87%AA%E7%84%B6%E8%BF%9E%E6%8E%A5_hue8bfd4e9aad9e7ff799acd76056526e2_5725_480x0_resize_box_3.png 480w, https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E8%BF%90%E7%AE%97_%E8%87%AA%E7%84%B6%E8%BF%9E%E6%8E%A5_hue8bfd4e9aad9e7ff799acd76056526e2_5725_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="550"
@@ -1633,10 +1633,10 @@ data-flex-basis="1320px"
 &lt;/blockquote>
 &lt;h2 id="选择投影自然连接综合例题">选择、投影、(自然)连接综合例题&lt;/h2>
 &lt;blockquote>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E9%80%89%E6%8B%A9%E3%80%81%E6%8A%95%E5%BD%B1%E3%80%81%E8%BF%9E%E6%8E%A5%E4%BE%8B%E9%A2%98.png"
+&lt;p>&lt;img src="https://rayxi.top/p/mssql01/%E9%80%89%E6%8B%A9%E3%80%81%E6%8A%95%E5%BD%B1%E3%80%81%E8%BF%9E%E6%8E%A5%E4%BE%8B%E9%A2%98.png"
 width="353"
 height="88"
-srcset="https://ruixi.me/p/mssql01/%E9%80%89%E6%8B%A9%E3%80%81%E6%8A%95%E5%BD%B1%E3%80%81%E8%BF%9E%E6%8E%A5%E4%BE%8B%E9%A2%98_hub3fae7b828fa91e2a4a3fc836d295a9f_30512_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E9%80%89%E6%8B%A9%E3%80%81%E6%8A%95%E5%BD%B1%E3%80%81%E8%BF%9E%E6%8E%A5%E4%BE%8B%E9%A2%98_hub3fae7b828fa91e2a4a3fc836d295a9f_30512_1024x0_resize_box_3.png 1024w"
+srcset="https://rayxi.top/p/mssql01/%E9%80%89%E6%8B%A9%E3%80%81%E6%8A%95%E5%BD%B1%E3%80%81%E8%BF%9E%E6%8E%A5%E4%BE%8B%E9%A2%98_hub3fae7b828fa91e2a4a3fc836d295a9f_30512_480x0_resize_box_3.png 480w, https://rayxi.top/p/mssql01/%E9%80%89%E6%8B%A9%E3%80%81%E6%8A%95%E5%BD%B1%E3%80%81%E8%BF%9E%E6%8E%A5%E4%BE%8B%E9%A2%98_hub3fae7b828fa91e2a4a3fc836d295a9f_30512_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="401"
@@ -1646,18 +1646,18 @@ data-flex-basis="962px"
 &lt;/blockquote>
 &lt;h2 id="除">除&lt;/h2>
 &lt;blockquote>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E9%99%A4_1.png"
+&lt;p>&lt;img src="https://rayxi.top/p/mssql01/%E9%99%A4_1.png"
 width="392"
 height="254"
-srcset="https://ruixi.me/p/mssql01/%E9%99%A4_1_hu2771cc8dcbb7f2d692a5bfc5e1b0c8df_51037_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E9%99%A4_1_hu2771cc8dcbb7f2d692a5bfc5e1b0c8df_51037_1024x0_resize_box_3.png 1024w"
+srcset="https://rayxi.top/p/mssql01/%E9%99%A4_1_hu2771cc8dcbb7f2d692a5bfc5e1b0c8df_51037_480x0_resize_box_3.png 480w, https://rayxi.top/p/mssql01/%E9%99%A4_1_hu2771cc8dcbb7f2d692a5bfc5e1b0c8df_51037_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="154"
 data-flex-basis="370px"
-> &lt;img src="https://ruixi.me/p/mssql01/%E9%99%A4_2.png"
+> &lt;img src="https://rayxi.top/p/mssql01/%E9%99%A4_2.png"
 width="359"
 height="215"
-srcset="https://ruixi.me/p/mssql01/%E9%99%A4_2_hu286ae05f2ac5a8aa33446528806beaae_63628_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E9%99%A4_2_hu286ae05f2ac5a8aa33446528806beaae_63628_1024x0_resize_box_3.png 1024w"
+srcset="https://rayxi.top/p/mssql01/%E9%99%A4_2_hu286ae05f2ac5a8aa33446528806beaae_63628_480x0_resize_box_3.png 480w, https://rayxi.top/p/mssql01/%E9%99%A4_2_hu286ae05f2ac5a8aa33446528806beaae_63628_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="166"
@@ -1665,46 +1665,46 @@ data-flex-basis="400px"
 >&lt;/p>
 &lt;/blockquote>
 &lt;h2 id="课后习题">课后习题&lt;/h2>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_1.png"
+&lt;p>&lt;img src="https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_1.png"
 width="927"
 height="551"
-srcset="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_1_hub00b40925f3daf742e51fe64329a7ac9_435549_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_1_hub00b40925f3daf742e51fe64329a7ac9_435549_1024x0_resize_box_3.png 1024w"
+srcset="https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_1_hub00b40925f3daf742e51fe64329a7ac9_435549_480x0_resize_box_3.png 480w, https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_1_hub00b40925f3daf742e51fe64329a7ac9_435549_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="168"
 data-flex-basis="403px"
 >&lt;/p>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_2.png"
+&lt;p>&lt;img src="https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_2.png"
 width="872"
 height="666"
-srcset="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_2_hu5451ee30d1f4a267bd05f5589834525e_606772_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_2_hu5451ee30d1f4a267bd05f5589834525e_606772_1024x0_resize_box_3.png 1024w"
+srcset="https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_2_hu5451ee30d1f4a267bd05f5589834525e_606772_480x0_resize_box_3.png 480w, https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_2_hu5451ee30d1f4a267bd05f5589834525e_606772_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="130"
 data-flex-basis="314px"
 >&lt;/p>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_3.png"
+&lt;p>&lt;img src="https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_3.png"
 width="934"
 height="436"
-srcset="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_3_hua04301b80e6360c28737cf7cb8b3e867_112499_480x0_resize_box_3.png 480w, https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_3_hua04301b80e6360c28737cf7cb8b3e867_112499_1024x0_resize_box_3.png 1024w"
+srcset="https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_3_hua04301b80e6360c28737cf7cb8b3e867_112499_480x0_resize_box_3.png 480w, https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_3_hua04301b80e6360c28737cf7cb8b3e867_112499_1024x0_resize_box_3.png 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="214"
 data-flex-basis="514px"
 >&lt;/p>
-&lt;p>&lt;img src="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_4.jpg"
+&lt;p>&lt;img src="https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_4.jpg"
 width="1920"
 height="1738"
-srcset="https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_4_hufce5555ea114c52e0c18951db64a152f_204458_480x0_resize_q75_box.jpg 480w, https://ruixi.me/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_4_hufce5555ea114c52e0c18951db64a152f_204458_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_4_hufce5555ea114c52e0c18951db64a152f_204458_480x0_resize_q75_box.jpg 480w, https://rayxi.top/p/mssql01/%E5%85%B3%E7%B3%BB%E4%BB%A3%E6%95%B0%E4%B9%A0%E9%A2%98_4_hufce5555ea114c52e0c18951db64a152f_204458_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="110"
 data-flex-basis="265px"
->&lt;/p></description></item><item><title>解决go test对单个文件进行单元测试提示undefiend</title><link>https://ruixi.me/p/%E8%A7%A3%E5%86%B3go-test%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/</link><pubDate>Sun, 28 Nov 2021 17:09:23 +0800</pubDate><guid>https://ruixi.me/p/%E8%A7%A3%E5%86%B3go-test%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/</guid><description>&lt;img src="https://ruixi.me/p/%E8%A7%A3%E5%86%B3go-test%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/feature.png" alt="Featured image of post 解决go test对单个文件进行单元测试提示undefiend" />&lt;p>&lt;em>&lt;strong>我的报错截图:&lt;/strong>&lt;/em>&lt;/p>
-&lt;p>&lt;img src="https://ruixi.me/p/%E8%A7%A3%E5%86%B3go-test%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/error.jpg"
+>&lt;/p></description></item><item><title>解决go test对单个文件进行单元测试提示undefiend</title><link>https://rayxi.top/p/%E8%A7%A3%E5%86%B3go-test%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/</link><pubDate>Sun, 28 Nov 2021 17:09:23 +0800</pubDate><guid>https://rayxi.top/p/%E8%A7%A3%E5%86%B3go-test%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/</guid><description>&lt;img src="https://rayxi.top/p/%E8%A7%A3%E5%86%B3go-test%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/feature.png" alt="Featured image of post 解决go test对单个文件进行单元测试提示undefiend" />&lt;p>&lt;em>&lt;strong>我的报错截图:&lt;/strong>&lt;/em>&lt;/p>
+&lt;p>&lt;img src="https://rayxi.top/p/%E8%A7%A3%E5%86%B3go-test%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/error.jpg"
 width="850"
 height="624"
-srcset="https://ruixi.me/p/%E8%A7%A3%E5%86%B3go-test%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/error_hue036e71731a728d226cddfaab0bfae22_85845_480x0_resize_q75_box.jpg 480w, https://ruixi.me/p/%E8%A7%A3%E5%86%B3go-test%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/error_hue036e71731a728d226cddfaab0bfae22_85845_1024x0_resize_q75_box.jpg 1024w"
+srcset="https://rayxi.top/p/%E8%A7%A3%E5%86%B3go-test%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/error_hue036e71731a728d226cddfaab0bfae22_85845_480x0_resize_q75_box.jpg 480w, https://rayxi.top/p/%E8%A7%A3%E5%86%B3go-test%E5%AF%B9%E5%8D%95%E4%B8%AA%E6%96%87%E4%BB%B6%E8%BF%9B%E8%A1%8C%E5%8D%95%E5%85%83%E6%B5%8B%E8%AF%95%E6%8F%90%E7%A4%BAundefiend/error_hue036e71731a728d226cddfaab0bfae22_85845_1024x0_resize_q75_box.jpg 1024w"
 loading="lazy"
 class="gallery-image"
 data-flex-grow="136"
@@ -1744,7 +1744,7 @@ ok command-line-arguments 0.008s
 &lt;h2 id="总结">总结&lt;/h2>
 &lt;p>测试单个文件，一定要带上被测试的原文件，如果原文件有其他引用，也需一并带上。&lt;/p>
 &lt;p>(文章转载自&lt;a class="link" href="https://www.cnblogs.com/Detector/p/10010292.html" target="_blank" rel="noopener"
->https://www.cnblogs.com/Detector/p/10010292.html&lt;/a>)&lt;/p></description></item><item><title>浅谈GoMod</title><link>https://ruixi.me/p/%E6%B5%85%E8%B0%88gomod/</link><pubDate>Sun, 28 Nov 2021 16:24:57 +0800</pubDate><guid>https://ruixi.me/p/%E6%B5%85%E8%B0%88gomod/</guid><description>&lt;img src="https://ruixi.me/p/%E6%B5%85%E8%B0%88gomod/feature.png" alt="Featured image of post 浅谈GoMod" />&lt;p>如果使用之前的&lt;strong>GOPATH&lt;/strong>进行包管理的话会面临以下问题:&lt;/p>
+>https://www.cnblogs.com/Detector/p/10010292.html&lt;/a>)&lt;/p></description></item><item><title>浅谈GoMod</title><link>https://rayxi.top/p/%E6%B5%85%E8%B0%88gomod/</link><pubDate>Sun, 28 Nov 2021 16:24:57 +0800</pubDate><guid>https://rayxi.top/p/%E6%B5%85%E8%B0%88gomod/</guid><description>&lt;img src="https://rayxi.top/p/%E6%B5%85%E8%B0%88gomod/feature.png" alt="Featured image of post 浅谈GoMod" />&lt;p>如果使用之前的&lt;strong>GOPATH&lt;/strong>进行包管理的话会面临以下问题:&lt;/p>
 &lt;ul>
 &lt;li>&lt;strong>在不使用额外的工具的情况下，Go 的依赖包需要手工下载&lt;/strong>&lt;/li>
 &lt;li>&lt;strong>第三方包没有版本的概念，如果第三方包的作者做了不兼容升级，会让开发者很难受&lt;/strong>&lt;/li>
@@ -1834,7 +1834,7 @@ go.sum 不需要手工维护，所以可以不用太关注。&lt;/p>
 &lt;/div>&lt;p>接下来执行 go run hello.go 然后会提示叫用 go get 下载引用第三方包，那就用呗。&lt;/p>
 &lt;p>下载完第三方包后，再次 go run hello.go 就跑起来啦！&lt;/p>
 &lt;h2 id="问题依赖的包下载到哪里了">问题：依赖的包下载到哪里了？&lt;/h2>
-&lt;p>使用 Go 的包管理方式，依赖的第三方包被下载到了$GOPATH/pkg/mod 路径下。（可以自行更改下载路径）&lt;/p></description></item><item><title>回车 &amp; 换行</title><link>https://ruixi.me/p/%E5%9B%9E%E8%BD%A6-%E6%8D%A2%E8%A1%8C/</link><pubDate>Sun, 28 Nov 2021 16:12:56 +0800</pubDate><guid>https://ruixi.me/p/%E5%9B%9E%E8%BD%A6-%E6%8D%A2%E8%A1%8C/</guid><description>&lt;img src="https://ruixi.me/p/%E5%9B%9E%E8%BD%A6-%E6%8D%A2%E8%A1%8C/feature.png" alt="Featured image of post 回车 &amp; 换行" />&lt;h1 id="关于回车carriage-return和换行line-feed这两个概念的来历和区别">关于“回车”（carriage return）和“换行”（line feed）这两个概念的来历和区别&lt;/h1>
+&lt;p>使用 Go 的包管理方式，依赖的第三方包被下载到了$GOPATH/pkg/mod 路径下。（可以自行更改下载路径）&lt;/p></description></item><item><title>回车 &amp; 换行</title><link>https://rayxi.top/p/%E5%9B%9E%E8%BD%A6-%E6%8D%A2%E8%A1%8C/</link><pubDate>Sun, 28 Nov 2021 16:12:56 +0800</pubDate><guid>https://rayxi.top/p/%E5%9B%9E%E8%BD%A6-%E6%8D%A2%E8%A1%8C/</guid><description>&lt;img src="https://rayxi.top/p/%E5%9B%9E%E8%BD%A6-%E6%8D%A2%E8%A1%8C/feature.png" alt="Featured image of post 回车 &amp; 换行" />&lt;h1 id="关于回车carriage-return和换行line-feed这两个概念的来历和区别">关于“回车”（carriage return）和“换行”（line feed）这两个概念的来历和区别&lt;/h1>
 &lt;p>关于换行和回车其实平时我们不太在意，所以关于两者的区别也不太清楚，在平时开发时可能会遇到一些文件处理的问题，放到不同的操作系统上出现各种坑。那么回车和换行到底有哪些区别呢？今天咱们就来总结一下。&lt;/p>
 &lt;h3 id="1-由来">1. 由来&lt;/h3>
 &lt;p>在计算机还没有出现之前，有一种叫做电传打字机（Teletype Model 33）的机械打字机，每秒钟可以打10个字符。但是它有一个问题，就是打完一行换行的时候，要用去0.2秒，正好可以打两个字符。要是在这0.2秒里面，又有新的字符传过来，那么这个字符将丢失。&lt;/p>
@@ -1859,7 +1859,7 @@ go.sum 不需要手工维护，所以可以不用太关注。&lt;/p>
 &lt;p>软回车是用 Shift + Enter 产生的，它换行，但是并不换段，即前后两段文字在 Word 中属于同一“段”。在应用格式时你会体会到这一点。&lt;/p>
 &lt;p>软回车能使前后两行的行间距大幅度缩小，因为它不是段落标记，要和法定的段落标记——硬回车区别出来。硬回车的html代码是&amp;lt;p&amp;gt;..&amp;lt;/p&amp;gt;，段落的内容就夹在里面，而软回车的代码很精悍：&amp;lt;br&amp;gt;。网页的文字如果复制到word中，则硬回车变为弯曲的箭头，软回车变为向下的箭头。&lt;/p>
 &lt;p>转载在自:&lt;a class="link" href="https://www.pythontab.com/html/2017/linuxkaiyuan_0115/1116.html" target="_blank" rel="noopener"
->https://www.pythontab.com/html/2017/linuxkaiyuan_0115/1116.html&lt;/a>&lt;/p></description></item><item><title>Animate_2021呆唯生日祭——说不完的省略号</title><link>https://ruixi.me/p/animate_2021%E5%91%86%E5%94%AF%E7%94%9F%E6%97%A5%E7%A5%AD%E8%AF%B4%E4%B8%8D%E5%AE%8C%E7%9A%84%E7%9C%81%E7%95%A5%E5%8F%B7/</link><pubDate>Sat, 27 Nov 2021 21:49:15 +0800</pubDate><guid>https://ruixi.me/p/animate_2021%E5%91%86%E5%94%AF%E7%94%9F%E6%97%A5%E7%A5%AD%E8%AF%B4%E4%B8%8D%E5%AE%8C%E7%9A%84%E7%9C%81%E7%95%A5%E5%8F%B7/</guid><description>&lt;img src="https://ruixi.me/p/animate_2021%E5%91%86%E5%94%AF%E7%94%9F%E6%97%A5%E7%A5%AD%E8%AF%B4%E4%B8%8D%E5%AE%8C%E7%9A%84%E7%9C%81%E7%95%A5%E5%8F%B7/feature.jpg" alt="Featured image of post Animate_2021呆唯生日祭——说不完的省略号" />
+>https://www.pythontab.com/html/2017/linuxkaiyuan_0115/1116.html&lt;/a>&lt;/p></description></item><item><title>Animate_2021呆唯生日祭——说不完的省略号</title><link>https://rayxi.top/p/animate_2021%E5%91%86%E5%94%AF%E7%94%9F%E6%97%A5%E7%A5%AD%E8%AF%B4%E4%B8%8D%E5%AE%8C%E7%9A%84%E7%9C%81%E7%95%A5%E5%8F%B7/</link><pubDate>Sat, 27 Nov 2021 21:49:15 +0800</pubDate><guid>https://rayxi.top/p/animate_2021%E5%91%86%E5%94%AF%E7%94%9F%E6%97%A5%E7%A5%AD%E8%AF%B4%E4%B8%8D%E5%AE%8C%E7%9A%84%E7%9C%81%E7%95%A5%E5%8F%B7/</guid><description>&lt;img src="https://rayxi.top/p/animate_2021%E5%91%86%E5%94%AF%E7%94%9F%E6%97%A5%E7%A5%AD%E8%AF%B4%E4%B8%8D%E5%AE%8C%E7%9A%84%E7%9C%81%E7%95%A5%E5%8F%B7/feature.jpg" alt="Featured image of post Animate_2021呆唯生日祭——说不完的省略号" />
 &lt;div class="video-wrapper">
 &lt;iframe src="https://player.bilibili.com/player.html?as_wide=1&amp;amp;high_quality=1&amp;amp;page=1&amp;bvid=BV1DF411b717"
 scrolling="no"
@@ -1868,7 +1868,7 @@ framespacing="0"
 allowfullscreen="true"
 >
 &lt;/iframe>
-&lt;/div></description></item><item><title>Go Run ,Go Build , Go Install</title><link>https://ruixi.me/p/go-run-go-build-go-install/</link><pubDate>Fri, 26 Nov 2021 07:47:36 +0800</pubDate><guid>https://ruixi.me/p/go-run-go-build-go-install/</guid><description>&lt;img src="https://ruixi.me/p/go-run-go-build-go-install/go.jpg" alt="Featured image of post Go Run ,Go Build , Go Install" />&lt;p>在实际操作之前，我们需要知道 go 有三种源码文件：&lt;/p>
+&lt;/div></description></item><item><title>Go Run ,Go Build , Go Install</title><link>https://rayxi.top/p/go-run-go-build-go-install/</link><pubDate>Fri, 26 Nov 2021 07:47:36 +0800</pubDate><guid>https://rayxi.top/p/go-run-go-build-go-install/</guid><description>&lt;img src="https://rayxi.top/p/go-run-go-build-go-install/go.jpg" alt="Featured image of post Go Run ,Go Build , Go Install" />&lt;p>在实际操作之前，我们需要知道 go 有三种源码文件：&lt;/p>
 &lt;p>1，命令源码文件；声明自己属于 main 包，并且包含 main 函数的文件，每个项目只能有一个这样的文件，即程序的入口文件&lt;/p>
 &lt;p>2，库源码文件；不能直接被执行的源码文件&lt;/p>
 &lt;p>3，测试源码文件&lt;/p>
@@ -1877,7 +1877,7 @@ allowfullscreen="true"
 &lt;p>+库源码文件：只是检查编译错误，不产生任何文件,如果库源码文件有语法错误，编译不通过会报错。&lt;/p>
 &lt;p>+命令源码文件：产生一个可执行文件&lt;/p>
 &lt;p>go install : 执行的过程：编译库源码文件-&amp;gt;编译命令源码文件-&amp;gt;移动编译文件，命令源码文件的编译后的二进制文件移到$GOPATH/bin目录下；库源码文件的编译移到$GOPATH/pkg 目录,后缀名为.a 的文件。这个移动目录的过程称为安装。&lt;/p>
-&lt;p>Ps：上述的二进制可执行文件可独立运行，当然可以放在任何目录下运行啦&lt;/p></description></item><item><title>Video</title><link>https://ruixi.me/p/video/</link><pubDate>Thu, 25 Nov 2021 16:02:33 +0800</pubDate><guid>https://ruixi.me/p/video/</guid><description>&lt;img src="https://ruixi.me/p/video/gujian.jpg" alt="Featured image of post Video" />&lt;div class="video-wrapper">
+&lt;p>Ps：上述的二进制可执行文件可独立运行，当然可以放在任何目录下运行啦&lt;/p></description></item><item><title>Video</title><link>https://rayxi.top/p/video/</link><pubDate>Thu, 25 Nov 2021 16:02:33 +0800</pubDate><guid>https://rayxi.top/p/video/</guid><description>&lt;img src="https://rayxi.top/p/video/gujian.jpg" alt="Featured image of post Video" />&lt;div class="video-wrapper">
 &lt;iframe loading="lazy"
 src="https://www.youtube.com/embed/NLwC7eu-Zfw"
 allowfullscreen
