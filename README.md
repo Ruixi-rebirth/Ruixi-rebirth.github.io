@@ -1,6 +1,6 @@
 # My blog
 
-> https://rayxi.top
+> https://ruixi2fp.top
 
 [![github pages](https://github.com/ruixi-rebirth/ruixi-rebirth.github.io/actions/workflows/gh_pages.yml/badge.svg)](https://github.com/ruixi-rebirth/ruixi-rebirth.github.io/actions/workflows/gh_pages.yml)
 
