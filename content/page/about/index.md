@@ -26,7 +26,7 @@ avatar: https://avatars.githubusercontent.com/u/75824585
 
 disc: 「与其悔当日，不如奋今朝!」
 
-site: https://rayxi.top
+site: https://ruixi2fp.top
 
 **联系方式：**
 
