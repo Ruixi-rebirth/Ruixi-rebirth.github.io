@@ -7,7 +7,7 @@
 ## Debug Build
 
 ```bash
- git clone https://github.com/Ruixi-rebirth/Ruixi-rebirth.github.io.git --branch=blog --depth=1
+ git clone https://github.com/Ruixi-rebirth/Ruixi-rebirth.github.io.git --branch=source --depth=1
 
  cd Ruixi-rebirth.github.io
 
